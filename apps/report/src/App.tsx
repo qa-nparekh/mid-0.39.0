@@ -225,7 +225,7 @@ function Visualizer(props: VisualizerProps): JSX.Element {
 export function App() {
   function getDumpElements(): PlaywrightTasks[] {
     const dumpElements = document.querySelectorAll(
-      'script[type="midscene_web_dump"]',
+      'script[type="SQAI_web_dump"]',
     );
     const reportDump: PlaywrightTasks[] = [];
     Array.from(dumpElements)
@@ -300,7 +300,7 @@ export function App() {
 
     const loadDumpElements = () => {
       const currentElements = document.querySelectorAll(
-        'script[type="midscene_web_dump"]',
+        'script[type="SQAI_web_dump"]',
       );
 
       // If it has been loaded and the number of elements has not changed, skip it.
