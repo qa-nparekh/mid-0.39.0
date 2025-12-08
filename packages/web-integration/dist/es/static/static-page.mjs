@@ -1,0 +1,132 @@
+import { defineActionDragAndDrop, defineActionHover, defineActionInput, defineActionKeyboardPress, defineActionRightClick, defineActionScroll, defineActionTap } from "@sqai/core/device";
+import { ERROR_CODE_NOT_IMPLEMENTED_AS_DESIGNED } from "@sqai/shared/common";
+function _define_property(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+const ThrowNotImplemented = (methodName)=>{
+    throw new Error(`The method "${methodName}" is not implemented as designed since this is a static UI context. (${ERROR_CODE_NOT_IMPLEMENTED_AS_DESIGNED})`);
+};
+class StaticPage {
+    actionSpace() {
+        return [
+            defineActionTap(async (param)=>{
+                ThrowNotImplemented('Tap');
+            }),
+            defineActionRightClick(async (param)=>{
+                ThrowNotImplemented('RightClick');
+            }),
+            defineActionHover(async (param)=>{
+                ThrowNotImplemented('Hover');
+            }),
+            defineActionInput(async (param)=>{
+                ThrowNotImplemented('Input');
+            }),
+            defineActionKeyboardPress(async (param)=>{
+                ThrowNotImplemented('KeyboardPress');
+            }),
+            defineActionScroll(async (param)=>{
+                ThrowNotImplemented('Scroll');
+            }),
+            defineActionDragAndDrop(async (param)=>{
+                ThrowNotImplemented('DragAndDrop');
+            })
+        ];
+    }
+    async evaluateJavaScript(script) {
+        return ThrowNotImplemented('evaluateJavaScript');
+    }
+    async getElementsInfo() {
+        return ThrowNotImplemented('getElementsInfo');
+    }
+    async getElementsNodeTree() {
+        return ThrowNotImplemented('getElementsNodeTree');
+    }
+    async getXpathsById(id) {
+        return ThrowNotImplemented('getXpathsById');
+    }
+    async getXpathsByPoint(point) {
+        return ThrowNotImplemented('getXpathsByPoint');
+    }
+    async getElementInfoByXpath(xpath) {
+        return ThrowNotImplemented('getElementInfoByXpath');
+    }
+    async size() {
+        return {
+            ...this.uiContext.size,
+            dpr: this.uiContext.size.dpr || 1
+        };
+    }
+    async screenshotBase64() {
+        const base64 = this.uiContext.screenshotBase64;
+        if (!base64) throw new Error('screenshot base64 is empty');
+        return base64;
+    }
+    async url() {
+        return Promise.resolve('https://static_page_without_url');
+    }
+    async scrollUntilTop(startingPoint) {
+        return ThrowNotImplemented('scrollUntilTop');
+    }
+    async scrollUntilBottom(startingPoint) {
+        return ThrowNotImplemented('scrollUntilBottom');
+    }
+    async scrollUntilLeft(startingPoint) {
+        return ThrowNotImplemented('scrollUntilLeft');
+    }
+    async scrollUntilRight(startingPoint) {
+        return ThrowNotImplemented('scrollUntilRight');
+    }
+    async scrollUp(distance, startingPoint) {
+        return ThrowNotImplemented('scrollUp');
+    }
+    async scrollDown(distance, startingPoint) {
+        return ThrowNotImplemented('scrollDown');
+    }
+    async scrollLeft(distance, startingPoint) {
+        return ThrowNotImplemented('scrollLeft');
+    }
+    async scrollRight(distance, startingPoint) {
+        return ThrowNotImplemented('scrollRight');
+    }
+    async clearInput() {
+        return ThrowNotImplemented('clearInput');
+    }
+    async destroy() {}
+    async getContext() {
+        return this.uiContext;
+    }
+    updateContext(newContext) {
+        this.uiContext = newContext;
+    }
+    constructor(uiContext){
+        _define_property(this, "interfaceType", 'static');
+        _define_property(this, "uiContext", void 0);
+        _define_property(this, "mouse", {
+            click: ThrowNotImplemented.bind(null, 'mouse.click'),
+            wheel: ThrowNotImplemented.bind(null, 'mouse.wheel'),
+            move: ThrowNotImplemented.bind(null, 'mouse.move'),
+            drag: ThrowNotImplemented.bind(null, 'mouse.drag')
+        });
+        _define_property(this, "keyboard", {
+            type: ThrowNotImplemented.bind(null, 'keyboard.type'),
+            press: ThrowNotImplemented.bind(null, 'keyboard.press')
+        });
+        if (uiContext.tree) this.uiContext = uiContext;
+        else this.uiContext = Object.assign(uiContext, {
+            tree: {
+                node: null,
+                children: []
+            }
+        });
+    }
+}
+export { StaticPage as default };
+
+//# sourceMappingURL=static-page.mjs.map

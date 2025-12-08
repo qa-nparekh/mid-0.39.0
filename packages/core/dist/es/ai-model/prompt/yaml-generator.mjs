@@ -1,0 +1,219 @@
+import { YAML_EXAMPLE_CODE } from "@sqai/shared/constants";
+import { AIActionType, callAI, callAIWithStringResponse } from "../index.mjs";
+const getScreenshotsForLLM = (events, maxScreenshots = 1)=>{
+    const eventsWithScreenshots = events.filter((event)=>event.screenshotBefore || event.screenshotAfter || event.screenshotWithBox);
+    const sortedEvents = [
+        ...eventsWithScreenshots
+    ].sort((a, b)=>{
+        if ('navigation' === a.type && 'navigation' !== b.type) return -1;
+        if ('navigation' !== a.type && 'navigation' === b.type) return 1;
+        if ('click' === a.type && 'click' !== b.type) return -1;
+        if ('click' !== a.type && 'click' === b.type) return 1;
+        return 0;
+    });
+    const screenshots = [];
+    for (const event of sortedEvents){
+        const screenshot = event.screenshotWithBox || event.screenshotAfter || event.screenshotBefore;
+        if (screenshot && !screenshots.includes(screenshot)) {
+            screenshots.push(screenshot);
+            if (screenshots.length >= maxScreenshots) break;
+        }
+    }
+    return screenshots;
+};
+const filterEventsByType = (events)=>({
+        navigationEvents: events.filter((event)=>'navigation' === event.type),
+        clickEvents: events.filter((event)=>'click' === event.type),
+        inputEvents: events.filter((event)=>'input' === event.type),
+        scrollEvents: events.filter((event)=>'scroll' === event.type)
+    });
+const createEventCounts = (filteredEvents, totalEvents)=>({
+        navigation: filteredEvents.navigationEvents.length,
+        click: filteredEvents.clickEvents.length,
+        input: filteredEvents.inputEvents.length,
+        scroll: filteredEvents.scrollEvents.length,
+        total: totalEvents
+    });
+const extractInputDescriptions = (inputEvents)=>inputEvents.map((event)=>({
+            description: event.elementDescription || '',
+            value: event.value || ''
+        })).filter((item)=>item.description && item.value);
+const processEventsForLLM = (events)=>events.map((event)=>({
+            type: event.type,
+            timestamp: event.timestamp,
+            url: event.url,
+            title: event.title,
+            elementDescription: event.elementDescription,
+            value: event.value,
+            pageInfo: event.pageInfo,
+            elementRect: event.elementRect
+        }));
+const prepareEventSummary = (events, options = {})=>{
+    const filteredEvents = filterEventsByType(events);
+    const eventCounts = createEventCounts(filteredEvents, events.length);
+    const startUrl = filteredEvents.navigationEvents.length > 0 ? filteredEvents.navigationEvents[0].url || '' : '';
+    const clickDescriptions = filteredEvents.clickEvents.map((event)=>event.elementDescription).filter((desc)=>Boolean(desc)).slice(0, 10);
+    const inputDescriptions = extractInputDescriptions(filteredEvents.inputEvents).slice(0, 10);
+    const urls = filteredEvents.navigationEvents.map((e)=>e.url).filter((url)=>Boolean(url)).slice(0, 5);
+    const processedEvents = processEventsForLLM(events);
+    return {
+        testName: options.testName || 'Automated test from recorded events',
+        startUrl,
+        eventCounts,
+        urls,
+        clickDescriptions,
+        inputDescriptions,
+        events: processedEvents
+    };
+};
+const createMessageContent = (promptText, screenshots = [], includeScreenshots = true)=>{
+    const messageContent = [
+        {
+            type: 'text',
+            text: promptText
+        }
+    ];
+    if (includeScreenshots && screenshots.length > 0) {
+        messageContent.unshift({
+            type: 'text',
+            text: 'Here are screenshots from the recording session to help you understand the context:'
+        });
+        screenshots.forEach((screenshot)=>{
+            messageContent.push({
+                type: 'image_url',
+                image_url: {
+                    url: screenshot
+                }
+            });
+        });
+    }
+    return messageContent;
+};
+const validateEvents = (events)=>{
+    if (!events.length) throw new Error('No events provided for test generation');
+};
+const generateYamlTest = async (events, options, modelConfig)=>{
+    try {
+        validateEvents(events);
+        const summary = prepareEventSummary(events, {
+            testName: options.testName,
+            maxScreenshots: options.maxScreenshots || 3
+        });
+        const yamlSummary = {
+            ...summary,
+            includeTimestamps: options.includeTimestamps || false
+        };
+        const screenshots = getScreenshotsForLLM(events, options.maxScreenshots || 3);
+        const prompt = [
+            {
+                role: 'system',
+                content: `You are an expert in Midscene.js YAML test generation. Generate clean, accurate YAML following these rules: ${YAML_EXAMPLE_CODE}`
+            },
+            {
+                role: 'user',
+                content: `Generate YAML test for Midscene.js automation from recorded browser events.
+
+Event Summary:
+${JSON.stringify(yamlSummary, null, 2)}
+
+Convert events:
+- navigation \u{2192} target.url
+- click \u{2192} aiTap with element description
+- input \u{2192} aiInput with value and locate
+- scroll \u{2192} aiScroll with appropriate direction
+- Add aiAssert for important state changes
+
+Important: Return ONLY the raw YAML content. Do NOT wrap the response in markdown code blocks (no \`\`\`yaml or \`\`\`). Start directly with the YAML content.`
+            }
+        ];
+        if (screenshots.length > 0) {
+            prompt.push({
+                role: 'user',
+                content: 'Here are screenshots from the recording session to help you understand the context:'
+            });
+            prompt.push({
+                role: 'user',
+                content: screenshots.map((screenshot)=>({
+                        type: 'image_url',
+                        image_url: {
+                            url: screenshot
+                        }
+                    }))
+            });
+        }
+        const response = await callAIWithStringResponse(prompt, AIActionType.TEXT, modelConfig);
+        if ((null == response ? void 0 : response.content) && 'string' == typeof response.content) return response.content;
+        throw new Error('Failed to generate YAML test configuration');
+    } catch (error) {
+        throw new Error(`Failed to generate YAML test: ${error}`);
+    }
+};
+const generateYamlTestStream = async (events, options, modelConfig)=>{
+    try {
+        validateEvents(events);
+        const summary = prepareEventSummary(events, {
+            testName: options.testName,
+            maxScreenshots: options.maxScreenshots || 3
+        });
+        const yamlSummary = {
+            ...summary,
+            includeTimestamps: options.includeTimestamps || false
+        };
+        const screenshots = getScreenshotsForLLM(events, options.maxScreenshots || 3);
+        const prompt = [
+            {
+                role: 'system',
+                content: `You are an expert in Midscene.js YAML test generation. Generate clean, accurate YAML following these rules: ${YAML_EXAMPLE_CODE}`
+            },
+            {
+                role: 'user',
+                content: `Generate YAML test for Midscene.js automation from recorded browser events.
+
+Event Summary:
+${JSON.stringify(yamlSummary, null, 2)}
+
+Convert events:
+- navigation \u{2192} target.url
+- click \u{2192} aiTap with element description
+- input \u{2192} aiInput with value and locate
+- scroll \u{2192} aiScroll with appropriate direction
+- Add aiAssert for important state changes
+
+Important: Return ONLY the raw YAML content. Do NOT wrap the response in markdown code blocks (no \`\`\`yaml or \`\`\`). Start directly with the YAML content.`
+            }
+        ];
+        if (screenshots.length > 0) {
+            prompt.push({
+                role: 'user',
+                content: 'Here are screenshots from the recording session to help you understand the context:'
+            });
+            prompt.push({
+                role: 'user',
+                content: screenshots.map((screenshot)=>({
+                        type: 'image_url',
+                        image_url: {
+                            url: screenshot
+                        }
+                    }))
+            });
+        }
+        if (options.stream && options.onChunk) return await callAI(prompt, AIActionType.TEXT, modelConfig, {
+            stream: true,
+            onChunk: options.onChunk
+        });
+        {
+            const response = await callAIWithStringResponse(prompt, AIActionType.TEXT, modelConfig);
+            if ((null == response ? void 0 : response.content) && 'string' == typeof response.content) return {
+                content: response.content,
+                usage: response.usage,
+                isStreamed: false
+            };
+            throw new Error('Failed to generate YAML test configuration');
+        }
+    } catch (error) {
+        throw new Error(`Failed to generate YAML test: ${error}`);
+    }
+};
+export { createEventCounts, createMessageContent, extractInputDescriptions, filterEventsByType, generateYamlTest, generateYamlTestStream, getScreenshotsForLLM, prepareEventSummary, processEventsForLLM, validateEvents };
+
+//# sourceMappingURL=yaml-generator.mjs.map

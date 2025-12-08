@@ -1,0 +1,33 @@
+.blackboard .footer {
+  color: #aaa;
+}
+
+.blackboard ul {
+  padding-left: 0;
+}
+
+.blackboard li {
+  list-style: none;
+}
+
+.blackboard .bottom-tip {
+  height: 30px;
+}
+
+.blackboard .bottom-tip-item {
+  color: #aaa;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  max-width: 500px;
+}
+
+.blackboard-filter {
+  margin: 10px 0;
+}
+
+.blackboard-main-content canvas {
+  box-sizing: border-box;
+  border: 1px solid #888;
+  width: 100%;
+}
+

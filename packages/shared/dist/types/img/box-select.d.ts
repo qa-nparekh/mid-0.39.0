@@ -1,0 +1,25 @@
+import type { BaseElement, Rect } from '../types';
+interface ElementForOverlay {
+    rect: Rect;
+    indexId?: number;
+}
+export declare const compositeElementInfoImg: (options: {
+    inputImgBase64: string;
+    elementsPositionInfo: Array<ElementForOverlay>;
+    size?: {
+        width: number;
+        height: number;
+    };
+    annotationPadding?: number;
+    borderThickness?: number;
+    prompt?: string;
+}) => Promise<string>;
+export declare const processImageElementInfo: (options: {
+    inputImgBase64: string;
+    elementsPositionInfo: Array<BaseElement>;
+    elementsPositionInfoWithoutText: Array<BaseElement>;
+}) => Promise<{
+    compositeElementInfoImgBase64: string;
+    compositeElementInfoImgWithoutTextBase64: string;
+}>;
+export {};

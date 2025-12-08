@@ -1,0 +1,391 @@
+.prompt-input-wrapper {
+  width: 100%;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper {
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  position: relative;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group {
+  scrollbar-width: thin;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  height: 100%;
+  margin-right: 60px;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group::-webkit-scrollbar {
+  height: 6px;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .ant-form-item {
+  flex-shrink: 0;
+  margin: 0 !important;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .ant-form-item .ant-radio-group {
+  flex-wrap: nowrap;
+  gap: 8px;
+  display: flex;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .ant-radio-button-wrapper {
+  height: 24px;
+  box-shadow: none;
+  white-space: nowrap;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 11px;
+  flex-shrink: 0;
+  margin-right: 0;
+  padding: 0 8px;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .ant-radio-button-wrapper:before {
+  display: none;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .ant-radio-button-wrapper:focus-within {
+  outline: none;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+  color: #fff;
+  background-color: #2b83ff;
+  border-color: #2b83ff;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .ant-radio-button-wrapper.ant-radio-button-wrapper-checked:hover {
+  color: #fff;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .ant-dropdown-trigger {
+  flex-shrink: 0;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .more-apis-button {
+  height: 24px;
+  box-shadow: none;
+  white-space: nowrap;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 11px;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 2px;
+  max-width: 160px;
+  padding: 0 8px;
+  font-size: 12px;
+  display: inline-flex;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .more-apis-button .ant-btn-content {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .more-apis-button:hover {
+  background-color: #e6e6e6;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .more-apis-button.selected-from-dropdown {
+  color: #fff;
+  background-color: #2b83ff;
+  font-weight: 500;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .mode-radio-group .more-apis-button.selected-from-dropdown:hover {
+  background-color: #2b83ff;
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .action-icons {
+  z-index: 10;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, .5) 20%, rgba(255, 255, 255, .8) 40%, rgba(255, 255, 255, .95) 60%, #fff 70%);
+  flex-shrink: 0;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  width: 80px;
+  padding-left: 20px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.prompt-input-wrapper .mode-radio-group-wrapper .action-icons > * {
+  pointer-events: auto;
+}
+
+.prompt-input-wrapper .main-side-console-input {
+  margin-top: 10px;
+  position: relative;
+}
+
+.prompt-input-wrapper .main-side-console-input .main-side-console-input-textarea {
+  white-space: pre-wrap;
+  scrollbar-width: thin;
+  background: #fff;
+  border: 1px solid #f2f4f7;
+  border-radius: 12px;
+  padding: 12px 16px;
+  line-height: 21px;
+  transition: background-color .2s;
+  overflow-y: auto;
+}
+
+@keyframes hue-shift {
+  0% {
+    filter: hue-rotate();
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.prompt-input-wrapper .main-side-console-input .main-side-console-input-textarea:focus-within {
+  background: linear-gradient(#fff, #fff) padding-box padding-box, linear-gradient(135deg, #4285f4 0%, #06f 25%, #7b02c5 50%, #ea4335 75%, #ff7043 100%) border-box;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.prompt-input-wrapper .main-side-console-input .main-side-console-input-textarea::-webkit-scrollbar {
+  width: 6px;
+}
+
+.prompt-input-wrapper .main-side-console-input .main-side-console-input-textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 3px;
+}
+
+.prompt-input-wrapper .main-side-console-input.loading .main-side-console-input-textarea {
+  background: linear-gradient(#fff, #fff) padding-box padding-box, linear-gradient(135deg, #4285f4 0%, #06f 25%, #7b02c5 50%, #ea4335 75%, #ff7043 100%) border-box;
+  border: 1px solid rgba(0, 0, 0, 0);
+  animation: 5s linear infinite hue-shift;
+}
+
+.prompt-input-wrapper .main-side-console-input .ant-form-item-control-input-content {
+  z-index: 999;
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 14px;
+}
+
+.prompt-input-wrapper .main-side-console-input:focus-within .ant-form-item-control-input-content {
+  border-color: rgba(43, 131, 255, .16);
+}
+
+.prompt-input-wrapper .main-side-console-input.disabled .form-controller-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.prompt-input-wrapper .ant-form-item-with-help + .form-controller-wrapper {
+  bottom: 22px;
+}
+
+.prompt-input-wrapper .ant-input {
+  padding-bottom: 40px;
+}
+
+.prompt-input-wrapper .form-controller-wrapper {
+  box-sizing: border-box;
+  background-color: #fff;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 8px;
+  width: calc(100% - 32px);
+  padding: 12px 0;
+  line-height: 32px;
+  transition: background-color .2s;
+  display: flex;
+  position: absolute;
+  bottom: 1px;
+  left: 16px;
+}
+
+.prompt-input-wrapper .settings-wrapper {
+  color: #777;
+  flex-flow: wrap;
+  gap: 2px;
+  display: flex;
+}
+
+.prompt-input-wrapper .settings-wrapper.settings-wrapper-hover {
+  color: #3b3b3b;
+}
+
+.prompt-input-wrapper .structured-params-container {
+  background: linear-gradient(#fff, #fff) padding-box padding-box, linear-gradient(135deg, #4285f4 0%, #06f 25%, #7b02c5 50%, #ea4335 75%, #ff7043 100%) border-box;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 12px;
+  padding: 16px 16px 56px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item {
+  flex-direction: column;
+  display: flex;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-label {
+  text-align: left;
+  flex-basis: auto;
+  padding-bottom: 4px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-label > label {
+  color: rgba(0, 0, 0, .85);
+  height: auto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-label > label:after {
+  color: #ff4d4f;
+  font-family: SimSun, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-label > label:not(:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):after {
+  margin-left: 4px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-label > label:not(:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):after {
+  margin-left: 4px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-label > label:not(:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi))):after {
+  margin-left: 4px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-label > label:-webkit-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):after {
+  margin-right: 4px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-label > label:-moz-any(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):after {
+  margin-right: 4px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-label > label:is(:lang(ae), :lang(ar), :lang(arc), :lang(bcc), :lang(bqi), :lang(ckb), :lang(dv), :lang(fa), :lang(glk), :lang(he), :lang(ku), :lang(mzn), :lang(nqo), :lang(pnb), :lang(ps), :lang(sd), :lang(ug), :lang(ur), :lang(yi)):after {
+  margin-right: 4px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-control {
+  flex: 1;
+  margin-top: 0;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-row {
+  flex-direction: column;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-form-item .ant-form-item-control-input {
+  min-height: auto;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-input, .prompt-input-wrapper .structured-params-container .structured-params .ant-input-number, .prompt-input-wrapper .structured-params-container .structured-params .ant-select {
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-input:hover, .prompt-input-wrapper .structured-params-container .structured-params .ant-input-number:hover, .prompt-input-wrapper .structured-params-container .structured-params .ant-select:hover {
+  border-color: #40a9ff;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-input:focus, .prompt-input-wrapper .structured-params-container .structured-params .ant-input-number:focus, .prompt-input-wrapper .structured-params-container .structured-params .ant-select:focus, .prompt-input-wrapper .structured-params-container .structured-params .ant-input:focus-within, .prompt-input-wrapper .structured-params-container .structured-params .ant-input-number:focus-within, .prompt-input-wrapper .structured-params-container .structured-params .ant-select:focus-within {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, .2);
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params textarea.ant-input {
+  padding-bottom: 5px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-input-number .ant-input-number-input {
+  box-shadow: none;
+  border: none;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-input-number:hover .ant-input-number-input {
+  box-shadow: none;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-select {
+  min-width: 120px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-select .ant-select-selector {
+  box-shadow: none;
+  border: none;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-select:hover .ant-select-selector, .prompt-input-wrapper .structured-params-container .structured-params .ant-select.ant-select-focused .ant-select-selector {
+  box-shadow: none;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-radio-group {
+  width: 100%;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-radio-group .ant-radio-button-wrapper {
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+  height: 32px;
+  margin-right: 4px;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.prompt-input-wrapper .structured-params-container .structured-params .ant-radio-group .ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+  color: #fff;
+  background-color: #2b83ff;
+  border-color: #2b83ff;
+}
+
+.selector-trigger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all .2s;
+}
+
+.selector-trigger .action-icon {
+  color: rgba(0, 0, 0, .85);
+  font-size: 14px;
+  transition: all .2s;
+}
+
+.selector-trigger .action-icon:hover {
+  color: #2b83ff;
+}
+

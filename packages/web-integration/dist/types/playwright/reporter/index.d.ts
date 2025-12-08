@@ -1,0 +1,18 @@
+import type { FullConfig, Reporter, Suite, TestCase, TestResult } from '@playwright/test/reporter';
+interface MidsceneReporterOptions {
+    type?: 'merged' | 'separate';
+}
+declare class MidsceneReporter implements Reporter {
+    private mergedFilename?;
+    private testTitleToFilename;
+    mode?: 'merged' | 'separate';
+    constructor(options?: MidsceneReporterOptions);
+    private static getMode;
+    private getSeparatedFilename;
+    private getReportFilename;
+    private updateReport;
+    onBegin(config: FullConfig, suite: Suite): Promise<void>;
+    onTestBegin(_test: TestCase, _result: TestResult): void;
+    onTestEnd(test: TestCase, result: TestResult): void;
+}
+export default MidsceneReporter;

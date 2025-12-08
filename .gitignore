@@ -72,8 +72,6 @@ common/autoinstallers/*/.npmrc
 # pnpm store
 .pnpm-store
 
-dist
-dist-script
 doc_build
 build_cn
 
@@ -127,3 +125,8 @@ AGENTS.md
 .gemini-clipboard
 tsconfig.build.tsbuildinfo
 .webx
+# Midscene.js dump files
+sqai_run/dump
+sqai_run/report
+sqai_run/tmp
+sqai_run/log
