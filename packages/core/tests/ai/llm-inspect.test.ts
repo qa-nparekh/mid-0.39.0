@@ -6,7 +6,7 @@ import {
 import {
   globalConfigManager,
   globalModelConfigManager,
-} from '@sqai/shared/env';
+} from '@sqaitech/shared/env';
 import { getContextFromFixture } from 'tests/evaluation';
 import { beforeAll, expect, test, vi } from 'vitest';
 

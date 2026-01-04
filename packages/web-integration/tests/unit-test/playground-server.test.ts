@@ -1,5 +1,5 @@
-import { PlaygroundServer } from '@sqai/playground';
-import { StaticPage, StaticPageAgent } from '@sqai/web/static';
+import { PlaygroundServer } from '@sqaitech/playground';
+import { StaticPage, StaticPageAgent } from '@sqaitech/web/static';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 
 describe('Playground Server', () => {

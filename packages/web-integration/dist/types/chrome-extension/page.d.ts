@@ -1,6 +1,6 @@
-import type { ElementTreeNode, Point, Size, UIContext } from '@sqai/core';
-import type { AbstractInterface, DeviceAction } from '@sqai/core/device';
-import type { ElementInfo } from '@sqai/shared/extractor';
+import type { ElementTreeNode, Point, Size, UIContext } from '@sqaitech/core';
+import type { AbstractInterface, DeviceAction } from '@sqaitech/core/device';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
 import { type KeyInput, type MouseButton } from '../web-page';
 export default class ChromeExtensionProxyPage implements AbstractInterface {
     interfaceType: string;

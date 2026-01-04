@@ -6,12 +6,12 @@ import type {
   ExecutionTaskInsightLocate,
   GroupedActionDump,
   InsightDump,
-} from '@sqai/core';
-import type { AnimationScript } from '@sqai/visualizer';
+} from '@sqaitech/core';
+import type { AnimationScript } from '@sqaitech/visualizer';
 import {
   allScriptsFromDump,
   generateAnimationScripts,
-} from '@sqai/visualizer';
+} from '@sqaitech/visualizer';
 import * as Z from 'zustand';
 
 const { create } = Z;

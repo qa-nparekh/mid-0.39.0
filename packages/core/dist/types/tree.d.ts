@@ -1,1 +1,1 @@
-export { truncateText, trimAttributes, descriptionOfTree, } from '@sqai/shared/extractor';
+export { truncateText, trimAttributes, descriptionOfTree, } from '@sqaitech/shared/extractor';

@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     PlaygroundSDK: ()=>PlaygroundSDK
 });
-const constants_namespaceObject = require("@sqai/shared/constants");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
 const local_execution_js_namespaceObject = require("../adapters/local-execution.js");
 const remote_execution_js_namespaceObject = require("../adapters/remote-execution.js");
 function _define_property(obj, key, value) {

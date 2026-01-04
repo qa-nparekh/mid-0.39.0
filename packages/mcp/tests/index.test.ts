@@ -22,7 +22,7 @@ vi.mock('node:fs', () => ({
   existsSync: vi.fn(),
 }));
 
-vi.mock('@sqai/shared/env', () => ({
+vi.mock('@sqaitech/shared/env', () => ({
   SQAI_MCP_CHROME_PATH: 'SQAI_MCP_CHROME_PATH',
   globalConfigManager: {
     getEnvConfigValue: vi.fn(),
@@ -144,7 +144,7 @@ describe('Utils Module', () => {
 
   describe('getChromePathFromEnv', () => {
     beforeEach(async () => {
-      const envModule = await import('@sqai/shared/env');
+      const envModule = await import('@sqaitech/shared/env');
       vi.mocked(
         envModule.globalConfigManager.getEnvConfigValue,
       ).mockReturnValue(undefined);
@@ -152,7 +152,7 @@ describe('Utils Module', () => {
     });
 
     test('should return env chrome path when valid', async () => {
-      const envModule = await import('@sqai/shared/env');
+      const envModule = await import('@sqaitech/shared/env');
       const customPath = '/custom/chrome/path';
       vi.mocked(
         envModule.globalConfigManager.getEnvConfigValue,
@@ -164,7 +164,7 @@ describe('Utils Module', () => {
     });
 
     test('should fallback to system path when env is auto', async () => {
-      const envModule = await import('@sqai/shared/env');
+      const envModule = await import('@sqaitech/shared/env');
       vi.mocked(
         envModule.globalConfigManager.getEnvConfigValue,
       ).mockReturnValue('auto');
@@ -174,7 +174,7 @@ describe('Utils Module', () => {
     });
 
     test('should fallback to system path when env path does not exist', async () => {
-      const envModule = await import('@sqai/shared/env');
+      const envModule = await import('@sqaitech/shared/env');
       vi.mocked(
         envModule.globalConfigManager.getEnvConfigValue,
       ).mockReturnValue('/nonexistent/path');

@@ -9,7 +9,7 @@ import {
   SQAI_USE_DOUBAO_VISION,
   OPENAI_API_KEY,
   OPENAI_BASE_URL,
-} from '@sqai/shared/env';
+} from '@sqaitech/shared/env';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { z } from 'zod';
 

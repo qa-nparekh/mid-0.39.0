@@ -13,19 +13,19 @@ import type {
   UIContext,
 } from '@/types';
 import { uploadTestInfoToServer } from '@/utils';
-import { NodeType } from '@sqai/shared/constants';
+import { NodeType } from '@sqaitech/shared/constants';
 import {
   SQAI_REPORT_TAG_NAME,
   globalConfigManager,
-} from '@sqai/shared/env';
+} from '@sqaitech/shared/env';
 import {
   generateElementByPosition,
   getNodeFromCacheList,
-} from '@sqai/shared/extractor';
-import { resizeImgBase64 } from '@sqai/shared/img';
-import { getDebug } from '@sqai/shared/logger';
-import { _keyDefinitions } from '@sqai/shared/us-keyboard-layout';
-import { assert, logMsg, uuid } from '@sqai/shared/utils';
+} from '@sqaitech/shared/extractor';
+import { resizeImgBase64 } from '@sqaitech/shared/img';
+import { getDebug } from '@sqaitech/shared/logger';
+import { _keyDefinitions } from '@sqaitech/shared/us-keyboard-layout';
+import { assert, logMsg, uuid } from '@sqaitech/shared/utils';
 import dayjs from 'dayjs';
 import { debug as cacheDebug } from './task-cache';
 import type { TaskExecutor } from './tasks';

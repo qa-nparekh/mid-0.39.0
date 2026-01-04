@@ -3,7 +3,7 @@ import type { AbstractInterface } from '@/types';
 import { describe, expect, it, vi } from 'vitest';
 
 // Mock dependencies
-vi.mock('@sqai/core/utils', () => ({
+vi.mock('@sqaitech/core/utils', () => ({
   writeLogFile: vi.fn(() => null),
   reportHTMLContent: vi.fn(() => ''),
   stringifyDumpData: vi.fn(() => '{}'),
@@ -12,13 +12,13 @@ vi.mock('@sqai/core/utils', () => ({
   sleep: vi.fn(() => Promise.resolve()),
 }));
 
-vi.mock('@sqai/shared/logger', () => ({
+vi.mock('@sqaitech/shared/logger', () => ({
   getDebug: vi.fn(() => vi.fn()),
   logMsg: vi.fn(),
 }));
 
-vi.mock('@sqai/core', async () => {
-  const actual = await vi.importActual('@sqai/core');
+vi.mock('@sqaitech/core', async () => {
+  const actual = await vi.importActual('@sqaitech/core');
   return {
     ...actual,
     Insight: vi.fn().mockImplementation(() => ({})),

@@ -1,6 +1,6 @@
 import { BorderOutlined, DownOutlined, SendOutlined } from '@ant-design/icons';
 import './index.less';
-import type { z } from '@sqai/core';
+import type { z } from '@sqaitech/core';
 import { Button, Dropdown, Form, Input, Radio, Tooltip } from 'antd';
 import type { MenuProps } from 'antd';
 import React, {
@@ -40,7 +40,7 @@ import {
 } from '../form-field';
 import { HistorySelector } from '../history-selector';
 import './index.less';
-import type { DeviceAction } from '@sqai/core';
+import type { DeviceAction } from '@sqaitech/core';
 
 const { TextArea } = Input;
 

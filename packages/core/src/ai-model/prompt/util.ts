@@ -1,13 +1,13 @@
 import { imageInfoOfBase64 } from '@/image/index';
 import type { BaseElement, ElementTreeNode, Size, UIContext } from '@/types';
-import { NodeType } from '@sqai/shared/constants';
-import type { TVlModeTypes } from '@sqai/shared/env';
+import { NodeType } from '@sqaitech/shared/constants';
+import type { TVlModeTypes } from '@sqaitech/shared/env';
 import {
   descriptionOfTree,
   generateElementByPosition,
   treeToList,
-} from '@sqai/shared/extractor';
-import { assert } from '@sqai/shared/utils';
+} from '@sqaitech/shared/extractor';
+import { assert } from '@sqaitech/shared/utils';
 
 export function describeSize(size: Size) {
   return `${size.width} x ${size.height}`;

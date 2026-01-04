@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     systemPromptToLocateElementPosition: ()=>systemPromptToLocateElementPosition
 });
-const env_namespaceObject = require("@sqai/shared/env");
+const env_namespaceObject = require("@sqaitech/shared/env");
 function systemPromptToLocateElementPosition() {
     const preferredLanguage = (0, env_namespaceObject.getPreferredLanguage)();
     return `

@@ -42,9 +42,9 @@ import {
   type IModelConfig,
   SQAI_REPLANNING_CYCLE_LIMIT,
   globalConfigManager,
-} from '@sqai/shared/env';
-import { getDebug } from '@sqai/shared/logger';
-import { assert } from '@sqai/shared/utils';
+} from '@sqaitech/shared/env';
+import { getDebug } from '@sqaitech/shared/logger';
+import { assert } from '@sqaitech/shared/utils';
 import type { TaskCache } from './task-cache';
 import { taskTitleStr } from './ui-utils';
 import {

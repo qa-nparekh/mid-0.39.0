@@ -1,5 +1,5 @@
-import { playgroundForAgent } from '@sqai/playground';
-import { PuppeteerAgent } from '@sqai/web/puppeteer';
+import { playgroundForAgent } from '@sqaitech/playground';
+import { PuppeteerAgent } from '@sqaitech/web/puppeteer';
 import dotenv from 'dotenv';
 import puppeteer from 'puppeteer';
 

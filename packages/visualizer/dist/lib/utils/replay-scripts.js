@@ -31,8 +31,8 @@ __webpack_require__.d(__webpack_exports__, {
     allScriptsFromDump: ()=>allScriptsFromDump
 });
 const external_index_js_namespaceObject = require("./index.js");
-const agent_namespaceObject = require("@sqai/core/agent");
-const extractor_namespaceObject = require("@sqai/shared/extractor");
+const agent_namespaceObject = require("@sqaitech/core/agent");
+const extractor_namespaceObject = require("@sqaitech/shared/extractor");
 const stillDuration = 900;
 const actionSpinningPointerDuration = 300;
 const stillAfterInsightDuration = 300;

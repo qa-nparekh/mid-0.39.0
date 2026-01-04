@@ -1,4 +1,4 @@
-import { PlaygroundSDK } from "@sqai/playground";
+import { PlaygroundSDK } from "@sqaitech/playground";
 import { useEffect, useState } from "react";
 import { useEnvConfig } from "../store/store.mjs";
 const useServerValid = function() {

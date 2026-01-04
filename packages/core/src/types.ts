@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import type { NodeType } from '@sqai/shared/constants';
-import type { TModelConfigFn } from '@sqai/shared/env';
+import type { NodeType } from '@sqaitech/shared/constants';
+import type { TModelConfigFn } from '@sqaitech/shared/env';
 import type {
   BaseElement,
   ElementTreeNode,
   Rect,
   Size,
-} from '@sqai/shared/types';
+} from '@sqaitech/shared/types';
 import type { z } from 'zod';
 import type { TUserPrompt } from './ai-model/common';
 import type { DetailedLocateParam, MidsceneYamlFlowItem } from './yaml';
@@ -18,7 +18,7 @@ export type {
   Rect,
   Size,
   Point,
-} from '@sqai/shared/types';
+} from '@sqaitech/shared/types';
 export * from './yaml';
 
 export type AIUsageInfo = Record<string, any> & {

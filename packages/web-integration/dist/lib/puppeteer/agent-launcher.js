@@ -42,10 +42,10 @@ __webpack_require__.d(__webpack_exports__, {
     defaultViewportWidth: ()=>defaultViewportWidth
 });
 const external_node_fs_namespaceObject = require("node:fs");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_index_js_namespaceObject = require("./index.js");
-const constants_namespaceObject = require("@sqai/shared/constants");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
 const external_puppeteer_namespaceObject = require("puppeteer");
 var external_puppeteer_default = /*#__PURE__*/ __webpack_require__.n(external_puppeteer_namespaceObject);
 const defaultUA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36';

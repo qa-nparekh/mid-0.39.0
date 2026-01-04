@@ -1,4 +1,4 @@
-import type { GLOBAL_ENV_KEYS, MODEL_ENV_KEYS } from '@sqai/shared/env';
+import type { GLOBAL_ENV_KEYS, MODEL_ENV_KEYS } from '@sqaitech/shared/env';
 /**
  * Safely override AI configuration with built-in error handling
  * @param newConfig - The configuration to override

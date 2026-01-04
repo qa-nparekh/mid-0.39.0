@@ -1,5 +1,5 @@
 import type { DeviceAction, LocateResultElement } from '../types';
-import type { ElementNode } from '@sqai/shared/extractor';
+import type { ElementNode } from '@sqaitech/shared/extractor';
 import { z } from 'zod';
 import type { ElementCacheFeature, Rect, Size, UIContext } from '../types';
 export declare abstract class AbstractInterface {

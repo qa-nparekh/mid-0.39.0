@@ -1,8 +1,8 @@
 import { PlayCircleOutlined } from '@ant-design/icons';
-import type { UIContext } from '@sqai/core';
-import { PlaygroundSDK } from '@sqai/playground';
-import { staticAgentFromContext, useEnvConfig } from '@sqai/visualizer';
-import type { WebUIContext } from '@sqai/web';
+import type { UIContext } from '@sqaitech/core';
+import { PlaygroundSDK } from '@sqaitech/playground';
+import { staticAgentFromContext, useEnvConfig } from '@sqaitech/visualizer';
+import type { WebUIContext } from '@sqaitech/web';
 import {
   Button,
   ConfigProvider,

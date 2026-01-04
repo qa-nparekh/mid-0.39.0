@@ -4,14 +4,14 @@ import type {
   Rect,
   UIContext,
   WebElementInfo,
-} from '@sqai/core';
-import type { AbstractInterface } from '@sqai/core/device';
-import { traverseTree } from '@sqai/shared/extractor';
-import { getDebug } from '@sqai/shared/logger';
-import { _keyDefinitions } from '@sqai/shared/us-keyboard-layout';
+} from '@sqaitech/core';
+import type { AbstractInterface } from '@sqaitech/core/device';
+import { traverseTree } from '@sqaitech/shared/extractor';
+import { getDebug } from '@sqaitech/shared/logger';
+import { _keyDefinitions } from '@sqaitech/shared/us-keyboard-layout';
 
-import { commonContextParser } from '@sqai/core/agent';
-import type { NodeType } from '@sqai/shared/constants';
+import { commonContextParser } from '@sqaitech/core/agent';
+import type { NodeType } from '@sqaitech/shared/constants';
 import type ChromeExtensionProxyPage from './chrome-extension/page';
 import type { PlaywrightWebPage } from './playwright';
 import type { PuppeteerWebPage } from './puppeteer';

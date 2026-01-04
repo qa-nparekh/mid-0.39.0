@@ -6,20 +6,20 @@ import * as path from 'node:path';
 import {
   defaultRunDirName,
   getMidsceneRunSubDir,
-} from '@sqai/shared/common';
+} from '@sqaitech/shared/common';
 import {
   SQAI_CACHE,
   SQAI_DEBUG_MODE,
   globalConfigManager,
-} from '@sqai/shared/env';
-import { getRunningPkgInfo } from '@sqai/shared/node';
-import { assert, logMsg } from '@sqai/shared/utils';
+} from '@sqaitech/shared/env';
+import { getRunningPkgInfo } from '@sqaitech/shared/node';
+import { assert, logMsg } from '@sqaitech/shared/utils';
 import {
   escapeScriptTag,
   ifInBrowser,
   ifInWorker,
   uuid,
-} from '@sqai/shared/utils';
+} from '@sqaitech/shared/utils';
 import type { Cache, Rect, ReportDumpWithAttributes } from './types';
 
 let logEnvReady = false;

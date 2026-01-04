@@ -1,8 +1,8 @@
 import { writeFileSync } from 'node:fs';
-import Insight, { type Rect } from '@sqai/core';
-import { sleep } from '@sqai/core/utils';
-import { globalModelConfigManager } from '@sqai/shared/env';
-import { saveBase64Image } from '@sqai/shared/img';
+import Insight, { type Rect } from '@sqaitech/core';
+import { sleep } from '@sqaitech/core/utils';
+import { globalModelConfigManager } from '@sqaitech/shared/env';
+import { saveBase64Image } from '@sqaitech/shared/img';
 
 import dotenv from 'dotenv';
 import { afterAll, beforeAll, expect, test } from 'vitest';

@@ -1,16 +1,16 @@
-import type { Cache } from '@sqai/core';
-import { processCacheConfig } from '@sqai/core/utils';
+import type { Cache } from '@sqaitech/core';
+import { processCacheConfig } from '@sqaitech/core/utils';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 
 // Mock the global config manager to control environment variables
-vi.mock('@sqai/shared/env', () => ({
+vi.mock('@sqaitech/shared/env', () => ({
   SQAI_CACHE: 'SQAI_CACHE',
   globalConfigManager: {
     getEnvConfigInBoolean: vi.fn(),
   },
 }));
 
-import { globalConfigManager } from '@sqai/shared/env';
+import { globalConfigManager } from '@sqaitech/shared/env';
 
 describe('processCacheConfig in CLI', () => {
   beforeEach(() => {

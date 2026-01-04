@@ -1,5 +1,5 @@
-import { findAllMidsceneLocatorField } from "@sqai/core/ai-model";
-import { buildDetailedLocateParam } from "@sqai/core/yaml";
+import { findAllMidsceneLocatorField } from "@sqaitech/core/ai-model";
+import { buildDetailedLocateParam } from "@sqaitech/core/yaml";
 const dataExtractionAPIs = [
     'aiQuery',
     'aiBoolean',

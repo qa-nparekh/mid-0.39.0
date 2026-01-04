@@ -1,4 +1,4 @@
-import { sleep } from '@sqai/core/utils';
+import { sleep } from '@sqaitech/core/utils';
 import { beforeAll, describe, it, vi } from 'vitest';
 import { AndroidAgent, AndroidDevice, getConnectedDevices } from '../../src';
 

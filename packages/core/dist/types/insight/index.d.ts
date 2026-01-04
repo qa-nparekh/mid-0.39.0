@@ -1,6 +1,6 @@
 import { callAIWithObjectResponse } from '../ai-model/index';
 import type { AIDescribeElementResponse, AIUsageInfo, BaseElement, DetailedLocateParam, DumpSubscriber, InsightAction, InsightExtractOption, InsightExtractParam, InsightTaskInfo, LocateResult, Rect, UIContext } from '../types';
-import { type IModelConfig } from '@sqai/shared/env';
+import { type IModelConfig } from '@sqaitech/shared/env';
 import type { TMultimodalPrompt } from '../ai-model/common';
 export interface LocateOpts {
     context?: UIContext<BaseElement>;

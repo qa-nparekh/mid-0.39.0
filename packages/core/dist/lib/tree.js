@@ -28,7 +28,7 @@ __webpack_require__.d(__webpack_exports__, {
     trimAttributes: ()=>extractor_namespaceObject.trimAttributes,
     descriptionOfTree: ()=>extractor_namespaceObject.descriptionOfTree
 });
-const extractor_namespaceObject = require("@sqai/shared/extractor");
+const extractor_namespaceObject = require("@sqaitech/shared/extractor");
 exports.descriptionOfTree = __webpack_exports__.descriptionOfTree;
 exports.trimAttributes = __webpack_exports__.trimAttributes;
 exports.truncateText = __webpack_exports__.truncateText;

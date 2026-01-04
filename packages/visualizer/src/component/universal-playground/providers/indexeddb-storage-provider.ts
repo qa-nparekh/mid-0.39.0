@@ -2,7 +2,7 @@ import {
   IndexedDBManager,
   createCleanupFunction,
   withErrorHandling,
-} from '@sqai/shared/baseDB';
+} from '@sqaitech/shared/baseDB';
 import type { InfoListItem, StorageProvider } from '../../../types';
 
 // Database configuration

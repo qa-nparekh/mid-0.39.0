@@ -35,7 +35,7 @@ __webpack_require__.d(__webpack_exports__, {
     validateEvents: ()=>validateEvents,
     createEventCounts: ()=>createEventCounts
 });
-const constants_namespaceObject = require("@sqai/shared/constants");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
 const external_index_js_namespaceObject = require("../index.js");
 const getScreenshotsForLLM = (events, maxScreenshots = 1)=>{
     const eventsWithScreenshots = events.filter((event)=>event.screenshotBefore || event.screenshotAfter || event.screenshotWithBox);

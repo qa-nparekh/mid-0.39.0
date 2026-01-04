@@ -1,4 +1,4 @@
-import { StaticPage, StaticPageAgent } from "@sqai/web/static";
+import { StaticPage, StaticPageAgent } from "@sqaitech/web/static";
 import { isZodObjectSchema, unwrapZodType } from "../types.mjs";
 const actionNameForType = (type)=>{
     const typeWithoutAi = type.startsWith('ai') ? type.slice(2) : type;

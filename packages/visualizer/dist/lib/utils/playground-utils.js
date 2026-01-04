@@ -29,7 +29,7 @@ __webpack_require__.d(__webpack_exports__, {
     isRunButtonEnabled: ()=>isRunButtonEnabled,
     getPlaceholderForType: ()=>getPlaceholderForType
 });
-const static_namespaceObject = require("@sqai/web/static");
+const static_namespaceObject = require("@sqaitech/web/static");
 const external_types_js_namespaceObject = require("../types.js");
 const actionNameForType = (type)=>{
     const typeWithoutAi = type.startsWith('ai') ? type.slice(2) : type;

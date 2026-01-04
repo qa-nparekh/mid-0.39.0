@@ -1,5 +1,5 @@
 import assert from 'node:assert';
-import type { Point } from '@sqai/core';
+import type { Point } from '@sqaitech/core';
 import {
   AbstractInterface,
   type DeviceAction,
@@ -14,12 +14,12 @@ import {
   defineActionScroll,
   defineActionSwipe,
   defineActionTap,
-} from '@sqai/core/device';
+} from '@sqaitech/core/device';
 
-import { sleep } from '@sqai/core/utils';
-import type { ElementInfo } from '@sqai/shared/extractor';
-import { getDebug } from '@sqai/shared/logger';
-import { transformHotkeyInput } from '@sqai/shared/us-keyboard-layout';
+import { sleep } from '@sqaitech/core/utils';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
+import { getDebug } from '@sqaitech/shared/logger';
+import { transformHotkeyInput } from '@sqaitech/shared/us-keyboard-layout';
 
 const debug = getDebug('web:page');
 

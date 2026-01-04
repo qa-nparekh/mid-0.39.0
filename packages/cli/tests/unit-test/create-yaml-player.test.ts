@@ -1,11 +1,11 @@
 import { readFileSync } from 'node:fs';
 import { createYamlPlayer, launchServer } from '@/create-yaml-player';
-import type { MidsceneYamlScript, MidsceneYamlScriptEnv } from '@sqai/core';
-import { processCacheConfig } from '@sqai/core/utils';
+import type { MidsceneYamlScript, MidsceneYamlScriptEnv } from '@sqaitech/core';
+import { processCacheConfig } from '@sqaitech/core/utils';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 
 // Mock the global config manager to control environment variables
-vi.mock('@sqai/shared/env', () => ({
+vi.mock('@sqaitech/shared/env', () => ({
   SQAI_CACHE: 'SQAI_CACHE',
   globalConfigManager: {
     getEnvConfigInBoolean: vi.fn(),
@@ -21,25 +21,25 @@ vi.mock('http-server', () => ({
   createServer: vi.fn(),
 }));
 
-vi.mock('@sqai/core/yaml', () => ({
+vi.mock('@sqaitech/core/yaml', () => ({
   ScriptPlayer: vi.fn(),
   parseYamlScript: vi.fn(),
 }));
 
-vi.mock('@sqai/android', () => ({
+vi.mock('@sqaitech/android', () => ({
   agentFromAdbDevice: vi.fn(),
 }));
 
-vi.mock('@sqai/web/bridge-mode', () => ({
+vi.mock('@sqaitech/web/bridge-mode', () => ({
   AgentOverChromeBridge: vi.fn(),
 }));
 
-vi.mock('@sqai/web/puppeteer-agent-launcher', () => ({
+vi.mock('@sqaitech/web/puppeteer-agent-launcher', () => ({
   puppeteerAgentForTarget: vi.fn(),
 }));
 
-import { ScriptPlayer, parseYamlScript } from '@sqai/core/yaml';
-import { globalConfigManager } from '@sqai/shared/env';
+import { ScriptPlayer, parseYamlScript } from '@sqaitech/core/yaml';
+import { globalConfigManager } from '@sqaitech/shared/env';
 import { createServer } from 'http-server';
 
 describe('create-yaml-player', () => {

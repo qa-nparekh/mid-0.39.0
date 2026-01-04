@@ -1,4 +1,4 @@
-import type { z } from '@sqai/core';
+import type { z } from '@sqaitech/core';
 import type React from 'react';
 interface FormFieldProps {
     name: string;

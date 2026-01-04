@@ -26,8 +26,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     LocalExecutionAdapter: ()=>LocalExecutionAdapter
 });
-const env_namespaceObject = require("@sqai/shared/env");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const env_namespaceObject = require("@sqaitech/shared/env");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_common_js_namespaceObject = require("../common.js");
 const external_base_js_namespaceObject = require("./base.js");
 function _define_property(obj, key, value) {

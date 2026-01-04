@@ -1,16 +1,16 @@
 import node_assert from "node:assert";
-import { getMidsceneLocationSchema, z } from "@sqai/core";
-import { defineAction, defineActionClearInput, defineActionDoubleClick, defineActionDragAndDrop, defineActionKeyboardPress, defineActionScroll, defineActionTap } from "@sqai/core/device";
-import { sleep } from "@sqai/core/utils";
-import { DEFAULT_WDA_PORT } from "@sqai/shared/constants";
-import { createImgBase64ByFormat } from "@sqai/shared/img";
-import { getDebug } from "@sqai/shared/logger";
-import { WDAManager, WebDriverClient } from "@sqai/webdriver";
-import { Agent } from "@sqai/core/agent";
+import { getMidsceneLocationSchema, z } from "@sqaitech/core";
+import { defineAction, defineActionClearInput, defineActionDoubleClick, defineActionDragAndDrop, defineActionKeyboardPress, defineActionScroll, defineActionTap } from "@sqaitech/core/device";
+import { sleep } from "@sqaitech/core/utils";
+import { DEFAULT_WDA_PORT } from "@sqaitech/shared/constants";
+import { createImgBase64ByFormat } from "@sqaitech/shared/img";
+import { getDebug } from "@sqaitech/shared/logger";
+import { WDAManager, WebDriverClient } from "@sqaitech/webdriver";
+import { Agent } from "@sqaitech/core/agent";
 import { exec } from "node:child_process";
 import { platform } from "node:os";
 import { promisify } from "node:util";
-import { overrideAIConfig } from "@sqai/shared/env";
+import { overrideAIConfig } from "@sqaitech/shared/env";
 const debugIOS = getDebug('webdriver:ios');
 class IOSWebDriverClient extends WebDriverClient {
     async launchApp(bundleId) {

@@ -27,7 +27,7 @@ __webpack_require__.d(__webpack_exports__, {
     ServiceModeControl: ()=>ServiceModeControl
 });
 const jsx_runtime_namespaceObject = require("react/jsx-runtime");
-const playground_namespaceObject = require("@sqai/playground");
+const playground_namespaceObject = require("@sqaitech/playground");
 const external_antd_namespaceObject = require("antd");
 const external_react_namespaceObject = require("react");
 const useSafeOverrideAIConfig_js_namespaceObject = require("../../hooks/useSafeOverrideAIConfig.js");

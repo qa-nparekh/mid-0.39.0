@@ -1,4 +1,4 @@
-import { IndexedDBManager, withErrorHandling } from '@sqai/shared/baseDB';
+import { IndexedDBManager, withErrorHandling } from '@sqaitech/shared/baseDB';
 
 // Database configuration
 const DB_NAME = 'midscene_bridge';

@@ -1,8 +1,8 @@
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { basename, dirname, join, resolve as external_node_path_resolve } from "node:path";
-import { assert, ifInBrowser, ifInWorker } from "@sqai/shared/utils";
-import { getMidsceneRunSubDir } from "@sqai/shared/common";
-import { getDebug } from "@sqai/shared/logger";
+import { assert, ifInBrowser, ifInWorker } from "@sqaitech/shared/utils";
+import { getMidsceneRunSubDir } from "@sqaitech/shared/common";
+import { getDebug } from "@sqaitech/shared/logger";
 import { buildDetailedLocateParam, buildDetailedLocateParamAndRestParams } from "./utils.mjs";
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {

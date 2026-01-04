@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { PLAYWRIGHT_EXAMPLE_CODE } from '@sqai/shared/constants';
+import { PLAYWRIGHT_EXAMPLE_CODE } from '@sqaitech/shared/constants';
 
 const apiText = fs.readFileSync(path.join(__dirname, 'api.mdx'), 'utf-8');
 

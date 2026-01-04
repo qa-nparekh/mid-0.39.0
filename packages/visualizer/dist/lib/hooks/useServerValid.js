@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     useServerValid: ()=>useServerValid
 });
-const playground_namespaceObject = require("@sqai/playground");
+const playground_namespaceObject = require("@sqaitech/playground");
 const external_react_namespaceObject = require("react");
 const store_js_namespaceObject = require("../store/store.js");
 const useServerValid = function() {

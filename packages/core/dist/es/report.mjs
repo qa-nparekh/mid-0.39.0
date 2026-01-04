@@ -1,6 +1,6 @@
 import { appendFileSync, existsSync, readFileSync, unlinkSync } from "node:fs";
 import { resolve } from "node:path";
-import { getMidsceneRunSubDir } from "@sqai/shared/common";
+import { getMidsceneRunSubDir } from "@sqaitech/shared/common";
 import { getReportFileName } from "./agent/index.mjs";
 import { getReportTpl, reportHTMLContent } from "./utils.mjs";
 function _define_property(obj, key, value) {

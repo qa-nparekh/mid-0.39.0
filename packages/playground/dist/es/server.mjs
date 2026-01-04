@@ -1,10 +1,10 @@
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
-import { getTmpDir } from "@sqai/core/utils";
-import { PLAYGROUND_SERVER_PORT } from "@sqai/shared/constants";
-import { overrideAIConfig } from "@sqai/shared/env";
-import { uuid as utils_uuid } from "@sqai/shared/utils";
+import { getTmpDir } from "@sqaitech/core/utils";
+import { PLAYGROUND_SERVER_PORT } from "@sqaitech/shared/constants";
+import { overrideAIConfig } from "@sqaitech/shared/env";
+import { uuid as utils_uuid } from "@sqaitech/shared/utils";
 import express from "express";
 import { executeAction, formatErrorMessage } from "./common.mjs";
 import "dotenv/config";

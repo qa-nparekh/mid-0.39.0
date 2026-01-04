@@ -3,7 +3,7 @@ import { Executor } from './ai-model/action-executor';
 import Insight from './insight/index';
 import { getVersion } from './utils';
 export { plan, describeUserPage, AiLocateElement, getMidsceneLocationSchema, type MidsceneLocationResultType, PointSchema, SizeSchema, RectSchema, TMultimodalPromptSchema, TUserPromptSchema, type TMultimodalPrompt, type TUserPrompt, } from './ai-model/index';
-export { SQAI_MODEL_NAME } from '@sqai/shared/env';
+export { SQAI_MODEL_NAME } from '@sqaitech/shared/env';
 export type * from './types';
 export { z };
 export default Insight;

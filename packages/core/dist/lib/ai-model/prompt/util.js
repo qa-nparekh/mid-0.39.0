@@ -33,9 +33,9 @@ __webpack_require__.d(__webpack_exports__, {
     samplePageDescription: ()=>samplePageDescription
 });
 const index_js_namespaceObject = require("../../image/index.js");
-const constants_namespaceObject = require("@sqai/shared/constants");
-const extractor_namespaceObject = require("@sqai/shared/extractor");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
+const extractor_namespaceObject = require("@sqaitech/shared/extractor");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 function describeSize(size) {
     return `${size.width} x ${size.height}`;
 }

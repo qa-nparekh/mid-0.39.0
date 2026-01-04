@@ -1,5 +1,5 @@
-import { getDebug } from '@sqai/shared/logger';
-import { WebDriverClient } from '@sqai/webdriver';
+import { getDebug } from '@sqaitech/shared/logger';
+import { WebDriverClient } from '@sqaitech/webdriver';
 
 const debugIOS = getDebug('webdriver:ios');
 

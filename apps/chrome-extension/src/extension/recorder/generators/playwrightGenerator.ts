@@ -1,13 +1,13 @@
-// import { generatePlaywrightTest as coreGeneratePlaywrightTest } from '@sqai/core/ai-model';
-import type { ChromeRecordedEvent } from '@sqai/recorder';
+// import { generatePlaywrightTest as coreGeneratePlaywrightTest } from '@sqaitech/core/ai-model';
+import type { ChromeRecordedEvent } from '@sqaitech/recorder';
 
 import type {
   StreamingAIResponse,
   StreamingCodeGenerationOptions,
-} from '@sqai/core';
+} from '@sqaitech/core';
 // Note: Streaming support will be added once the core package exports are updated
-import { generatePlaywrightTestStream as coreGeneratePlaywrightTestStream } from '@sqai/core/ai-model';
-import type { IModelConfig } from '@sqai/shared/env';
+import { generatePlaywrightTestStream as coreGeneratePlaywrightTestStream } from '@sqaitech/core/ai-model';
+import type { IModelConfig } from '@sqaitech/shared/env';
 import { recordLogger } from '../logger';
 import { handleTestGenerationError } from './shared/testGenerationUtils';
 

@@ -1,8 +1,8 @@
 import type {
   MidsceneYamlFlowItemAIAction,
   MidsceneYamlScriptEnv,
-} from '@sqai/core';
-import type { ScriptPlayer } from '@sqai/core/yaml';
+} from '@sqaitech/core';
+import type { ScriptPlayer } from '@sqaitech/core/yaml';
 import { Steps } from 'antd';
 import { useState } from 'react';
 

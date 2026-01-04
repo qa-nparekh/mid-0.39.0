@@ -28,9 +28,9 @@ __webpack_require__.d(__webpack_exports__, {
 });
 const external_node_fs_namespaceObject = require("node:fs");
 const external_node_path_namespaceObject = require("node:path");
-const utils_namespaceObject = require("@sqai/shared/utils");
-const common_namespaceObject = require("@sqai/shared/common");
-const logger_namespaceObject = require("@sqai/shared/logger");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
+const common_namespaceObject = require("@sqaitech/shared/common");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
 const external_utils_js_namespaceObject = require("./utils.js");
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {

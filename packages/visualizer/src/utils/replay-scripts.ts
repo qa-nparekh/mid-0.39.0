@@ -1,6 +1,6 @@
 'use client';
 import { mousePointer } from '@/utils';
-import { paramStr, typeStr } from '@sqai/core/agent';
+import { paramStr, typeStr } from '@sqaitech/core/agent';
 
 import type {
   ExecutionDump,
@@ -11,8 +11,8 @@ import type {
   LocateResultElement,
   Rect,
   UIContext,
-} from '@sqai/core';
-import { treeToList } from '@sqai/shared/extractor';
+} from '@sqaitech/core';
+import { treeToList } from '@sqaitech/shared/extractor';
 
 export interface CameraState {
   left: number;

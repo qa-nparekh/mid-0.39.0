@@ -1,5 +1,5 @@
 import node_fs from "node:fs";
-import { ifInBrowser, ifInWorker } from "@sqai/shared/utils";
+import { ifInBrowser, ifInWorker } from "@sqaitech/shared/utils";
 let scriptFileContentCache = null;
 const getHtmlElementScript = async ()=>{
     const scriptFileToRetrieve = chrome.runtime.getURL("scripts/htmlElement.js");

@@ -1,2 +1,2 @@
-import { descriptionOfTree, trimAttributes, truncateText } from "@sqai/shared/extractor";
+import { descriptionOfTree, trimAttributes, truncateText } from "@sqaitech/shared/extractor";
 export { descriptionOfTree, trimAttributes, truncateText };

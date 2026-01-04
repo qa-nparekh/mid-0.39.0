@@ -1,5 +1,5 @@
-import { Agent } from "@sqai/core/agent";
-import { assert } from "@sqai/shared/utils";
+import { Agent } from "@sqaitech/core/agent";
+import { assert } from "@sqaitech/shared/utils";
 import { commonWebActionsForWebPage } from "../web-page.mjs";
 import { BridgeEvent, BridgePageType, DefaultBridgeServerPort, KeyboardEvent, MouseEvent } from "./common.mjs";
 import { BridgeServer } from "./io-server.mjs";

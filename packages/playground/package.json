@@ -1,6 +1,6 @@
 {
-  "name": "@sqai/playground",
-  "version": "0.30.9",
+  "name": "@sqaitech/playground",
+  "version": "0.30.10",
   "description": "SQAI playground utilities for web integration",
   "author": "sqai team",
   "license": "MIT",
@@ -15,7 +15,10 @@
       "import": "./dist/es/index.mjs"
     }
   },
-  "files": ["dist", "static"],
+  "files": [
+    "dist",
+    "static"
+  ],
   "scripts": {
     "build": "rslib build",
     "build:watch": "rslib build --watch",
@@ -25,8 +28,8 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@sqai/core": "workspace:*",
-    "@sqai/shared": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.2",

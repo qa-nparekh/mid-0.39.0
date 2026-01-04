@@ -1,9 +1,9 @@
 import { mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import path, { resolve, join } from 'node:path';
-import Insight, { type Rect, SQAI_MODEL_NAME } from '@sqai/core';
-import { sleep } from '@sqai/core/utils';
-import { globalModelConfigManager } from '@sqai/shared/env';
-import { imageInfoOfBase64, saveBase64Image } from '@sqai/shared/img';
+import Insight, { type Rect, SQAI_MODEL_NAME } from '@sqaitech/core';
+import { sleep } from '@sqaitech/core/utils';
+import { globalModelConfigManager } from '@sqaitech/shared/env';
+import { imageInfoOfBase64, saveBase64Image } from '@sqaitech/shared/img';
 import dotenv from 'dotenv';
 import sharp from 'sharp';
 import { afterEach, expect, test } from 'vitest';

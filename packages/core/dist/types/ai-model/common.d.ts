@@ -1,7 +1,7 @@
 import type { BaseElement, DeviceAction, ElementTreeNode, MidsceneYamlFlowItem, PlanningAction, Rect, Size } from '../types';
 import type { ChatCompletionMessageParam } from 'openai/resources/index';
 import type { PlanningLocateParam } from '../types';
-import type { TVlModeTypes } from '@sqai/shared/env';
+import type { TVlModeTypes } from '@sqaitech/shared/env';
 import { z } from 'zod';
 export type AIArgs = ChatCompletionMessageParam[];
 export declare enum AIActionType {

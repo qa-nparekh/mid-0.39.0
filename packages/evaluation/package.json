@@ -1,5 +1,5 @@
 {
-  "name": "@sqai/evaluation",
+  "name": "@sqaitech/evaluation",
   "private": true,
   "scripts": {
     "update-page-data:headless": "playwright test ./data-generator/generator-headless.spec.ts && npm run format",
@@ -19,11 +19,14 @@
     "evaluate:section-locator": "npx vitest --run tests/llm-section-locator.test.ts",
     "format": "cd ../.. && npm run lint"
   },
-  "files": ["dist", "README.md"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
-    "@sqai/core": "workspace:*",
-    "@sqai/shared": "workspace:*",
-    "@sqai/web": "workspace:*"
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
+    "@sqaitech/web": "workspace:*"
   },
   "devDependencies": {
     "@playwright/test": "^1.44.1",
@@ -42,5 +45,5 @@
     "registry": "https://registry.npmjs.org"
   },
   "license": "MIT",
-  "version": "0.30.9"
+  "version": "0.30.10"
 }

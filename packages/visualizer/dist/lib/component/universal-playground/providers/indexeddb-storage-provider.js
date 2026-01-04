@@ -28,7 +28,7 @@ __webpack_require__.d(__webpack_exports__, {
     NoOpStorageProvider: ()=>NoOpStorageProvider,
     MemoryStorageProvider: ()=>MemoryStorageProvider
 });
-const baseDB_namespaceObject = require("@sqai/shared/baseDB");
+const baseDB_namespaceObject = require("@sqaitech/shared/baseDB");
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,

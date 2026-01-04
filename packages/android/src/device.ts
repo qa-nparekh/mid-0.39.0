@@ -10,7 +10,7 @@ import {
   type Size,
   getMidsceneLocationSchema,
   z,
-} from '@sqai/core';
+} from '@sqaitech/core';
 import {
   type AbstractInterface,
   type ActionTapParam,
@@ -21,23 +21,23 @@ import {
   defineActionKeyboardPress,
   defineActionScroll,
   defineActionTap,
-} from '@sqai/core/device';
-import { getTmpFile, sleep } from '@sqai/core/utils';
+} from '@sqaitech/core/device';
+import { getTmpFile, sleep } from '@sqaitech/core/utils';
 import {
   SQAI_ADB_PATH,
   SQAI_ADB_REMOTE_HOST,
   SQAI_ADB_REMOTE_PORT,
   SQAI_ANDROID_IME_STRATEGY,
   globalConfigManager,
-} from '@sqai/shared/env';
-import type { ElementInfo } from '@sqai/shared/extractor';
+} from '@sqaitech/shared/env';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
 import {
   createImgBase64ByFormat,
   isValidPNGImageBuffer,
-} from '@sqai/shared/img';
-import { getDebug } from '@sqai/shared/logger';
-import { uuid } from '@sqai/shared/utils';
-import { repeat } from '@sqai/shared/utils';
+} from '@sqaitech/shared/img';
+import { getDebug } from '@sqaitech/shared/logger';
+import { uuid } from '@sqaitech/shared/utils';
+import { repeat } from '@sqaitech/shared/utils';
 
 import { ADB } from 'appium-adb';
 
@@ -1209,7 +1209,7 @@ ${Object.keys(size)
       const adb = await this.getAdb();
       // Use a more reliable path resolution method
       const androidPkgJson = createRequire(import.meta.url).resolve(
-        '@sqai/android/package.json',
+        '@sqaitech/android/package.json',
       );
       const yadbBin = path.join(path.dirname(androidPkgJson), 'bin', 'yadb');
       await adb.push(yadbBin, '/data/local/tmp');

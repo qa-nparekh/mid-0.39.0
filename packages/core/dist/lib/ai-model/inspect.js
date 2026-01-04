@@ -28,9 +28,9 @@ __webpack_require__.d(__webpack_exports__, {
     AiLocateSection: ()=>AiLocateSection,
     AiExtractElementInfo: ()=>AiExtractElementInfo
 });
-const img_namespaceObject = require("@sqai/shared/img");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const img_namespaceObject = require("@sqaitech/shared/img");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_common_js_namespaceObject = require("./common.js");
 const extraction_js_namespaceObject = require("./prompt/extraction.js");
 const llm_locator_js_namespaceObject = require("./prompt/llm-locator.js");

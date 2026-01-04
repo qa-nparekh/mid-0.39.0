@@ -1,6 +1,6 @@
 import type { TUserPrompt } from '../ai-model';
 import type { ElementCacheFeature } from '../types';
-export declare const debug: import("@sqai/shared/logger").DebugFunction;
+export declare const debug: import("@sqaitech/shared/logger").DebugFunction;
 export interface PlanningCache {
     type: 'plan';
     prompt: string;

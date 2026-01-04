@@ -2,15 +2,15 @@ import node_assert from "node:assert";
 import node_fs from "node:fs";
 import { createRequire } from "node:module";
 import node_path from "node:path";
-import { getMidsceneLocationSchema, z } from "@sqai/core";
-import { defineAction, defineActionClearInput, defineActionDoubleClick, defineActionDragAndDrop, defineActionKeyboardPress, defineActionScroll, defineActionTap } from "@sqai/core/device";
-import { getTmpFile, sleep } from "@sqai/core/utils";
-import { SQAI_ADB_PATH, SQAI_ADB_REMOTE_HOST, SQAI_ADB_REMOTE_PORT, SQAI_ANDROID_IME_STRATEGY, globalConfigManager, overrideAIConfig } from "@sqai/shared/env";
-import { createImgBase64ByFormat, isValidPNGImageBuffer } from "@sqai/shared/img";
-import { getDebug } from "@sqai/shared/logger";
-import { repeat, uuid } from "@sqai/shared/utils";
+import { getMidsceneLocationSchema, z } from "@sqaitech/core";
+import { defineAction, defineActionClearInput, defineActionDoubleClick, defineActionDragAndDrop, defineActionKeyboardPress, defineActionScroll, defineActionTap } from "@sqaitech/core/device";
+import { getTmpFile, sleep } from "@sqaitech/core/utils";
+import { SQAI_ADB_PATH, SQAI_ADB_REMOTE_HOST, SQAI_ADB_REMOTE_PORT, SQAI_ANDROID_IME_STRATEGY, globalConfigManager, overrideAIConfig } from "@sqaitech/shared/env";
+import { createImgBase64ByFormat, isValidPNGImageBuffer } from "@sqaitech/shared/img";
+import { getDebug } from "@sqaitech/shared/logger";
+import { repeat, uuid } from "@sqaitech/shared/utils";
 import { ADB } from "appium-adb";
-import { Agent } from "@sqai/core/agent";
+import { Agent } from "@sqaitech/core/agent";
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,
@@ -694,7 +694,7 @@ ${Object.keys(size).filter((key)=>size[key]).map((key)=>`  ${key} size: ${size[k
     async ensureYadb() {
         if (!this.yadbPushed) {
             const adb = await this.getAdb();
-            const androidPkgJson = createRequire(import.meta.url).resolve('@sqai/android/package.json');
+            const androidPkgJson = createRequire(import.meta.url).resolve('@sqaitech/android/package.json');
             const yadbBin = node_path.join(node_path.dirname(androidPkgJson), 'bin', 'yadb');
             await adb.push(yadbBin, '/data/local/tmp');
             this.yadbPushed = true;

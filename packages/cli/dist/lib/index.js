@@ -3016,10 +3016,10 @@ var __webpack_modules__ = {
         var main = __webpack_require__("../../node_modules/.pnpm/dotenv@16.4.5/node_modules/dotenv/lib/main.js");
         var main_default = /*#__PURE__*/ __webpack_require__.n(main);
         var package_namespaceObject = {
-            i8: "0.30.9"
+            i8: "0.30.10"
         };
-        const yaml_namespaceObject = require("@sqai/core/yaml");
-        const common_namespaceObject = require("@sqai/shared/common");
+        const yaml_namespaceObject = require("@sqaitech/core/yaml");
+        const common_namespaceObject = require("@sqaitech/shared/common");
         const external_lodash_merge_namespaceObject = require("lodash.merge");
         var external_lodash_merge_default = /*#__PURE__*/ __webpack_require__.n(external_lodash_merge_namespaceObject);
         class Node {
@@ -3144,13 +3144,13 @@ var __webpack_modules__ = {
         const external_http_server_namespaceObject = require("http-server");
         const external_node_assert_namespaceObject = require("node:assert");
         var external_node_assert_default = /*#__PURE__*/ __webpack_require__.n(external_node_assert_namespaceObject);
-        const android_namespaceObject = require("@sqai/android");
-        const agent_namespaceObject = require("@sqai/core/agent");
-        const utils_namespaceObject = require("@sqai/core/utils");
-        const ios_namespaceObject = require("@sqai/ios");
-        const logger_namespaceObject = require("@sqai/shared/logger");
-        const bridge_mode_namespaceObject = require("@sqai/web/bridge-mode");
-        const puppeteer_agent_launcher_namespaceObject = require("@sqai/web/puppeteer-agent-launcher");
+        const android_namespaceObject = require("@sqaitech/android");
+        const agent_namespaceObject = require("@sqaitech/core/agent");
+        const utils_namespaceObject = require("@sqaitech/core/utils");
+        const ios_namespaceObject = require("@sqaitech/ios");
+        const logger_namespaceObject = require("@sqaitech/shared/logger");
+        const bridge_mode_namespaceObject = require("@sqaitech/web/bridge-mode");
+        const puppeteer_agent_launcher_namespaceObject = require("@sqaitech/web/puppeteer-agent-launcher");
         const debug = (0, logger_namespaceObject.getDebug)('create-yaml-player');
         const launchServer = async (dir)=>new Promise((resolve)=>{
                 const server = (0, external_http_server_namespaceObject.createServer)({
@@ -11923,7 +11923,7 @@ Usage:
                     type: 'string',
                     description: 'Override WebDriverAgent host for iOS environments.'
                 }
-            }).version('version', 'Show version number', "0.30.9").help().wrap(yargs().terminalWidth());
+            }).version('version', 'Show version number', "0.30.10").help().wrap(yargs().terminalWidth());
             const argv = await args.argv;
             cli_utils_debug('argv', argv);
             const transformedArgv = {
@@ -11980,7 +11980,7 @@ Usage:
         }
         Promise.resolve((async ()=>{
             const { options, path, files: cmdFiles } = await parseProcessArgs();
-            const welcome = `\nWelcome to @sqai/cli v${package_namespaceObject.i8}\n`;
+            const welcome = `\nWelcome to @sqaitech/cli v${package_namespaceObject.i8}\n`;
             console.log(welcome);
             if (options.url) {
                 console.error("the cli mode is no longer supported, please use yaml file instead. See https://midscenejs.com/automate-with-scripts-in-yaml for more information. Sorry for the inconvenience.");

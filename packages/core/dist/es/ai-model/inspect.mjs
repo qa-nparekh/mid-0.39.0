@@ -1,6 +1,6 @@
-import { cropByRect, paddingToMatchBlockByBase64, preProcessImageUrl } from "@sqai/shared/img";
-import { getDebug } from "@sqai/shared/logger";
-import { assert } from "@sqai/shared/utils";
+import { cropByRect, paddingToMatchBlockByBase64, preProcessImageUrl } from "@sqaitech/shared/img";
+import { getDebug } from "@sqaitech/shared/logger";
+import { assert } from "@sqaitech/shared/utils";
 import { AIActionType, adaptBboxToRect, expandSearchArea, markupImageForLLM, mergeRects } from "./common.mjs";
 import { extractDataQueryPrompt, systemPromptToExtract } from "./prompt/extraction.mjs";
 import { findElementPrompt, systemPromptToLocateElement } from "./prompt/llm-locator.mjs";

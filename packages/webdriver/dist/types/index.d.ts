@@ -1,4 +1,4 @@
-import { WEBDRIVER_ELEMENT_ID_KEY } from '@sqai/shared/constants';
+import { WEBDRIVER_ELEMENT_ID_KEY } from '@sqaitech/shared/constants';
 
 export declare abstract class BaseServiceManager implements WebDriverServiceManager {
     protected port: number;

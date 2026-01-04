@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     BridgeClient: ()=>BridgeClient
 });
-const utils_namespaceObject = require("@sqai/shared/utils");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_socket_io_client_namespaceObject = require("socket.io-client");
 const external_common_js_namespaceObject = require("./common.js");
 function _define_property(obj, key, value) {
@@ -45,7 +45,7 @@ class BridgeClient {
             this.socket = (0, external_socket_io_client_namespaceObject.io)(this.endpoint, {
                 reconnection: false,
                 query: {
-                    version: "0.30.9"
+                    version: "0.30.10"
                 }
             });
             const timeout = setTimeout(()=>{

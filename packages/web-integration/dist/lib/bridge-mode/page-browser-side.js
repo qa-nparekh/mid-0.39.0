@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     ExtensionBridgePageBrowserSide: ()=>ExtensionBridgePageBrowserSide
 });
-const utils_namespaceObject = require("@sqai/shared/utils");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const page_js_namespaceObject = require("../chrome-extension/page.js");
 var page_js_default = /*#__PURE__*/ __webpack_require__.n(page_js_namespaceObject);
 const external_common_js_namespaceObject = require("./common.js");
@@ -83,7 +83,7 @@ class ExtensionBridgePageBrowserSide extends page_js_default() {
             }
         }, ()=>this.destroy());
         await this.bridgeClient.connect();
-        this.onLogMessage(`Bridge connected, cli-side version v${this.bridgeClient.serverVersion}, browser-side version v0.30.9`, 'log');
+        this.onLogMessage(`Bridge connected, cli-side version v${this.bridgeClient.serverVersion}, browser-side version v0.30.10`, 'log');
     }
     async connect() {
         return await this.setupBridgeClient();

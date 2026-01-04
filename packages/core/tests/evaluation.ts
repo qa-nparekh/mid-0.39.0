@@ -1,8 +1,8 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { describeUserPage } from '@/index';
-import type { TVlModeTypes } from '@sqai/shared/env';
-import { imageInfoOfBase64, localImg2Base64 } from '@sqai/shared/img';
+import type { TVlModeTypes } from '@sqaitech/shared/env';
+import { imageInfoOfBase64, localImg2Base64 } from '@sqaitech/shared/img';
 
 export async function buildContext(
   targetDir: string,

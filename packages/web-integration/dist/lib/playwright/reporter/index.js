@@ -27,9 +27,9 @@ __webpack_require__.d(__webpack_exports__, {
     default: ()=>reporter
 });
 const external_node_fs_namespaceObject = require("node:fs");
-const agent_namespaceObject = require("@sqai/core/agent");
-const utils_namespaceObject = require("@sqai/core/utils");
-const shared_utils_namespaceObject = require("@sqai/shared/utils");
+const agent_namespaceObject = require("@sqaitech/core/agent");
+const utils_namespaceObject = require("@sqaitech/core/utils");
+const shared_utils_namespaceObject = require("@sqaitech/shared/utils");
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,

@@ -1,18 +1,18 @@
 import { writeFileSync } from 'node:fs';
-import { type PlanningAIResponse, type Rect, plan } from '@sqai/core';
-import { adaptBboxToRect } from '@sqai/core/ai-model';
+import { type PlanningAIResponse, type Rect, plan } from '@sqaitech/core';
+import { adaptBboxToRect } from '@sqaitech/core/ai-model';
 import {
   type DeviceAction,
   defineActionInput,
   defineActionKeyboardPress,
   defineActionTap,
-} from '@sqai/core/device';
-import { sleep } from '@sqai/core/utils';
+} from '@sqaitech/core/device';
+import { sleep } from '@sqaitech/core/utils';
 import {
   globalConfigManager,
   globalModelConfigManager,
-} from '@sqai/shared/env';
-import { saveBase64Image } from '@sqai/shared/img';
+} from '@sqaitech/shared/env';
+import { saveBase64Image } from '@sqaitech/shared/img';
 import dotenv from 'dotenv';
 import { afterEach, beforeAll, describe, expect, test } from 'vitest';
 import { TestResultCollector } from '../src/test-analyzer';

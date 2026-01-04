@@ -29,7 +29,7 @@ __webpack_require__.d(__webpack_exports__, {
     killRunningServer: ()=>external_io_server_js_namespaceObject.killRunningServer
 });
 const external_agent_cli_side_js_namespaceObject = require("./agent-cli-side.js");
-const env_namespaceObject = require("@sqai/shared/env");
+const env_namespaceObject = require("@sqaitech/shared/env");
 const external_io_server_js_namespaceObject = require("./io-server.js");
 exports.AgentOverChromeBridge = __webpack_exports__.AgentOverChromeBridge;
 exports.killRunningServer = __webpack_exports__.killRunningServer;

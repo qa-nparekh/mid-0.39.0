@@ -1,4 +1,4 @@
-import { assert } from "@sqai/shared/utils";
+import { assert } from "@sqaitech/shared/utils";
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,

@@ -2,10 +2,10 @@ import {
   AndroidAgent,
   AndroidDevice,
   getConnectedDevices,
-} from '@sqai/android';
-import type { TestStatus } from '@sqai/core';
-import { ReportMergingTool } from '@sqai/core/report';
-import { sleep } from '@sqai/core/utils';
+} from '@sqaitech/android';
+import type { TestStatus } from '@sqaitech/core';
+import { ReportMergingTool } from '@sqaitech/core/report';
+import { sleep } from '@sqaitech/core/utils';
 import type ADB from 'appium-adb';
 import {
   afterAll,

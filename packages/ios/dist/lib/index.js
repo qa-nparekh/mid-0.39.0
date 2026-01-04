@@ -42,13 +42,13 @@ __webpack_require__.d(__webpack_exports__, {
 });
 const external_node_assert_namespaceObject = require("node:assert");
 var external_node_assert_default = /*#__PURE__*/ __webpack_require__.n(external_node_assert_namespaceObject);
-const core_namespaceObject = require("@sqai/core");
-const device_namespaceObject = require("@sqai/core/device");
-const utils_namespaceObject = require("@sqai/core/utils");
-const constants_namespaceObject = require("@sqai/shared/constants");
-const img_namespaceObject = require("@sqai/shared/img");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const webdriver_namespaceObject = require("@sqai/webdriver");
+const core_namespaceObject = require("@sqaitech/core");
+const device_namespaceObject = require("@sqaitech/core/device");
+const utils_namespaceObject = require("@sqaitech/core/utils");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
+const img_namespaceObject = require("@sqaitech/shared/img");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const webdriver_namespaceObject = require("@sqaitech/webdriver");
 const debugIOS = (0, logger_namespaceObject.getDebug)('webdriver:ios');
 class IOSWebDriverClient extends webdriver_namespaceObject.WebDriverClient {
     async launchApp(bundleId) {
@@ -891,7 +891,7 @@ ScreenSize: ${size.width}x${size.height} (DPR: ${size.scale})
         this.wdaManager = webdriver_namespaceObject.WDAManager.getInstance(wdaPort, wdaHost);
     }
 }
-const agent_namespaceObject = require("@sqai/core/agent");
+const agent_namespaceObject = require("@sqaitech/core/agent");
 const external_node_child_process_namespaceObject = require("node:child_process");
 const external_node_os_namespaceObject = require("node:os");
 const external_node_util_namespaceObject = require("node:util");
@@ -962,7 +962,7 @@ async function agentFromWebDriverAgent(opts) {
     await device.connect();
     return new IOSAgent(device, opts);
 }
-const env_namespaceObject = require("@sqai/shared/env");
+const env_namespaceObject = require("@sqaitech/shared/env");
 exports.IOSAgent = __webpack_exports__.IOSAgent;
 exports.IOSDevice = __webpack_exports__.IOSDevice;
 exports.IOSWebDriverClient = __webpack_exports__.IOSWebDriverClient;

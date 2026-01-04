@@ -1,0 +1,7 @@
+midsceneVersion: 0.30.10
+cacheId: 465b3104-5986-43ff-89fd-f14575698d91
+caches:
+  - type: locate
+    prompt: legacy-locate
+    xpaths:
+      - legacy-xpath-1

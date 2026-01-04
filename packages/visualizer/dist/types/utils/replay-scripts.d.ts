@@ -1,4 +1,4 @@
-import type { ExecutionDump, ExecutionTask, GroupedActionDump, LocateResultElement, Rect, UIContext } from '@sqai/core';
+import type { ExecutionDump, ExecutionTask, GroupedActionDump, LocateResultElement, Rect, UIContext } from '@sqaitech/core';
 export interface CameraState {
     left: number;
     top: number;

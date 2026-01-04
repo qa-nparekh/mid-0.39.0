@@ -25,10 +25,10 @@ import {
   type IModelConfig,
   SQAI_FORCE_DEEP_THINK,
   globalConfigManager,
-} from '@sqai/shared/env';
-import { compositeElementInfoImg, cropByRect } from '@sqai/shared/img';
-import { getDebug } from '@sqai/shared/logger';
-import { assert } from '@sqai/shared/utils';
+} from '@sqaitech/shared/env';
+import { compositeElementInfoImg, cropByRect } from '@sqaitech/shared/img';
+import { getDebug } from '@sqaitech/shared/logger';
+import { assert } from '@sqaitech/shared/utils';
 import type { TMultimodalPrompt } from '../ai-model/common';
 import { emitInsightDump } from './utils';
 

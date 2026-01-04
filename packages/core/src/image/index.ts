@@ -6,4 +6,4 @@ export {
   resizeAndConvertImgBuffer,
   saveBase64Image,
   zoomForGPT4o,
-} from '@sqai/shared/img';
+} from '@sqaitech/shared/img';

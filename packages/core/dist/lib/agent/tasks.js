@@ -30,9 +30,9 @@ __webpack_require__.d(__webpack_exports__, {
 const index_js_namespaceObject = require("../ai-model/index.js");
 const action_executor_js_namespaceObject = require("../ai-model/action-executor.js");
 const external_utils_js_namespaceObject = require("../utils.js");
-const env_namespaceObject = require("@sqai/shared/env");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const env_namespaceObject = require("@sqaitech/shared/env");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_ui_utils_js_namespaceObject = require("./ui-utils.js");
 const external_utils_js_namespaceObject_1 = require("./utils.js");
 function _define_property(obj, key, value) {

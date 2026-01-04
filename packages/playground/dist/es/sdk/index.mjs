@@ -1,4 +1,4 @@
-import { PLAYGROUND_SERVER_PORT } from "@sqai/shared/constants";
+import { PLAYGROUND_SERVER_PORT } from "@sqaitech/shared/constants";
 import { LocalExecutionAdapter } from "../adapters/local-execution.mjs";
 import { RemoteExecutionAdapter } from "../adapters/remote-execution.mjs";
 function _define_property(obj, key, value) {

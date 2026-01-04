@@ -1,4 +1,4 @@
-import { PlaygroundSDK } from '@sqai/playground';
+import { PlaygroundSDK } from '@sqaitech/playground';
 import { Button, Tooltip } from 'antd';
 import type React from 'react';
 import { useEffect } from 'react';

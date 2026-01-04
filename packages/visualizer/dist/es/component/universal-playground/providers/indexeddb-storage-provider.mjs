@@ -1,4 +1,4 @@
-import { IndexedDBManager, createCleanupFunction, withErrorHandling } from "@sqai/shared/baseDB";
+import { IndexedDBManager, createCleanupFunction, withErrorHandling } from "@sqaitech/shared/baseDB";
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,

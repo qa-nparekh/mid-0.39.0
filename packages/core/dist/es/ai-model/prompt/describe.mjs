@@ -1,4 +1,4 @@
-import { getPreferredLanguage } from "@sqai/shared/env";
+import { getPreferredLanguage } from "@sqaitech/shared/env";
 const elementDescriberInstruction = ()=>`
 Describe the element in the red rectangle for precise identification. Use ${getPreferredLanguage()}.
 

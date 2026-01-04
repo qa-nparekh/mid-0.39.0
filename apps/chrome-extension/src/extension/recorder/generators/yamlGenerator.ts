@@ -1,13 +1,13 @@
 import type {
   StreamingAIResponse,
   StreamingCodeGenerationOptions,
-} from '@sqai/core';
+} from '@sqaitech/core';
 import {
   generateYamlTest as generateYamlTestCore,
   generateYamlTestStream as generateYamlTestStreamCore,
-} from '@sqai/core/ai-model';
-import type { ChromeRecordedEvent } from '@sqai/recorder';
-import type { IModelConfig } from '@sqai/shared/env';
+} from '@sqaitech/core/ai-model';
+import type { ChromeRecordedEvent } from '@sqaitech/recorder';
+import type { IModelConfig } from '@sqaitech/shared/env';
 import { recordLogger } from '../logger';
 import { extractNavigationAndViewportInfo } from './playwrightGenerator';
 import { handleTestGenerationError } from './shared/testGenerationUtils';

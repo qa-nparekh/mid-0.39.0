@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     BasePlaygroundAdapter: ()=>BasePlaygroundAdapter
 });
-const ai_model_namespaceObject = require("@sqai/core/ai-model");
+const ai_model_namespaceObject = require("@sqaitech/core/ai-model");
 class BasePlaygroundAdapter {
     async getActionSpace(_context) {
         return [];

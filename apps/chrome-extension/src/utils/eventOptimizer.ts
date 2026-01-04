@@ -1,8 +1,8 @@
-import Insight from '@sqai/core';
-import type { BaseElement, Rect, UIContext } from '@sqai/core';
-import type { RecordedEvent } from '@sqai/recorder';
-import { globalModelConfigManager } from '@sqai/shared/env';
-import { compositeElementInfoImg } from '@sqai/shared/img';
+import Insight from '@sqaitech/core';
+import type { BaseElement, Rect, UIContext } from '@sqaitech/core';
+import type { RecordedEvent } from '@sqaitech/recorder';
+import { globalModelConfigManager } from '@sqaitech/shared/env';
+import { compositeElementInfoImg } from '@sqaitech/shared/img';
 
 // Caches for element descriptions and boxed screenshots to improve performance
 const MAX_CACHE_SIZE = 100;

@@ -28,7 +28,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 const external_react_namespaceObject = require("react");
 const store_js_namespaceObject = require("../store/store.js");
-const playground_namespaceObject = require("@sqai/playground");
+const playground_namespaceObject = require("@sqaitech/playground");
 const constants_js_namespaceObject = require("../utils/constants.js");
 const replay_scripts_js_namespaceObject = require("../utils/replay-scripts.js");
 function usePlaygroundExecution(playgroundSDK, storage, actionSpace, loading, setLoading, infoList, setInfoList, replayCounter, setReplayCounter, verticalMode, currentRunningIdRef, interruptedFlagRef) {

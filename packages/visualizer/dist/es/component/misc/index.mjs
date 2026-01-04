@@ -66,7 +66,7 @@ const errorMessageServerNotReady = /*#__PURE__*/ jsxs("span", {
         /*#__PURE__*/ jsx("br", {}),
         "b. ",
         /*#__PURE__*/ jsx("strong", {
-            children: "npx --yes @sqai/web"
+            children: "npx --yes @sqaitech/web"
         })
     ]
 });

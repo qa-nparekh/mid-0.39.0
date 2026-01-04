@@ -1,5 +1,5 @@
 import type { BaseElement, ElementTreeNode, Size, UIContext } from '../../types';
-import type { TVlModeTypes } from '@sqai/shared/env';
+import type { TVlModeTypes } from '@sqaitech/shared/env';
 export declare function describeSize(size: Size): string;
 export declare function describeElement(elements: (Pick<BaseElement, 'rect' | 'content'> & {
     id: string;

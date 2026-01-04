@@ -1,10 +1,10 @@
 import { elementByPositionWithElementInfo } from "../ai-model/index.mjs";
 import { uploadTestInfoToServer } from "../utils.mjs";
-import { NodeType } from "@sqai/shared/constants";
-import { SQAI_REPORT_TAG_NAME, globalConfigManager } from "@sqai/shared/env";
-import { generateElementByPosition, getNodeFromCacheList } from "@sqai/shared/extractor";
-import { getDebug } from "@sqai/shared/logger";
-import { assert, logMsg, uuid } from "@sqai/shared/utils";
+import { NodeType } from "@sqaitech/shared/constants";
+import { SQAI_REPORT_TAG_NAME, globalConfigManager } from "@sqaitech/shared/env";
+import { generateElementByPosition, getNodeFromCacheList } from "@sqaitech/shared/extractor";
+import { getDebug } from "@sqaitech/shared/logger";
+import { assert, logMsg, uuid } from "@sqaitech/shared/utils";
 import dayjs from "dayjs";
 import { debug } from "./task-cache.mjs";
 const debugProfile = getDebug('web:tool:profile');
@@ -143,7 +143,7 @@ function trimContextByViewport(execution) {
         }) : execution.tasks
     };
 }
-const getMidsceneVersion = ()=>"0.30.9";
+const getMidsceneVersion = ()=>"0.30.10";
 const parsePrompt = (prompt)=>{
     if ('string' == typeof prompt) return {
         textPrompt: prompt,

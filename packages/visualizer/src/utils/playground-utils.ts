@@ -1,5 +1,5 @@
-import type { WebUIContext } from '@sqai/core';
-import { StaticPage, StaticPageAgent } from '@sqai/web/static';
+import type { WebUIContext } from '@sqaitech/core';
+import { StaticPage, StaticPageAgent } from '@sqaitech/web/static';
 import type { ZodObjectSchema } from '../types';
 import { isZodObjectSchema, unwrapZodType } from '../types';
 

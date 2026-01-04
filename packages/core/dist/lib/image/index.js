@@ -32,7 +32,7 @@ __webpack_require__.d(__webpack_exports__, {
     imageInfo: ()=>img_namespaceObject.imageInfo,
     resizeAndConvertImgBuffer: ()=>img_namespaceObject.resizeAndConvertImgBuffer
 });
-const img_namespaceObject = require("@sqai/shared/img");
+const img_namespaceObject = require("@sqaitech/shared/img");
 exports.httpImg2Base64 = __webpack_exports__.httpImg2Base64;
 exports.imageInfo = __webpack_exports__.imageInfo;
 exports.imageInfoOfBase64 = __webpack_exports__.imageInfoOfBase64;

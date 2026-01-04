@@ -1,4 +1,4 @@
-import type { DeviceAction, UIContext } from '@sqai/core';
+import type { DeviceAction, UIContext } from '@sqaitech/core';
 import type { ContextProvider, InfoListItem, PlaygroundSDKLike, StorageProvider } from '../types';
 /**
  * Hook for managing playground state
@@ -10,8 +10,8 @@ export declare function usePlaygroundState(playgroundSDK: PlaygroundSDKLike | nu
     setInfoList: import("react").Dispatch<import("react").SetStateAction<InfoListItem[]>>;
     actionSpace: DeviceAction<unknown>[];
     actionSpaceLoading: boolean;
-    uiContextPreview: UIContext<import("@sqai/core").BaseElement> | undefined;
-    setUiContextPreview: import("react").Dispatch<import("react").SetStateAction<UIContext<import("@sqai/core").BaseElement> | undefined>>;
+    uiContextPreview: UIContext<import("@sqaitech/core").BaseElement> | undefined;
+    setUiContextPreview: import("react").Dispatch<import("react").SetStateAction<UIContext<import("@sqaitech/core").BaseElement> | undefined>>;
     showScrollToBottomButton: boolean;
     verticalMode: boolean;
     replayCounter: number;

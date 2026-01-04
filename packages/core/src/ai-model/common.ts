@@ -8,16 +8,16 @@ import type {
   Rect,
   Size,
 } from '@/types';
-import { assert } from '@sqai/shared/utils';
+import { assert } from '@sqaitech/shared/utils';
 
 import type { ChatCompletionMessageParam } from 'openai/resources/index';
 
 import type { PlanningLocateParam } from '@/types';
-import { NodeType } from '@sqai/shared/constants';
-import type { TVlModeTypes } from '@sqai/shared/env';
-import { treeToList } from '@sqai/shared/extractor';
-import { compositeElementInfoImg } from '@sqai/shared/img';
-import { getDebug } from '@sqai/shared/logger';
+import { NodeType } from '@sqaitech/shared/constants';
+import type { TVlModeTypes } from '@sqaitech/shared/env';
+import { treeToList } from '@sqaitech/shared/extractor';
+import { compositeElementInfoImg } from '@sqaitech/shared/img';
+import { getDebug } from '@sqaitech/shared/logger';
 import { z } from 'zod';
 
 export type AIArgs = ChatCompletionMessageParam[];

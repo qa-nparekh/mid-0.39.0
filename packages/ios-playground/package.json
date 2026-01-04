@@ -1,14 +1,18 @@
 {
-  "name": "@sqai/ios-playground",
-  "version": "0.30.9",
+  "name": "@sqaitech/ios-playground",
+  "version": "0.30.10",
   "description": "iOS playground for SQAI",
   "main": "./dist/lib/index.js",
   "types": "./dist/types/index.d.ts",
   "module": "./dist/es/index.mjs",
-  "files": ["dist", "bin", "README.md"],
+  "files": [
+    "dist",
+    "bin",
+    "README.md"
+  ],
   "bin": {
     "sqai-ios-playground": "./bin/sqai-ios-playground",
-    "@sqai/ios-playground": "./bin/sqai-ios-playground"
+    "@sqaitech/ios-playground": "./bin/sqai-ios-playground"
   },
   "scripts": {
     "dev": "npm run build:watch",
@@ -17,7 +21,7 @@
     "build:watch": "rslib build --watch"
   },
   "dependencies": {
-    "@sqai/ios": "workspace:*"
+    "@sqaitech/ios": "workspace:*"
   },
   "devDependencies": {
     "@rslib/core": "^0.11.2",

@@ -4,8 +4,8 @@ import { Alert, ConfigProvider, Empty } from 'antd';
 import { useEffect, useRef, useState } from 'react';
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';
 
-import { antiEscapeScriptTag } from '@sqai/shared/utils';
-import { Logo, Player, globalThemeConfig } from '@sqai/visualizer';
+import { antiEscapeScriptTag } from '@sqaitech/shared/utils';
+import { Logo, Player, globalThemeConfig } from '@sqaitech/visualizer';
 import DetailPanel from './components/detail-panel';
 import DetailSide from './components/detail-side';
 import GlobalHoverPreview from './components/global-hover-preview';

@@ -3,12 +3,12 @@ import { createServer } from 'node:net';
 import path from 'node:path';
 import { promisify } from 'node:util';
 import { select } from '@inquirer/prompts';
-import { AndroidAgent, AndroidDevice } from '@sqai/android';
-import { PlaygroundServer } from '@sqai/playground';
+import { AndroidAgent, AndroidDevice } from '@sqaitech/android';
+import { PlaygroundServer } from '@sqaitech/playground';
 import {
   PLAYGROUND_SERVER_PORT,
   SCRCPY_SERVER_PORT,
-} from '@sqai/shared/constants';
+} from '@sqaitech/shared/constants';
 import ScrcpyServer from './scrcpy-server';
 
 const promiseExec = promisify(exec);

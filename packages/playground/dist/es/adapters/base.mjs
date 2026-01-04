@@ -1,4 +1,4 @@
-import { findAllMidsceneLocatorField } from "@sqai/core/ai-model";
+import { findAllMidsceneLocatorField } from "@sqaitech/core/ai-model";
 class BasePlaygroundAdapter {
     async getActionSpace(_context) {
         return [];

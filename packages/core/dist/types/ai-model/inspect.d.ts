@@ -1,5 +1,5 @@
 import type { AIDataExtractionResponse, AIElementLocatorResponse, AIElementResponse, AIUsageInfo, BaseElement, ElementById, InsightExtractOption, Rect, ReferenceImage, UIContext } from '../types';
-import type { IModelConfig } from '@sqai/shared/env';
+import type { IModelConfig } from '@sqaitech/shared/env';
 import type { ChatCompletionSystemMessageParam, ChatCompletionUserMessageParam } from 'openai/resources/index';
 import type { TMultimodalPrompt, TUserPrompt } from './common';
 import { callAIWithObjectResponse } from './service-caller/index';

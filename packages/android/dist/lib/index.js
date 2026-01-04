@@ -49,13 +49,13 @@ var external_node_fs_default = /*#__PURE__*/ __webpack_require__.n(external_node
 const external_node_module_namespaceObject = require("node:module");
 const external_node_path_namespaceObject = require("node:path");
 var external_node_path_default = /*#__PURE__*/ __webpack_require__.n(external_node_path_namespaceObject);
-const core_namespaceObject = require("@sqai/core");
-const device_namespaceObject = require("@sqai/core/device");
-const utils_namespaceObject = require("@sqai/core/utils");
-const env_namespaceObject = require("@sqai/shared/env");
-const img_namespaceObject = require("@sqai/shared/img");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const shared_utils_namespaceObject = require("@sqai/shared/utils");
+const core_namespaceObject = require("@sqaitech/core");
+const device_namespaceObject = require("@sqaitech/core/device");
+const utils_namespaceObject = require("@sqaitech/core/utils");
+const env_namespaceObject = require("@sqaitech/shared/env");
+const img_namespaceObject = require("@sqaitech/shared/img");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const shared_utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_appium_adb_namespaceObject = require("appium-adb");
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
@@ -740,7 +740,7 @@ ${Object.keys(size).filter((key)=>size[key]).map((key)=>`  ${key} size: ${size[k
     async ensureYadb() {
         if (!this.yadbPushed) {
             const adb = await this.getAdb();
-            const androidPkgJson = (0, external_node_module_namespaceObject.createRequire)(__rslib_import_meta_url__).resolve('@sqai/android/package.json');
+            const androidPkgJson = (0, external_node_module_namespaceObject.createRequire)(__rslib_import_meta_url__).resolve('@sqaitech/android/package.json');
             const yadbBin = external_node_path_default().join(external_node_path_default().dirname(androidPkgJson), 'bin', 'yadb');
             await adb.push(yadbBin, '/data/local/tmp');
             this.yadbPushed = true;
@@ -991,7 +991,7 @@ ${Object.keys(size).filter((key)=>size[key]).map((key)=>`  ${key} size: ${size[k
         this.customActions = null == options ? void 0 : options.customActions;
     }
 }
-const agent_namespaceObject = require("@sqai/core/agent");
+const agent_namespaceObject = require("@sqaitech/core/agent");
 const debugUtils = (0, logger_namespaceObject.getDebug)('android:utils');
 async function getConnectedDevices() {
     try {

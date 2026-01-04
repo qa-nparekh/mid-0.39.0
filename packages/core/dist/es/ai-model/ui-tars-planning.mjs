@@ -1,8 +1,8 @@
-import { UITarsModelVersion } from "@sqai/shared/env";
-import { resizeImgBase64 } from "@sqai/shared/img";
-import { getDebug } from "@sqai/shared/logger";
-import { transformHotkeyInput } from "@sqai/shared/us-keyboard-layout";
-import { assert } from "@sqai/shared/utils";
+import { UITarsModelVersion } from "@sqaitech/shared/env";
+import { resizeImgBase64 } from "@sqaitech/shared/img";
+import { getDebug } from "@sqaitech/shared/logger";
+import { transformHotkeyInput } from "@sqaitech/shared/us-keyboard-layout";
+import { assert } from "@sqaitech/shared/utils";
 import { actionParser } from "@ui-tars/action-parser";
 import { AIActionType } from "./common.mjs";
 import { getSummary, getUiTarsPlanningPrompt } from "./prompt/ui-tars-planning.mjs";

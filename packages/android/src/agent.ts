@@ -1,5 +1,5 @@
-import { type AgentOpt, Agent as PageAgent } from '@sqai/core/agent';
-import { getDebug } from '@sqai/shared/logger';
+import { type AgentOpt, Agent as PageAgent } from '@sqaitech/core/agent';
+import { getDebug } from '@sqaitech/shared/logger';
 import { AndroidDevice, type AndroidDeviceOpt } from './device';
 import { getConnectedDevices } from './utils';
 

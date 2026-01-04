@@ -1,6 +1,6 @@
 import { type AIUsageInfo } from '../../types';
 import type { StreamingCallback } from '../../types';
-import { type IModelConfig, type TVlModeTypes } from '@sqai/shared/env';
+import { type IModelConfig, type TVlModeTypes } from '@sqaitech/shared/env';
 import OpenAI from 'openai';
 import type { ChatCompletionMessageParam } from 'openai/resources/index';
 import { AIActionType, type AIArgs } from '../common';

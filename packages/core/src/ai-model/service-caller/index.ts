@@ -13,12 +13,12 @@ import {
   type TVlModeTypes,
   type UITarsModelVersion,
   globalConfigManager,
-} from '@sqai/shared/env';
+} from '@sqaitech/shared/env';
 
-import { parseBase64 } from '@sqai/shared/img';
-import { getDebug } from '@sqai/shared/logger';
-import { assert } from '@sqai/shared/utils';
-import { ifInBrowser } from '@sqai/shared/utils';
+import { parseBase64 } from '@sqaitech/shared/img';
+import { getDebug } from '@sqaitech/shared/logger';
+import { assert } from '@sqaitech/shared/utils';
+import { ifInBrowser } from '@sqaitech/shared/utils';
 import { HttpsProxyAgent } from 'https-proxy-agent';
 import { jsonrepair } from 'jsonrepair';
 import OpenAI, { AzureOpenAI } from 'openai';

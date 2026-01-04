@@ -21,7 +21,7 @@ var __webpack_require__ = {};
     __webpack_require__.o = (obj, prop)=>Object.prototype.hasOwnProperty.call(obj, prop);
 })();
 var __webpack_exports__ = {};
-const playground_namespaceObject = require("@sqai/playground");
+const playground_namespaceObject = require("@sqaitech/playground");
 const external_cors_namespaceObject = require("cors");
 var external_cors_default = /*#__PURE__*/ __webpack_require__.n(external_cors_namespaceObject);
 const index_js_namespaceObject = require("./static/index.js");

@@ -1,16 +1,16 @@
 import { PlaywrightAiFixture } from '@/playwright/ai-fixture';
-import { processCacheConfig } from '@sqai/core/utils';
+import { processCacheConfig } from '@sqaitech/core/utils';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 // Mock the global config manager to control environment variables
-vi.mock('@sqai/shared/env', () => ({
+vi.mock('@sqaitech/shared/env', () => ({
   SQAI_CACHE: 'SQAI_CACHE',
   globalConfigManager: {
     getEnvConfigInBoolean: vi.fn(),
   },
 }));
 
-import { globalConfigManager } from '@sqai/shared/env';
+import { globalConfigManager } from '@sqaitech/shared/env';
 
 describe('PlaywrightAiFixture Cache Configuration', () => {
   beforeEach(() => {

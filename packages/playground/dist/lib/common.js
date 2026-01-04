@@ -32,8 +32,8 @@ __webpack_require__.d(__webpack_exports__, {
     executeAction: ()=>executeAction,
     noReplayAPIs: ()=>noReplayAPIs
 });
-const ai_model_namespaceObject = require("@sqai/core/ai-model");
-const yaml_namespaceObject = require("@sqai/core/yaml");
+const ai_model_namespaceObject = require("@sqaitech/core/ai-model");
+const yaml_namespaceObject = require("@sqaitech/core/yaml");
 const dataExtractionAPIs = [
     'aiQuery',
     'aiBoolean',

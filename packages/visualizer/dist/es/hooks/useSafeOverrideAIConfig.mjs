@@ -1,4 +1,4 @@
-import { overrideAIConfig } from "@sqai/shared/env";
+import { overrideAIConfig } from "@sqaitech/shared/env";
 import { message } from "antd";
 function safeOverrideAIConfig(newConfig) {
     let extendMode = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : false, showErrorMessage = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : true;

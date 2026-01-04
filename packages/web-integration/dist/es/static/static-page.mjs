@@ -1,5 +1,5 @@
-import { defineActionDragAndDrop, defineActionHover, defineActionInput, defineActionKeyboardPress, defineActionRightClick, defineActionScroll, defineActionTap } from "@sqai/core/device";
-import { ERROR_CODE_NOT_IMPLEMENTED_AS_DESIGNED } from "@sqai/shared/common";
+import { defineActionDragAndDrop, defineActionHover, defineActionInput, defineActionKeyboardPress, defineActionRightClick, defineActionScroll, defineActionTap } from "@sqaitech/core/device";
+import { ERROR_CODE_NOT_IMPLEMENTED_AS_DESIGNED } from "@sqaitech/shared/common";
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,

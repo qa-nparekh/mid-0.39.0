@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     ChromeExtensionProxyPageAgent: ()=>ChromeExtensionProxyPageAgent
 });
-const agent_namespaceObject = require("@sqai/core/agent");
+const agent_namespaceObject = require("@sqaitech/core/agent");
 class ChromeExtensionProxyPageAgent extends agent_namespaceObject.Agent {
     constructor(page, opts){
         super(page, opts);

@@ -1,7 +1,7 @@
 import { readFileSync, rmSync } from "node:fs";
-import { getReportFileName, printReportMsg } from "@sqai/core/agent";
-import { writeDumpReport } from "@sqai/core/utils";
-import { replaceIllegalPathCharsAndSpace } from "@sqai/shared/utils";
+import { getReportFileName, printReportMsg } from "@sqaitech/core/agent";
+import { writeDumpReport } from "@sqaitech/core/utils";
+import { replaceIllegalPathCharsAndSpace } from "@sqaitech/shared/utils";
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,

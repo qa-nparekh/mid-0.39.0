@@ -1,7 +1,7 @@
 import { imageInfoOfBase64 } from "../../image/index.mjs";
-import { NodeType } from "@sqai/shared/constants";
-import { descriptionOfTree, generateElementByPosition, treeToList } from "@sqai/shared/extractor";
-import { assert } from "@sqai/shared/utils";
+import { NodeType } from "@sqaitech/shared/constants";
+import { descriptionOfTree, generateElementByPosition, treeToList } from "@sqaitech/shared/extractor";
+import { assert } from "@sqaitech/shared/utils";
 function describeSize(size) {
     return `${size.width} x ${size.height}`;
 }

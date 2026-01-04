@@ -46,11 +46,11 @@ __webpack_require__.d(__webpack_exports__, {
 });
 const index_js_namespaceObject = require("../ai-model/index.js");
 const external_utils_js_namespaceObject = require("../utils.js");
-const constants_namespaceObject = require("@sqai/shared/constants");
-const env_namespaceObject = require("@sqai/shared/env");
-const extractor_namespaceObject = require("@sqai/shared/extractor");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
+const env_namespaceObject = require("@sqaitech/shared/env");
+const extractor_namespaceObject = require("@sqaitech/shared/extractor");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_dayjs_namespaceObject = require("dayjs");
 var external_dayjs_default = /*#__PURE__*/ __webpack_require__.n(external_dayjs_namespaceObject);
 const external_task_cache_js_namespaceObject = require("./task-cache.js");
@@ -190,7 +190,7 @@ function trimContextByViewport(execution) {
         }) : execution.tasks
     };
 }
-const getMidsceneVersion = ()=>"0.30.9";
+const getMidsceneVersion = ()=>"0.30.10";
 const parsePrompt = (prompt)=>{
     if ('string' == typeof prompt) return {
         textPrompt: prompt,

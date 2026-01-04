@@ -1,8 +1,8 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { getTmpFile } from '@sqai/core/utils';
-import { uuid } from '@sqai/shared/utils';
+import { getTmpFile } from '@sqaitech/core/utils';
+import { uuid } from '@sqaitech/shared/utils';
 import { execa } from 'execa';
 import { describe, expect, test, vi } from 'vitest';
 

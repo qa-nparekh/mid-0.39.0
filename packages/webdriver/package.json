@@ -1,6 +1,6 @@
 {
-  "name": "@sqai/webdriver",
-  "version": "0.30.9",
+  "name": "@sqaitech/webdriver",
+  "version": "0.30.10",
   "description": "WebDriver protocol implementation for SQAI automation",
   "main": "dist/lib/index.js",
   "module": "dist/es/index.mjs",
@@ -13,7 +13,7 @@
     "lint:fix": "biome check . --write"
   },
   "dependencies": {
-    "@sqai/shared": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
     "node-fetch": "^3.3.2"
   },
   "devDependencies": {
@@ -29,6 +29,13 @@
       "require": "./dist/lib/index.js"
     }
   },
-  "files": ["dist"],
-  "keywords": ["webdriver", "automation", "ios", "mobile"]
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "webdriver",
+    "automation",
+    "ios",
+    "mobile"
+  ]
 }

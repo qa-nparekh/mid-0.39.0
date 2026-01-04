@@ -1,18 +1,18 @@
 /*! For license information please see index.mjs.LICENSE.txt */
 import node_path, { basename, dirname, extname, join, posix, relative as external_node_path_relative, resolve as external_node_path_resolve, win32 } from "node:path";
-import { ScriptPlayer, interpolateEnvVars, parseYamlScript } from "@sqai/core/yaml";
-import { getMidsceneRunSubDir } from "@sqai/shared/common";
+import { ScriptPlayer, interpolateEnvVars, parseYamlScript } from "@sqaitech/core/yaml";
+import { getMidsceneRunSubDir } from "@sqaitech/shared/common";
 import lodash_merge from "lodash.merge";
 import puppeteer from "puppeteer";
 import { createServer } from "http-server";
 import node_assert from "node:assert";
-import { agentFromAdbDevice } from "@sqai/android";
-import { createAgent } from "@sqai/core/agent";
-import { processCacheConfig } from "@sqai/core/utils";
-import { agentFromWebDriverAgent } from "@sqai/ios";
-import { getDebug } from "@sqai/shared/logger";
-import { AgentOverChromeBridge } from "@sqai/web/bridge-mode";
-import { puppeteerAgentForTarget } from "@sqai/web/puppeteer-agent-launcher";
+import { agentFromAdbDevice } from "@sqaitech/android";
+import { createAgent } from "@sqaitech/core/agent";
+import { processCacheConfig } from "@sqaitech/core/utils";
+import { agentFromWebDriverAgent } from "@sqaitech/ios";
+import { getDebug } from "@sqaitech/shared/logger";
+import { AgentOverChromeBridge } from "@sqaitech/web/bridge-mode";
+import { puppeteerAgentForTarget } from "@sqaitech/web/puppeteer-agent-launcher";
 import { stripVTControlCharacters } from "node:util";
 import node_process, { cwd as external_node_process_cwd } from "node:process";
 import { fileURLToPath } from "node:url";
@@ -3025,7 +3025,7 @@ var __webpack_modules__ = {
         var main = __webpack_require__("../../node_modules/.pnpm/dotenv@16.4.5/node_modules/dotenv/lib/main.js");
         var main_default = /*#__PURE__*/ __webpack_require__.n(main);
         var package_namespaceObject = {
-            i8: "0.30.9"
+            i8: "0.30.10"
         };
         class Node {
             value;
@@ -11908,7 +11908,7 @@ Usage:
                     type: 'string',
                     description: 'Override WebDriverAgent host for iOS environments.'
                 }
-            }).version('version', 'Show version number', "0.30.9").help().wrap(yargs().terminalWidth());
+            }).version('version', 'Show version number', "0.30.10").help().wrap(yargs().terminalWidth());
             const argv = await args.argv;
             cli_utils_debug('argv', argv);
             const transformedArgv = {
@@ -11965,7 +11965,7 @@ Usage:
         }
         Promise.resolve((async ()=>{
             const { options, path, files: cmdFiles } = await parseProcessArgs();
-            const welcome = `\nWelcome to @sqai/cli v${package_namespaceObject.i8}\n`;
+            const welcome = `\nWelcome to @sqaitech/cli v${package_namespaceObject.i8}\n`;
             console.log(welcome);
             if (options.url) {
                 console.error("the cli mode is no longer supported, please use yaml file instead. See https://midscenejs.com/automate-with-scripts-in-yaml for more information. Sorry for the inconvenience.");

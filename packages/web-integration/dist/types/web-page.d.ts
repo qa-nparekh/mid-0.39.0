@@ -1,6 +1,6 @@
-import type { Point } from '@sqai/core';
-import { AbstractInterface, type DeviceAction } from '@sqai/core/device';
-import type { ElementInfo } from '@sqai/shared/extractor';
+import type { Point } from '@sqaitech/core';
+import { AbstractInterface, type DeviceAction } from '@sqaitech/core/device';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
 export declare function getKeyCommands(value: string | string[]): Array<{
     key: string;
     command?: string;

@@ -5,16 +5,16 @@ vi.spyOn(console, 'warn').mockImplementation(() => {});
 vi.spyOn(console, 'error').mockImplementation(() => {});
 
 // Mock problematic dependencies early
-vi.mock('@sqai/shared', () => ({
+vi.mock('@sqaitech/shared', () => ({
   generateId: vi.fn(() => 'mock-id'),
   sleep: vi.fn(() => Promise.resolve()),
 }));
 
-vi.mock('@sqai/shared/img/get-photon', () => ({
+vi.mock('@sqaitech/shared/img/get-photon', () => ({
   default: vi.fn(),
 }));
 
-vi.mock('@sqai/shared/env', () => ({
+vi.mock('@sqaitech/shared/env', () => ({
   overrideAIConfig: vi.fn(),
   resetAIConfig: vi.fn(),
   globalConfigManager: {
@@ -24,17 +24,17 @@ vi.mock('@sqai/shared/env', () => ({
   },
 }));
 
-vi.mock('@sqai/core/ai-model', () => ({
+vi.mock('@sqaitech/core/ai-model', () => ({
   findAllMidsceneLocatorField: vi.fn(() => ['locateField']),
 }));
 
-vi.mock('@sqai/core', () => ({
+vi.mock('@sqaitech/core', () => ({
   Puppeteer: vi.fn(),
   Playwright: vi.fn(),
   createPage: vi.fn(),
 }));
 
-vi.mock('@sqai/core/agent', () => ({
+vi.mock('@sqaitech/core/agent', () => ({
   Agent: class MockAgent {
     constructor(device: any) {
       this.device = device;

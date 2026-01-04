@@ -1,4 +1,4 @@
-import { PlaygroundServer } from "@sqai/playground";
+import { PlaygroundServer } from "@sqaitech/playground";
 import cors from "cors";
 import { StaticPage, StaticPageAgent } from "./static/index.mjs";
 import "dotenv/config";

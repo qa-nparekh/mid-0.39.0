@@ -1,0 +1,49 @@
+import type { DeviceAction, WebUIContext } from '@sqaitech/core';
+import type { Agent } from '@sqaitech/core/agent';
+export interface PlaygroundAgent extends Agent {
+    [key: string]: any;
+}
+export interface FormValue {
+    type: string;
+    prompt?: string;
+    params?: Record<string, unknown>;
+}
+export interface ValidationResult {
+    valid: boolean;
+    errorMessage?: string;
+}
+export interface ServerResponse {
+    result?: unknown;
+    dump?: any;
+    reportHTML?: string;
+    error?: string;
+}
+export interface ExecutionOptions {
+    deepThink?: boolean;
+    screenshotIncluded?: boolean;
+    domIncluded?: boolean | 'visible-only';
+    context?: any;
+    requestId?: string;
+}
+export type PlaygroundWebUIContext = WebUIContext & {
+    screenshotBase64?: string;
+    size: {
+        width: number;
+        height: number;
+        dpr?: number;
+    };
+};
+export type ExecutionType = 'local-execution' | 'remote-execution';
+export interface PlaygroundConfig {
+    type: ExecutionType;
+    serverUrl?: string;
+    agent?: PlaygroundAgent;
+}
+export interface PlaygroundAdapter {
+    parseStructuredParams(action: DeviceAction<unknown>, params: Record<string, unknown>, options: ExecutionOptions): Promise<unknown[]>;
+    formatErrorMessage(error: any): string;
+    validateParams(value: FormValue, action: DeviceAction<unknown> | undefined): ValidationResult;
+    createDisplayContent(value: FormValue, needsStructuredParams: boolean, action: DeviceAction<unknown> | undefined): string;
+    executeAction(activeAgent: PlaygroundAgent, actionType: string, actionSpace: DeviceAction<unknown>[], value: FormValue, options: ExecutionOptions): Promise<unknown>;
+    getActionSpace?(context: any): Promise<DeviceAction<unknown>[]>;
+}

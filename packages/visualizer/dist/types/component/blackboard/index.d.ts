@@ -1,5 +1,5 @@
 import 'pixi.js/unsafe-eval';
-import type { BaseElement, Rect, UIContext } from '@sqai/core';
+import type { BaseElement, Rect, UIContext } from '@sqaitech/core';
 import * as PIXI from 'pixi.js';
 import './index.less';
 export declare const pointMarkForItem: (point: [number, number], type: "highlightPoint") => PIXI.Graphics;

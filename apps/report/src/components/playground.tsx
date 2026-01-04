@@ -1,6 +1,6 @@
-import type { DeviceAction, UIContext } from '@sqai/core';
-import { PlaygroundSDK, noReplayAPIs } from '@sqai/playground';
-import type { ServerResponse } from '@sqai/playground';
+import type { DeviceAction, UIContext } from '@sqaitech/core';
+import { PlaygroundSDK, noReplayAPIs } from '@sqaitech/playground';
+import type { ServerResponse } from '@sqaitech/playground';
 import {
   ContextPreview,
   Logo,
@@ -13,8 +13,8 @@ import {
   safeOverrideAIConfig,
   useEnvConfig,
   useServerValid,
-} from '@sqai/visualizer';
-import type { StaticPageAgent } from '@sqai/web/static';
+} from '@sqaitech/visualizer';
+import type { StaticPageAgent } from '@sqaitech/web/static';
 import { Form, message } from 'antd';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';

@@ -1,5 +1,5 @@
 import { AgentOverChromeBridge } from '@/bridge-mode/agent-cli-side';
-import { sleep } from '@sqai/core/utils';
+import { sleep } from '@sqaitech/core/utils';
 import { describe, it, vi } from 'vitest';
 
 vi.setConfig({

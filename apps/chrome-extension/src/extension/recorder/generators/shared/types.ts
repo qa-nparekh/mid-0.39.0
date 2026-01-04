@@ -1,4 +1,4 @@
-import type { ChromeRecordedEvent } from '@sqai/recorder';
+import type { ChromeRecordedEvent } from '@sqaitech/recorder';
 
 // Common interfaces for test generation
 export interface EventCounts {

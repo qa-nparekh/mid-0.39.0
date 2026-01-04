@@ -1,5 +1,5 @@
 {
-  "name": "@sqai/web",
+  "name": "@sqaitech/web",
   "description": "Automate browser actions, extract data, and perform assertions using AI. It offers JavaScript SDK, Chrome extension, and support for scripting in YAML. See https://sqai.tech/ for details.",
   "keywords": [
     "AI UI automation",
@@ -8,7 +8,7 @@
     "Browser use",
     "Android use"
   ],
-  "version": "0.30.9",
+  "version": "0.30.10",
   "repository": "https://github.com/qa-nparekh/midscene",
   "homepage": "https://sqai.tech/",
   "main": "./dist/lib/index.js",
@@ -88,7 +88,9 @@
   },
   "watch": {
     "build": {
-      "patterns": ["src"],
+      "patterns": [
+        "src"
+      ],
       "extensions": "tsx,less,scss,css,js,jsx,ts",
       "quiet": false
     }
@@ -112,11 +114,17 @@
   "bin": {
     "sqai-playground": "./bin/sqai-playground"
   },
-  "files": ["static", "dist", "iife-script", "README.md", "bin"],
+  "files": [
+    "static",
+    "dist",
+    "iife-script",
+    "README.md",
+    "bin"
+  ],
   "dependencies": {
-    "@sqai/core": "workspace:*",
-    "@sqai/playground": "workspace:*",
-    "@sqai/shared": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/playground": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
     "cors": "^2.8.5",
     "dayjs": "^1.11.11",
     "dotenv": "^16.4.5",

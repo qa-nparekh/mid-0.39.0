@@ -1,4 +1,4 @@
-import type { DeviceAction, UIContext } from '@sqai/core';
+import type { DeviceAction, UIContext } from '@sqaitech/core';
 import type { ComponentType } from 'react';
 export interface ZodType {
     _def?: {
@@ -71,8 +71,8 @@ export declare const unwrapZodType: (field: ZodType) => {
     hasDefault: boolean;
 };
 export declare const extractDefaultValue: (field: ZodType) => unknown;
-import type { GroupedActionDump, WebUIContext } from '@sqai/core';
-import type { ExecutionOptions, PlaygroundAgent } from '@sqai/playground';
+import type { GroupedActionDump, WebUIContext } from '@sqaitech/core';
+import type { ExecutionOptions, PlaygroundAgent } from '@sqaitech/playground';
 export interface PlaygroundResult {
     result: any;
     dump?: GroupedActionDump | null;

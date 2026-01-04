@@ -1,6 +1,6 @@
 {
-  "name": "@sqai/ios",
-  "version": "0.30.9",
+  "name": "@sqaitech/ios",
+  "version": "0.30.10",
   "description": "iOS automation library for SQAI",
   "keywords": [
     "iOS UI automation",
@@ -13,7 +13,12 @@
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.mjs",
   "types": "./dist/types/index.d.ts",
-  "files": ["dist", "static", "bin", "README.md"],
+  "files": [
+    "dist",
+    "static",
+    "bin",
+    "README.md"
+  ],
   "bin": {
     "sqai-ios-playground": "./bin/sqai-ios-playground"
   },
@@ -41,14 +46,14 @@
     "test:ai:cache": "SQAI_CACHE=true AI_TEST_TYPE=iOS npm run test"
   },
   "dependencies": {
-    "@sqai/core": "workspace:*",
-    "@sqai/shared": "workspace:*",
-    "@sqai/webdriver": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
+    "@sqaitech/webdriver": "workspace:*",
     "@inquirer/prompts": "^7.8.6",
     "open": "10.1.0"
   },
   "devDependencies": {
-    "@sqai/playground": "workspace:*",
+    "@sqaitech/playground": "workspace:*",
     "@rslib/core": "^0.11.2",
     "@types/node": "^18.0.0",
     "dotenv": "^16.4.5",

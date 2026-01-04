@@ -28,9 +28,9 @@ __webpack_require__.d(__webpack_exports__, {
     WebPageContextParser: ()=>WebPageContextParser,
     limitOpenNewTabScript: ()=>limitOpenNewTabScript
 });
-const extractor_namespaceObject = require("@sqai/shared/extractor");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const agent_namespaceObject = require("@sqai/core/agent");
+const extractor_namespaceObject = require("@sqaitech/shared/extractor");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const agent_namespaceObject = require("@sqaitech/core/agent");
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,

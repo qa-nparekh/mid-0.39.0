@@ -38,11 +38,11 @@ __webpack_require__.d(__webpack_exports__, {
     overrideAIConfig: ()=>env_namespaceObject.overrideAIConfig,
     ChromeExtensionProxyPageAgent: ()=>external_agent_js_namespaceObject.ChromeExtensionProxyPageAgent
 });
-const common_namespaceObject = require("@sqai/shared/common");
+const common_namespaceObject = require("@sqaitech/shared/common");
 const external_agent_js_namespaceObject = require("./agent.js");
 const external_page_js_namespaceObject = require("./page.js");
 var external_page_js_default = /*#__PURE__*/ __webpack_require__.n(external_page_js_namespaceObject);
-const env_namespaceObject = require("@sqai/shared/env");
+const env_namespaceObject = require("@sqaitech/shared/env");
 exports.ChromeExtensionProxyPage = __webpack_exports__.ChromeExtensionProxyPage;
 exports.ChromeExtensionProxyPageAgent = __webpack_exports__.ChromeExtensionProxyPageAgent;
 exports.ERROR_CODE_NOT_IMPLEMENTED_AS_DESIGNED = __webpack_exports__.ERROR_CODE_NOT_IMPLEMENTED_AS_DESIGNED;

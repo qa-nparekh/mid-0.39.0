@@ -1,5 +1,5 @@
 import { spawn } from "node:child_process";
-import { PLAYGROUND_SERVER_PORT } from "@sqai/shared/constants";
+import { PLAYGROUND_SERVER_PORT } from "@sqaitech/shared/constants";
 import cors from "cors";
 import server_0 from "./server.mjs";
 function playgroundForAgent(agent) {

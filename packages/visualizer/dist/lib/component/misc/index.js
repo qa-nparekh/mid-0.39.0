@@ -108,7 +108,7 @@ const errorMessageServerNotReady = /*#__PURE__*/ (0, jsx_runtime_namespaceObject
         /*#__PURE__*/ (0, jsx_runtime_namespaceObject.jsx)("br", {}),
         "b. ",
         /*#__PURE__*/ (0, jsx_runtime_namespaceObject.jsx)("strong", {
-            children: "npx --yes @sqai/web"
+            children: "npx --yes @sqaitech/web"
         })
     ]
 });

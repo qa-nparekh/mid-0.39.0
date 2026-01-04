@@ -1,11 +1,11 @@
 import { WebPageContextParser } from "../web-element.mjs";
-import { sleep } from "@sqai/core/utils";
-import { DEFAULT_WAIT_FOR_NAVIGATION_TIMEOUT, DEFAULT_WAIT_FOR_NETWORK_IDLE_CONCURRENCY, DEFAULT_WAIT_FOR_NETWORK_IDLE_TIMEOUT } from "@sqai/shared/constants";
-import { treeToList } from "@sqai/shared/extractor";
-import { createImgBase64ByFormat } from "@sqai/shared/img";
-import { getDebug } from "@sqai/shared/logger";
-import { getElementInfosScriptContent, getExtraReturnLogic } from "@sqai/shared/node";
-import { assert } from "@sqai/shared/utils";
+import { sleep } from "@sqaitech/core/utils";
+import { DEFAULT_WAIT_FOR_NAVIGATION_TIMEOUT, DEFAULT_WAIT_FOR_NETWORK_IDLE_CONCURRENCY, DEFAULT_WAIT_FOR_NETWORK_IDLE_TIMEOUT } from "@sqaitech/shared/constants";
+import { treeToList } from "@sqaitech/shared/extractor";
+import { createImgBase64ByFormat } from "@sqaitech/shared/img";
+import { getDebug } from "@sqaitech/shared/logger";
+import { getElementInfosScriptContent, getExtraReturnLogic } from "@sqaitech/shared/node";
+import { assert } from "@sqaitech/shared/utils";
 import { commonWebActionsForWebPage } from "../web-page.mjs";
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {

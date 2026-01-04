@@ -27,9 +27,9 @@ __webpack_require__.d(__webpack_exports__, {
     default: ()=>ChromeExtensionProxyPage
 });
 const external_web_element_js_namespaceObject = require("../web-element.js");
-const extractor_namespaceObject = require("@sqai/shared/extractor");
-const img_namespaceObject = require("@sqai/shared/img");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const extractor_namespaceObject = require("@sqaitech/shared/extractor");
+const img_namespaceObject = require("@sqaitech/shared/img");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_web_page_js_namespaceObject = require("../web-page.js");
 const external_cdpInput_js_namespaceObject = require("./cdpInput.js");
 const external_dynamic_scripts_js_namespaceObject = require("./dynamic-scripts.js");

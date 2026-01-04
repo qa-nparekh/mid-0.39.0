@@ -13,7 +13,7 @@
     "dayjs": "^1.11.11",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "@sqai/recorder": "workspace:*"
+    "@sqaitech/recorder": "workspace:*"
   },
   "devDependencies": {
     "@rsbuild/plugin-node-polyfill": "1.3.0",

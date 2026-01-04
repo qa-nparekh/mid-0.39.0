@@ -1,13 +1,13 @@
-import { AbstractInterface } from '@sqai/core/device';
-import { Agent } from '@sqai/core/agent';
-import { AgentOpt } from '@sqai/core/agent';
-import { DeviceAction } from '@sqai/core';
-import type { ElementInfo } from '@sqai/shared/extractor';
-import { InterfaceType } from '@sqai/core';
-import { overrideAIConfig } from '@sqai/shared/env';
-import { Point } from '@sqai/core';
-import { Size } from '@sqai/core';
-import { WebDriverClient } from '@sqai/webdriver';
+import { AbstractInterface } from '@sqaitech/core/device';
+import { Agent } from '@sqaitech/core/agent';
+import { AgentOpt } from '@sqaitech/core/agent';
+import { DeviceAction } from '@sqaitech/core';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
+import { InterfaceType } from '@sqaitech/core';
+import { overrideAIConfig } from '@sqaitech/shared/env';
+import { Point } from '@sqaitech/core';
+import { Size } from '@sqaitech/core';
+import { WebDriverClient } from '@sqaitech/webdriver';
 
 export declare function agentFromWebDriverAgent(opts?: IOSAgentOpt & IOSDeviceOpt): Promise<IOSAgent>;
 

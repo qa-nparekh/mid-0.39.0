@@ -1,4 +1,4 @@
-import type { GroupedActionDump } from '@sqai/core';
+import type { GroupedActionDump } from '@sqaitech/core';
 
 // Core visualization types
 export interface PlaywrightTaskAttributes {

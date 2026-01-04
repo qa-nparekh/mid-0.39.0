@@ -2,10 +2,10 @@ import { writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { PlaywrightAgent } from "./index.mjs";
-import { processCacheConfig } from "@sqai/core/utils";
-import { DEFAULT_WAIT_FOR_NAVIGATION_TIMEOUT, DEFAULT_WAIT_FOR_NETWORK_IDLE_TIMEOUT } from "@sqai/shared/constants";
-import { getDebug } from "@sqai/shared/logger";
-import { replaceIllegalPathCharsAndSpace, uuid } from "@sqai/shared/utils";
+import { processCacheConfig } from "@sqaitech/core/utils";
+import { DEFAULT_WAIT_FOR_NAVIGATION_TIMEOUT, DEFAULT_WAIT_FOR_NETWORK_IDLE_TIMEOUT } from "@sqaitech/shared/constants";
+import { getDebug } from "@sqaitech/shared/logger";
+import { replaceIllegalPathCharsAndSpace, uuid } from "@sqaitech/shared/utils";
 import { test as test_test } from "@playwright/test";
 const debugPage = getDebug('web:playwright:ai-fixture');
 const groupAndCaseForTest = (testInfo)=>{

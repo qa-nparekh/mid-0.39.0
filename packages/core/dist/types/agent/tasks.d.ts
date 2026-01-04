@@ -3,7 +3,7 @@ import type { TMultimodalPrompt, TUserPrompt } from '../ai-model/common';
 import type { AbstractInterface } from '../device';
 import type Insight from '../insight';
 import type { DetailedLocateParam, ExecutionTaskApply, ExecutionTaskProgressOptions, InsightExtractOption, InsightExtractParam, MidsceneYamlFlowItem, PlanningAction, PlanningActionParamWaitFor, PlanningLocateParam } from '../types';
-import { type IModelConfig } from '@sqai/shared/env';
+import { type IModelConfig } from '@sqaitech/shared/env';
 import type { TaskCache } from './task-cache';
 interface ExecutionResult<OutputType = any> {
     output: OutputType;

@@ -1,4 +1,4 @@
-import type { DeviceAction } from '@sqai/core';
+import type { DeviceAction } from '@sqaitech/core';
 import type { FormValue, InfoListItem, PlaygroundSDKLike, StorageProvider } from '../types';
 /**
  * Hook for handling playground execution logic

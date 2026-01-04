@@ -6,8 +6,8 @@ import type {
   MidsceneYamlScriptAndroidEnv,
   MidsceneYamlScriptIOSEnv,
   MidsceneYamlScriptWebEnv,
-} from '@sqai/core';
-import { interpolateEnvVars } from '@sqai/core/yaml';
+} from '@sqaitech/core';
+import { interpolateEnvVars } from '@sqaitech/core/yaml';
 import { load as yamlLoad } from 'js-yaml';
 import merge from 'lodash.merge';
 import type { BatchRunnerConfig } from './batch-runner';

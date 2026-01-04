@@ -1,5 +1,5 @@
 import { PuppeteerAgent } from './index';
-import type { Cache, MidsceneYamlScriptWebEnv } from '@sqai/core';
+import type { Cache, MidsceneYamlScriptWebEnv } from '@sqaitech/core';
 import { type Browser } from 'puppeteer';
 export declare const defaultUA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36";
 export declare const defaultViewportWidth = 1440;

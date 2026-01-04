@@ -1,6 +1,6 @@
-import type { AgentOpt, DeviceAction, Rect, UIContext, WebElementInfo } from '@sqai/core';
-import type { AbstractInterface } from '@sqai/core/device';
-import type { NodeType } from '@sqai/shared/constants';
+import type { AgentOpt, DeviceAction, Rect, UIContext, WebElementInfo } from '@sqaitech/core';
+import type { AbstractInterface } from '@sqaitech/core/device';
+import type { NodeType } from '@sqaitech/shared/constants';
 import type ChromeExtensionProxyPage from './chrome-extension/page';
 import type { PlaywrightWebPage } from './playwright';
 import type { PuppeteerWebPage } from './puppeteer';

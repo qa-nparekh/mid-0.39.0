@@ -1,10 +1,10 @@
-import { PlaygroundSDK } from '@sqai/playground';
+import { PlaygroundSDK } from '@sqaitech/playground';
 import {
   Logo,
   NavActions,
   UniversalPlayground,
   globalThemeConfig,
-} from '@sqai/visualizer';
+} from '@sqaitech/visualizer';
 import { ConfigProvider, Layout } from 'antd';
 import { useEffect, useMemo, useState } from 'react';
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';

@@ -1,5 +1,5 @@
-import { overrideAIConfig } from "@sqai/shared/env";
-import { uuid } from "@sqai/shared/utils";
+import { overrideAIConfig } from "@sqaitech/shared/env";
+import { uuid } from "@sqaitech/shared/utils";
 import { executeAction, parseStructuredParams } from "../common.mjs";
 import { BasePlaygroundAdapter } from "./base.mjs";
 function _define_property(obj, key, value) {

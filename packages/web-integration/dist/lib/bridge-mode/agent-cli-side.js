@@ -27,8 +27,8 @@ __webpack_require__.d(__webpack_exports__, {
     AgentOverChromeBridge: ()=>AgentOverChromeBridge,
     getBridgePageInCliSide: ()=>getBridgePageInCliSide
 });
-const agent_namespaceObject = require("@sqai/core/agent");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const agent_namespaceObject = require("@sqaitech/core/agent");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_web_page_js_namespaceObject = require("../web-page.js");
 const external_common_js_namespaceObject = require("./common.js");
 const external_io_server_js_namespaceObject = require("./io-server.js");

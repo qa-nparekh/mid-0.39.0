@@ -1,5 +1,5 @@
 import type { StreamingAIResponse, StreamingCodeGenerationOptions } from '../../types';
-import type { IModelConfig } from '@sqai/shared/env';
+import type { IModelConfig } from '@sqaitech/shared/env';
 import { type ChromeRecordedEvent, type EventCounts, type EventSummary, type InputDescription, type ProcessedEvent, createEventCounts, createMessageContent, extractInputDescriptions, filterEventsByType, getScreenshotsForLLM, prepareEventSummary, processEventsForLLM, validateEvents } from './yaml-generator';
 export interface PlaywrightGenerationOptions {
     testName?: string;

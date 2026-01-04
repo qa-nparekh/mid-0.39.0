@@ -28,11 +28,11 @@ __webpack_require__.d(__webpack_exports__, {
     overrideAIConfig: ()=>env_namespaceObject.overrideAIConfig,
     PuppeteerWebPage: ()=>external_page_js_namespaceObject.PuppeteerWebPage
 });
-const agent_namespaceObject = require("@sqai/core/agent");
-const logger_namespaceObject = require("@sqai/shared/logger");
+const agent_namespaceObject = require("@sqaitech/core/agent");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
 const external_base_page_js_namespaceObject = require("./base-page.js");
 const external_page_js_namespaceObject = require("./page.js");
-const env_namespaceObject = require("@sqai/shared/env");
+const env_namespaceObject = require("@sqaitech/shared/env");
 const debug = (0, logger_namespaceObject.getDebug)('puppeteer:agent');
 class PuppeteerAgent extends agent_namespaceObject.Agent {
     constructor(page, opts){

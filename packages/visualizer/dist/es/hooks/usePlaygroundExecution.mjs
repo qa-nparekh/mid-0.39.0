@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useEnvConfig } from "../store/store.mjs";
-import { noReplayAPIs } from "@sqai/playground";
+import { noReplayAPIs } from "@sqaitech/playground";
 import { BLANK_RESULT } from "../utils/constants.mjs";
 import { allScriptsFromDump } from "../utils/replay-scripts.mjs";
 function usePlaygroundExecution(playgroundSDK, storage, actionSpace, loading, setLoading, infoList, setInfoList, replayCounter, setReplayCounter, verticalMode, currentRunningIdRef, interruptedFlagRef) {

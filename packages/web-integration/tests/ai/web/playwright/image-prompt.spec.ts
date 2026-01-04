@@ -1,5 +1,5 @@
 import path from 'node:path';
-import { sleep } from '@sqai/core/utils';
+import { sleep } from '@sqaitech/core/utils';
 import { expect } from '@playwright/test';
 import { test } from './fixture';
 

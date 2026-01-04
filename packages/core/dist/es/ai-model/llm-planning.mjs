@@ -1,6 +1,6 @@
-import { paddingToMatchBlockByBase64 } from "@sqai/shared/img";
-import { getDebug } from "@sqai/shared/logger";
-import { assert } from "@sqai/shared/utils";
+import { paddingToMatchBlockByBase64 } from "@sqaitech/shared/img";
+import { getDebug } from "@sqaitech/shared/logger";
+import { assert } from "@sqaitech/shared/utils";
 import { AIActionType, buildYamlFlowFromPlans, fillBboxParam, findAllMidsceneLocatorField, markupImageForLLM, warnGPT4oSizeLimit } from "./common.mjs";
 import { systemPromptToTaskPlanning } from "./prompt/llm-planning.mjs";
 import { describeUserPage } from "./prompt/util.mjs";

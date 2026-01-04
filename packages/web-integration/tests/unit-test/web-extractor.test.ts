@@ -1,13 +1,13 @@
 import { join } from 'node:path';
 import { WebPageContextParser } from '@/web-element';
 import type { WebElementInfo } from '@/web-element';
-import { traverseTree, treeToList } from '@sqai/shared/extractor';
+import { traverseTree, treeToList } from '@sqaitech/shared/extractor';
 import {
   compositeElementInfoImg,
   imageInfoOfBase64,
   saveBase64Image,
-} from '@sqai/shared/img';
-import { getElementInfosScriptContent } from '@sqai/shared/node';
+} from '@sqaitech/shared/img';
+import { getElementInfosScriptContent } from '@sqaitech/shared/node';
 import { createServer } from 'http-server';
 import { beforeAll, describe, expect, it } from 'vitest';
 import { launchPage } from '../ai/web/puppeteer/utils';

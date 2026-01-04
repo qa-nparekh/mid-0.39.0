@@ -29,11 +29,11 @@ __webpack_require__.d(__webpack_exports__, {
     PlaywrightWebPage: ()=>external_page_js_namespaceObject.WebPage,
     PlaywrightAiFixture: ()=>external_ai_fixture_js_namespaceObject.PlaywrightAiFixture
 });
-const agent_namespaceObject = require("@sqai/core/agent");
+const agent_namespaceObject = require("@sqaitech/core/agent");
 const external_page_js_namespaceObject = require("./page.js");
 const external_ai_fixture_js_namespaceObject = require("./ai-fixture.js");
-const env_namespaceObject = require("@sqai/shared/env");
-const logger_namespaceObject = require("@sqai/shared/logger");
+const env_namespaceObject = require("@sqaitech/shared/env");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
 const base_page_js_namespaceObject = require("../puppeteer/base-page.js");
 const debug = (0, logger_namespaceObject.getDebug)('playwright:agent');
 class PlaywrightAgent extends agent_namespaceObject.Agent {

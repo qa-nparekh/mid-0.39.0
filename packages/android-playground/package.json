@@ -1,14 +1,19 @@
 {
-  "name": "@sqai/android-playground",
-  "version": "0.30.9",
+  "name": "@sqaitech/android-playground",
+  "version": "0.30.10",
   "description": "Android playground for SQAI",
   "main": "./dist/lib/index.js",
   "types": "./dist/types/index.d.ts",
   "module": "./dist/es/index.mjs",
-  "files": ["dist", "static", "bin", "README.md"],
+  "files": [
+    "dist",
+    "static",
+    "bin",
+    "README.md"
+  ],
   "bin": {
     "sqai-android-playground": "./bin/sqai-android-playground",
-    "@sqai/android-playground": "./bin/sqai-android-playground"
+    "@sqaitech/android-playground": "./bin/sqai-android-playground"
   },
   "scripts": {
     "dev": "npm run build:watch",
@@ -17,10 +22,10 @@
     "build:watch": "rslib build --watch"
   },
   "dependencies": {
-    "@sqai/android": "workspace:*",
-    "@sqai/core": "workspace:*",
-    "@sqai/playground": "workspace:*",
-    "@sqai/shared": "workspace:*",
+    "@sqaitech/android": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/playground": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
     "@yume-chan/adb": "^1.1.0",
     "@yume-chan/adb-scrcpy": "^1.1.0",
     "@yume-chan/adb-server-node-tcp": "^1.1.0",

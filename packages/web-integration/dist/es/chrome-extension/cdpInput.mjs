@@ -1,6 +1,6 @@
 /*! For license information please see cdpInput.mjs.LICENSE.txt */
-import { _keyDefinitions } from "@sqai/shared/us-keyboard-layout";
-import { assert } from "@sqai/shared/utils";
+import { _keyDefinitions } from "@sqaitech/shared/us-keyboard-layout";
+import { assert } from "@sqaitech/shared/utils";
 /**
  * @license
  * Copyright 2017 Google Inc.

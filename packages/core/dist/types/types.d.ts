@@ -1,10 +1,10 @@
-import type { NodeType } from '@sqai/shared/constants';
-import type { TModelConfigFn } from '@sqai/shared/env';
-import type { BaseElement, ElementTreeNode, Rect, Size } from '@sqai/shared/types';
+import type { NodeType } from '@sqaitech/shared/constants';
+import type { TModelConfigFn } from '@sqaitech/shared/env';
+import type { BaseElement, ElementTreeNode, Rect, Size } from '@sqaitech/shared/types';
 import type { z } from 'zod';
 import type { TUserPrompt } from './ai-model/common';
 import type { DetailedLocateParam, MidsceneYamlFlowItem } from './yaml';
-export type { ElementTreeNode, BaseElement, Rect, Size, Point, } from '@sqai/shared/types';
+export type { ElementTreeNode, BaseElement, Rect, Size, Point, } from '@sqaitech/shared/types';
 export * from './yaml';
 export type AIUsageInfo = Record<string, any> & {
     prompt_tokens: number | undefined;

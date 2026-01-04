@@ -1,6 +1,6 @@
-import type { DeviceAction } from '@sqai/core';
-import { findAllMidsceneLocatorField } from '@sqai/core/ai-model';
-import { buildDetailedLocateParam } from '@sqai/core/yaml';
+import type { DeviceAction } from '@sqaitech/core';
+import { findAllMidsceneLocatorField } from '@sqaitech/core/ai-model';
+import { buildDetailedLocateParam } from '@sqaitech/core/yaml';
 import type {
   ExecutionOptions,
   FormValue,

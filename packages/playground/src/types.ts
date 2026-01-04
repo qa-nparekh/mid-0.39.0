@@ -1,5 +1,5 @@
-import type { DeviceAction, WebUIContext } from '@sqai/core';
-import type { Agent } from '@sqai/core/agent';
+import type { DeviceAction, WebUIContext } from '@sqaitech/core';
+import type { Agent } from '@sqaitech/core/agent';
 
 export interface PlaygroundAgent extends Agent {
   [key: string]: any; // Allow dynamic method access for backward compatibility

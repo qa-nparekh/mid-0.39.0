@@ -1,5 +1,5 @@
 import { Fragment, jsx, jsxs } from "react/jsx-runtime";
-import { PlaygroundSDK } from "@sqai/playground";
+import { PlaygroundSDK } from "@sqaitech/playground";
 import { Button, Tooltip } from "antd";
 import { useEffect } from "react";
 import { safeOverrideAIConfig } from "../../hooks/useSafeOverrideAIConfig.mjs";

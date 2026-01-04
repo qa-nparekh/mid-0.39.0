@@ -4,8 +4,8 @@ import type {
   AIUsageInfo,
   ExecutionTask,
   ExecutionTaskInsightLocate,
-} from '@sqai/core';
-import { typeStr } from '@sqai/core/agent';
+} from '@sqaitech/core';
+import { typeStr } from '@sqaitech/core/agent';
 
 // Extended task type with searchAreaUsage
 type ExecutionTaskWithSearchAreaUsage = ExecutionTask & {
@@ -15,7 +15,7 @@ import {
   type AnimationScript,
   iconForStatus,
   timeCostStrElement,
-} from '@sqai/visualizer';
+} from '@sqaitech/visualizer';
 import { Checkbox, Tag, Tooltip } from 'antd';
 import { useEffect } from 'react';
 import CameraIcon from '../../icons/camera.svg?react';

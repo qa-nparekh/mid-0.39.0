@@ -1,8 +1,8 @@
-import { Agent } from "@sqai/core/agent";
+import { Agent } from "@sqaitech/core/agent";
 import { WebPage } from "./page.mjs";
 import { PlaywrightAiFixture } from "./ai-fixture.mjs";
-import { overrideAIConfig } from "@sqai/shared/env";
-import { getDebug } from "@sqai/shared/logger";
+import { overrideAIConfig } from "@sqaitech/shared/env";
+import { getDebug } from "@sqaitech/shared/logger";
 import { forceClosePopup } from "../puppeteer/base-page.mjs";
 const debug = getDebug('playwright:agent');
 class PlaywrightAgent extends Agent {

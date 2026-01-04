@@ -1,11 +1,11 @@
-import { TaskExecutor } from '@sqai/core/agent';
-import type { IModelConfig } from '@sqai/shared/env';
+import { TaskExecutor } from '@sqaitech/core/agent';
+import type { IModelConfig } from '@sqaitech/shared/env';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 declare const __VERSION__: string;
 
 // Mock only the necessary parts to avoid side effects
-vi.mock('@sqai/core/utils', () => ({
+vi.mock('@sqaitech/core/utils', () => ({
   writeLogFile: vi.fn(() => null),
   reportHTMLContent: vi.fn(() => ''),
   stringifyDumpData: vi.fn(() => '{}'),
@@ -14,13 +14,13 @@ vi.mock('@sqai/core/utils', () => ({
   sleep: vi.fn(() => Promise.resolve()),
 }));
 
-vi.mock('@sqai/shared/logger', () => ({
+vi.mock('@sqaitech/shared/logger', () => ({
   getDebug: vi.fn(() => vi.fn()),
   logMsg: vi.fn(),
 }));
 
-vi.mock('@sqai/core', async () => {
-  const actual = await vi.importActual('@sqai/core');
+vi.mock('@sqaitech/core', async () => {
+  const actual = await vi.importActual('@sqaitech/core');
   return {
     ...actual,
     Insight: vi.fn().mockImplementation(() => ({})),

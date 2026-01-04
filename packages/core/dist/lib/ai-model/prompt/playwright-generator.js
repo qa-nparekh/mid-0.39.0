@@ -35,7 +35,7 @@ __webpack_require__.d(__webpack_exports__, {
     generatePlaywrightTestStream: ()=>generatePlaywrightTestStream,
     createEventCounts: ()=>external_yaml_generator_js_namespaceObject.createEventCounts
 });
-const constants_namespaceObject = require("@sqai/shared/constants");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
 const external_index_js_namespaceObject = require("../index.js");
 const external_yaml_generator_js_namespaceObject = require("./yaml-generator.js");
 const generatePlaywrightTest = async (events, options, modelConfig)=>{
@@ -54,7 +54,7 @@ const generatePlaywrightTest = async (events, options, modelConfig)=>{
         }
     };
     const screenshots = (0, external_yaml_generator_js_namespaceObject.getScreenshotsForLLM)(events, options.maxScreenshots || 3);
-    const promptText = `Generate a Playwright test using @sqai/web/playwright that reproduces this recorded browser session. The test should be based on the following events and follow the structure of the example provided. Make the test descriptive with appropriate assertions and validations.
+    const promptText = `Generate a Playwright test using @sqaitech/web/playwright that reproduces this recorded browser session. The test should be based on the following events and follow the structure of the example provided. Make the test descriptive with appropriate assertions and validations.
 
 Event Summary:
 ${JSON.stringify(playwrightSummary, null, 2)}
@@ -71,7 +71,7 @@ Generated code should:
 Important: Return ONLY the raw Playwright test code. Do NOT wrap the response in markdown code blocks (no \`\`\`typescript, \`\`\`javascript or \`\`\`). Start directly with the code content.`;
     const messageContent = (0, external_yaml_generator_js_namespaceObject.createMessageContent)(promptText, screenshots, false !== options.includeScreenshots);
     const systemPrompt = `You are an expert test automation engineer specializing in Playwright and Midscene. 
-Your task is to generate a complete, executable Playwright test using @sqai/web/playwright that reproduces a recorded browser session.
+Your task is to generate a complete, executable Playwright test using @sqaitech/web/playwright that reproduces a recorded browser session.
 
 ${constants_namespaceObject.PLAYWRIGHT_EXAMPLE_CODE}`;
     const prompt = [
@@ -104,7 +104,7 @@ const generatePlaywrightTestStream = async (events, options, modelConfig)=>{
         }
     };
     const screenshots = (0, external_yaml_generator_js_namespaceObject.getScreenshotsForLLM)(events, options.maxScreenshots || 3);
-    const promptText = `Generate a Playwright test using @sqai/web/playwright that reproduces this recorded browser session. The test should be based on the following events and follow the structure of the example provided. Make the test descriptive with appropriate assertions and validations.
+    const promptText = `Generate a Playwright test using @sqaitech/web/playwright that reproduces this recorded browser session. The test should be based on the following events and follow the structure of the example provided. Make the test descriptive with appropriate assertions and validations.
 
 Event Summary:
 ${JSON.stringify(playwrightSummary, null, 2)}
@@ -122,7 +122,7 @@ Generated code should:
 Important: Return ONLY the raw Playwright test code. Do NOT wrap the response in markdown code blocks (no \`\`\`typescript, \`\`\`javascript or \`\`\`). Start directly with the code content.`;
     const messageContent = (0, external_yaml_generator_js_namespaceObject.createMessageContent)(promptText, screenshots, false !== options.includeScreenshots);
     const systemPrompt = `You are an expert test automation engineer specializing in Playwright and Midscene. 
-Your task is to generate a complete, executable Playwright test using @sqai/web/playwright that reproduces a recorded browser session.
+Your task is to generate a complete, executable Playwright test using @sqaitech/web/playwright that reproduces a recorded browser session.
 
 ${constants_namespaceObject.PLAYWRIGHT_EXAMPLE_CODE}`;
     const prompt = [

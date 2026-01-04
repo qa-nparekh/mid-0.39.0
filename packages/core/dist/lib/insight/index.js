@@ -30,10 +30,10 @@ const common_js_namespaceObject = require("../ai-model/common.js");
 const index_js_namespaceObject = require("../ai-model/index.js");
 const inspect_js_namespaceObject = require("../ai-model/inspect.js");
 const describe_js_namespaceObject = require("../ai-model/prompt/describe.js");
-const env_namespaceObject = require("@sqai/shared/env");
-const img_namespaceObject = require("@sqai/shared/img");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const env_namespaceObject = require("@sqaitech/shared/env");
+const img_namespaceObject = require("@sqaitech/shared/img");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_utils_js_namespaceObject = require("./utils.js");
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {

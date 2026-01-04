@@ -27,7 +27,7 @@ __webpack_require__.d(__webpack_exports__, {
     safeOverrideAIConfig: ()=>safeOverrideAIConfig,
     useSafeOverrideAIConfig: ()=>useSafeOverrideAIConfig
 });
-const env_namespaceObject = require("@sqai/shared/env");
+const env_namespaceObject = require("@sqaitech/shared/env");
 const external_antd_namespaceObject = require("antd");
 function safeOverrideAIConfig(newConfig) {
     let extendMode = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : false, showErrorMessage = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : true;

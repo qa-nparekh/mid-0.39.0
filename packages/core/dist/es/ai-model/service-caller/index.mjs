@@ -1,10 +1,10 @@
 import { AIResponseFormat } from "../../types.mjs";
 import { Anthropic } from "@anthropic-ai/sdk";
 import { DefaultAzureCredential, getBearerTokenProvider } from "@azure/identity";
-import { OPENAI_MAX_TOKENS, SQAI_API_TYPE, SQAI_LANGSMITH_DEBUG, globalConfigManager } from "@sqai/shared/env";
-import { parseBase64 } from "@sqai/shared/img";
-import { getDebug } from "@sqai/shared/logger";
-import { assert, ifInBrowser } from "@sqai/shared/utils";
+import { OPENAI_MAX_TOKENS, SQAI_API_TYPE, SQAI_LANGSMITH_DEBUG, globalConfigManager } from "@sqaitech/shared/env";
+import { parseBase64 } from "@sqaitech/shared/img";
+import { getDebug } from "@sqaitech/shared/logger";
+import { assert, ifInBrowser } from "@sqaitech/shared/utils";
 import { HttpsProxyAgent } from "https-proxy-agent";
 import { jsonrepair } from "jsonrepair";
 import openai_0, { AzureOpenAI } from "openai";

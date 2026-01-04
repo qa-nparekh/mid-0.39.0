@@ -1,4 +1,4 @@
-import { getDebug } from '@sqai/shared/logger';
+import { getDebug } from '@sqaitech/shared/logger';
 
 const debugRequest = getDebug('webdriver:request');
 

@@ -36,7 +36,7 @@ __webpack_require__.d(__webpack_exports__, {
     playgroundForAgent: ()=>playgroundForAgent
 });
 const external_node_child_process_namespaceObject = require("node:child_process");
-const constants_namespaceObject = require("@sqai/shared/constants");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
 const external_cors_namespaceObject = require("cors");
 var external_cors_default = /*#__PURE__*/ __webpack_require__.n(external_cors_namespaceObject);
 const external_server_js_namespaceObject = require("./server.js");

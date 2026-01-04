@@ -1,6 +1,6 @@
 {
-  "name": "@sqai/shared",
-  "version": "0.30.9",
+  "name": "@sqaitech/shared",
+  "version": "0.30.10",
   "repository": "https://github.com/qa-nparekh/midscene",
   "homepage": "https://sqai.tech/",
   "types": "./dist/types/index.d.ts",
@@ -63,7 +63,11 @@
       "require": "./dist/lib/*.js"
     }
   },
-  "files": ["dist", "src", "README.md"],
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "scripts": {
     "dev": "npm run build:watch",
     "build": "npm run build:script && npm run build:pkg",

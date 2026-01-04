@@ -1,4 +1,4 @@
-import { sleep } from '@sqai/core/utils';
+import { sleep } from '@sqaitech/core/utils';
 import { test } from './fixture';
 
 test.beforeEach(async ({ page }) => {

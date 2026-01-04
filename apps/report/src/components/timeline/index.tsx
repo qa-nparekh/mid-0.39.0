@@ -3,7 +3,7 @@ import * as PIXI from 'pixi.js';
 import { useEffect, useMemo, useRef } from 'react';
 
 import './index.less';
-import type { ExecutionRecorderItem, ExecutionTask } from '@sqai/core';
+import type { ExecutionRecorderItem, ExecutionTask } from '@sqaitech/core';
 import { getTextureFromCache, loadTexture } from '../pixi-loader';
 import { useAllCurrentTasks, useExecutionDump } from '../store';
 

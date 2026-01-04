@@ -13,7 +13,7 @@ vi.mock('node:path', () => ({
   },
 }));
 
-vi.mock('@sqai/shared/constants', () => ({
+vi.mock('@sqaitech/shared/constants', () => ({
   PLAYWRIGHT_EXAMPLE_CODE: 'mock playwright example code',
 }));
 

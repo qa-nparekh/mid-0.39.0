@@ -42,10 +42,10 @@ __webpack_require__.d(__webpack_exports__, {
 const external_node_fs_namespaceObject = require("node:fs");
 const external_node_path_namespaceObject = require("node:path");
 const external_node_url_namespaceObject = require("node:url");
-const utils_namespaceObject = require("@sqai/core/utils");
-const constants_namespaceObject = require("@sqai/shared/constants");
-const env_namespaceObject = require("@sqai/shared/env");
-const shared_utils_namespaceObject = require("@sqai/shared/utils");
+const utils_namespaceObject = require("@sqaitech/core/utils");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
+const env_namespaceObject = require("@sqaitech/shared/env");
+const shared_utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_express_namespaceObject = require("express");
 var external_express_default = /*#__PURE__*/ __webpack_require__.n(external_express_namespaceObject);
 const external_common_js_namespaceObject = require("./common.js");

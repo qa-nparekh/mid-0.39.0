@@ -1,15 +1,15 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import type { AbstractWebPage } from '@/web-page';
-import type { GroupedActionDump } from '@sqai/core';
-import { Agent as PageAgent } from '@sqai/core/agent';
-import { globalConfigManager } from '@sqai/shared/env';
+import type { GroupedActionDump } from '@sqaitech/core';
+import { Agent as PageAgent } from '@sqaitech/core/agent';
+import { globalConfigManager } from '@sqaitech/shared/env';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 declare const __VERSION__: string;
 // Mock only the necessary parts to avoid side effects
-vi.mock('@sqai/core/utils', async () => {
-  const actual = await vi.importActual('@sqai/core/utils');
+vi.mock('@sqaitech/core/utils', async () => {
+  const actual = await vi.importActual('@sqaitech/core/utils');
   return {
     ...actual,
     writeLogFile: vi.fn(() => null),
@@ -21,13 +21,13 @@ vi.mock('@sqai/core/utils', async () => {
   };
 });
 
-vi.mock('@sqai/shared/logger', () => ({
+vi.mock('@sqaitech/shared/logger', () => ({
   getDebug: vi.fn(() => vi.fn()),
   logMsg: vi.fn(),
 }));
 
-vi.mock('@sqai/core', async () => {
-  const actual = await vi.importActual('@sqai/core');
+vi.mock('@sqaitech/core', async () => {
+  const actual = await vi.importActual('@sqaitech/core');
   return {
     ...actual,
     Insight: vi.fn().mockImplementation(() => ({})),

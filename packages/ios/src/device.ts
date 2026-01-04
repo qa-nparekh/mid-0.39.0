@@ -7,7 +7,7 @@ import {
   type Size,
   getMidsceneLocationSchema,
   z,
-} from '@sqai/core';
+} from '@sqaitech/core';
 import {
   type AbstractInterface,
   type ActionTapParam,
@@ -18,13 +18,13 @@ import {
   defineActionKeyboardPress,
   defineActionScroll,
   defineActionTap,
-} from '@sqai/core/device';
-import { sleep } from '@sqai/core/utils';
-import { DEFAULT_WDA_PORT } from '@sqai/shared/constants';
-import type { ElementInfo } from '@sqai/shared/extractor';
-import { createImgBase64ByFormat } from '@sqai/shared/img';
-import { getDebug } from '@sqai/shared/logger';
-import { WDAManager } from '@sqai/webdriver';
+} from '@sqaitech/core/device';
+import { sleep } from '@sqaitech/core/utils';
+import { DEFAULT_WDA_PORT } from '@sqaitech/shared/constants';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
+import { createImgBase64ByFormat } from '@sqaitech/shared/img';
+import { getDebug } from '@sqaitech/shared/logger';
+import { WDAManager } from '@sqaitech/webdriver';
 import { IOSWebDriverClient as WebDriverAgentBackend } from './ios-webdriver-client';
 
 const debugDevice = getDebug('ios:device');

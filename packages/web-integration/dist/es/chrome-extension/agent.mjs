@@ -1,4 +1,4 @@
-import { Agent } from "@sqai/core/agent";
+import { Agent } from "@sqaitech/core/agent";
 class ChromeExtensionProxyPageAgent extends Agent {
     constructor(page, opts){
         super(page, opts);

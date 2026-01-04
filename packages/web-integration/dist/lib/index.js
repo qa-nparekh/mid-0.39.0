@@ -33,7 +33,7 @@ __webpack_require__.d(__webpack_exports__, {
     PlaywrightAiFixture: ()=>index_js_namespaceObject.PlaywrightAiFixture
 });
 const index_js_namespaceObject = require("./playwright/index.js");
-const agent_namespaceObject = require("@sqai/core/agent");
+const agent_namespaceObject = require("@sqaitech/core/agent");
 const external_puppeteer_index_js_namespaceObject = require("./puppeteer/index.js");
 const external_static_index_js_namespaceObject = require("./static/index.js");
 const external_web_element_js_namespaceObject = require("./web-element.js");

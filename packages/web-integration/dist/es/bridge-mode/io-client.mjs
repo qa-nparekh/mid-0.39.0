@@ -1,4 +1,4 @@
-import { assert } from "@sqai/shared/utils";
+import { assert } from "@sqaitech/shared/utils";
 import { io } from "socket.io-client";
 import { BridgeEvent } from "./common.mjs";
 function _define_property(obj, key, value) {
@@ -17,7 +17,7 @@ class BridgeClient {
             this.socket = io(this.endpoint, {
                 reconnection: false,
                 query: {
-                    version: "0.30.9"
+                    version: "0.30.10"
                 }
             });
             const timeout = setTimeout(()=>{

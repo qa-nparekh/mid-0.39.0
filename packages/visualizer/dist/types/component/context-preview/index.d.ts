@@ -1,4 +1,4 @@
-import type { UIContext } from '@sqai/core';
+import type { UIContext } from '@sqaitech/core';
 import type React from 'react';
 interface ContextPreviewProps {
     uiContextPreview: UIContext | undefined;

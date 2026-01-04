@@ -6,7 +6,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import "./index.css";
 import { mouseLoading, mousePointer } from "../../utils/index.mjs";
 import { CaretRightOutlined, DownloadOutlined, ExportOutlined, LoadingOutlined } from "@ant-design/icons";
-import { treeToList } from "@sqai/shared/extractor";
+import { treeToList } from "@sqaitech/shared/extractor";
 import { Dropdown, Spin, Switch, Tooltip } from "antd";
 import global_perspective from "../../icons/global-perspective.mjs";
 import player_setting from "../../icons/player-setting.mjs";

@@ -50,11 +50,11 @@ __webpack_require__.d(__webpack_exports__, {
     dumpActionParam: ()=>dumpActionParam,
     warnGPT4oSizeLimit: ()=>warnGPT4oSizeLimit
 });
-const utils_namespaceObject = require("@sqai/shared/utils");
-const constants_namespaceObject = require("@sqai/shared/constants");
-const extractor_namespaceObject = require("@sqai/shared/extractor");
-const img_namespaceObject = require("@sqai/shared/img");
-const logger_namespaceObject = require("@sqai/shared/logger");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
+const extractor_namespaceObject = require("@sqaitech/shared/extractor");
+const img_namespaceObject = require("@sqaitech/shared/img");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
 const external_zod_namespaceObject = require("zod");
 var common_AIActionType = /*#__PURE__*/ function(AIActionType) {
     AIActionType[AIActionType["ASSERT"] = 0] = "ASSERT";

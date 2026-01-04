@@ -1,4 +1,4 @@
-import type { IModelConfig } from '@sqai/shared/env';
+import type { IModelConfig } from '@sqaitech/shared/env';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { AIActionType, callAIWithStringResponse } from '../../../src/ai-model';
 import {
@@ -246,8 +246,8 @@ describe('playwright-generator', () => {
 
   describe('generatePlaywrightTest', () => {
     const mockPlaywrightCode = `import { test as base } from '@playwright/test';
-import type { PlayWrightAiFixtureType } from '@sqai/web/playwright';
-import { PlaywrightAiFixture } from '@sqai/web/playwright';
+import type { PlayWrightAiFixtureType } from '@sqaitech/web/playwright';
+import { PlaywrightAiFixture } from '@sqaitech/web/playwright';
 
 const test = base.extend<PlayWrightAiFixtureType>(PlaywrightAiFixture({
   waitForNetworkIdleTimeout: 2000,

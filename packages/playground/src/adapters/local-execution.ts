@@ -1,6 +1,6 @@
-import type { DeviceAction } from '@sqai/core';
-import { overrideAIConfig } from '@sqai/shared/env';
-import { uuid } from '@sqai/shared/utils';
+import type { DeviceAction } from '@sqaitech/core';
+import { overrideAIConfig } from '@sqaitech/shared/env';
+import { uuid } from '@sqaitech/shared/utils';
 import { executeAction, parseStructuredParams } from '../common';
 import type { ExecutionOptions, FormValue, PlaygroundAgent } from '../types';
 import { BasePlaygroundAdapter } from './base';

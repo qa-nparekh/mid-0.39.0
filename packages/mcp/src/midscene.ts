@@ -2,14 +2,14 @@ import {
   AndroidAgent,
   AndroidDevice,
   getConnectedDevices,
-} from '@sqai/android';
+} from '@sqaitech/android';
 import {
   SQAI_MCP_ANDROID_MODE,
   SQAI_MCP_USE_PUPPETEER_MODE,
   globalConfigManager,
-} from '@sqai/shared/env';
-import { parseBase64 } from '@sqai/shared/img';
-import { AgentOverChromeBridge } from '@sqai/web/bridge-mode';
+} from '@sqaitech/shared/env';
+import { parseBase64 } from '@sqaitech/shared/img';
+import { AgentOverChromeBridge } from '@sqaitech/web/bridge-mode';
 import type { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import type {
   ImageContent,

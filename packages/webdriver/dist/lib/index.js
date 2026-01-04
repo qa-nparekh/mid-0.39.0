@@ -63,8 +63,8 @@ class BaseServiceManager {
 }
 const external_node_child_process_namespaceObject = require("node:child_process");
 const external_node_util_namespaceObject = require("node:util");
-const constants_namespaceObject = require("@sqai/shared/constants");
-const logger_namespaceObject = require("@sqai/shared/logger");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
 function WDAManager_define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,

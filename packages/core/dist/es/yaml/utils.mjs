@@ -1,5 +1,5 @@
-import { getDebug } from "@sqai/shared/logger";
-import { assert } from "@sqai/shared/utils";
+import { getDebug } from "@sqaitech/shared/logger";
+import { assert } from "@sqaitech/shared/utils";
 import js_yaml from "js-yaml";
 const debugUtils = getDebug('yaml:utils');
 function interpolateEnvVars(content) {

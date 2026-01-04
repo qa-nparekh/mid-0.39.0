@@ -1,5 +1,5 @@
 import type { PlanningAIResponse, Size, UIContext } from '../types';
-import { type IModelConfig, UITarsModelVersion } from '@sqai/shared/env';
+import { type IModelConfig, UITarsModelVersion } from '@sqaitech/shared/env';
 import type { ConversationHistory } from './conversation-history';
 type ActionType = 'click' | 'drag' | 'type' | 'hotkey' | 'finished' | 'scroll' | 'wait';
 export declare function uiTarsPlanning(userInstruction: string, options: {

@@ -27,11 +27,11 @@ __webpack_require__.d(__webpack_exports__, {
     resizeImageForUiTars: ()=>resizeImageForUiTars,
     uiTarsPlanning: ()=>uiTarsPlanning
 });
-const env_namespaceObject = require("@sqai/shared/env");
-const img_namespaceObject = require("@sqai/shared/img");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const us_keyboard_layout_namespaceObject = require("@sqai/shared/us-keyboard-layout");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const env_namespaceObject = require("@sqaitech/shared/env");
+const img_namespaceObject = require("@sqaitech/shared/img");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const us_keyboard_layout_namespaceObject = require("@sqaitech/shared/us-keyboard-layout");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const action_parser_namespaceObject = require("@ui-tars/action-parser");
 const external_common_js_namespaceObject = require("./common.js");
 const ui_tars_planning_js_namespaceObject = require("./prompt/ui-tars-planning.js");

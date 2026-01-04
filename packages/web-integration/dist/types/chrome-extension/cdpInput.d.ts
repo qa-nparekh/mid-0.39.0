@@ -3,7 +3,7 @@
  * Copyright 2017 Google Inc.
  * SPDX-License-Identifier: Apache-2.0
  */
-import { type KeyInput } from '@sqai/shared/us-keyboard-layout';
+import { type KeyInput } from '@sqaitech/shared/us-keyboard-layout';
 /**
  * @public
  */

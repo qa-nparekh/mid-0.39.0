@@ -2,10 +2,10 @@ import { AIActionType, expandSearchArea } from "../ai-model/common.mjs";
 import { AiExtractElementInfo, AiLocateElement, callAIWithObjectResponse } from "../ai-model/index.mjs";
 import { AiLocateSection } from "../ai-model/inspect.mjs";
 import { elementDescriberInstruction } from "../ai-model/prompt/describe.mjs";
-import { SQAI_FORCE_DEEP_THINK, globalConfigManager } from "@sqai/shared/env";
-import { compositeElementInfoImg, cropByRect } from "@sqai/shared/img";
-import { getDebug } from "@sqai/shared/logger";
-import { assert } from "@sqai/shared/utils";
+import { SQAI_FORCE_DEEP_THINK, globalConfigManager } from "@sqaitech/shared/env";
+import { compositeElementInfoImg, cropByRect } from "@sqaitech/shared/img";
+import { getDebug } from "@sqaitech/shared/logger";
+import { assert } from "@sqaitech/shared/utils";
 import { emitInsightDump } from "./utils.mjs";
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {

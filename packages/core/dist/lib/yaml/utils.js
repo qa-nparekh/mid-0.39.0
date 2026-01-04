@@ -38,8 +38,8 @@ __webpack_require__.d(__webpack_exports__, {
     buildDetailedLocateParam: ()=>buildDetailedLocateParam,
     buildDetailedLocateParamAndRestParams: ()=>buildDetailedLocateParamAndRestParams
 });
-const logger_namespaceObject = require("@sqai/shared/logger");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_js_yaml_namespaceObject = require("js-yaml");
 var external_js_yaml_default = /*#__PURE__*/ __webpack_require__.n(external_js_yaml_namespaceObject);
 const debugUtils = (0, logger_namespaceObject.getDebug)('yaml:utils');

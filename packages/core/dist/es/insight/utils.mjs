@@ -1,4 +1,4 @@
-import { uuid } from "@sqai/shared/utils";
+import { uuid } from "@sqaitech/shared/utils";
 function emitInsightDump(data, dumpSubscriber) {
     const baseData = {
         logTime: Date.now()

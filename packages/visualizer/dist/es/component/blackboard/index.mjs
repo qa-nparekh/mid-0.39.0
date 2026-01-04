@@ -6,7 +6,7 @@ import { Application, Container, Graphics, Rectangle, Sprite, Text, Texture } fr
 import { useEffect, useMemo, useRef, useState } from "react";
 import { colorForName, highlightColorForType } from "../../utils/color.mjs";
 import "./index.css";
-import { treeToList } from "@sqai/shared/extractor";
+import { treeToList } from "@sqaitech/shared/extractor";
 import { DropShadowFilter } from "pixi-filters";
 import { useBlackboardPreference } from "../../store/store.mjs";
 const itemFillAlpha = 0.4;

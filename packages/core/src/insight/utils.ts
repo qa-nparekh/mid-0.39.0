@@ -4,7 +4,7 @@ import type {
   InsightDump,
   PartialInsightDumpFromSDK,
 } from '@/types';
-import { uuid } from '@sqai/shared/utils';
+import { uuid } from '@sqaitech/shared/utils';
 
 export function emitInsightDump(
   data: PartialInsightDumpFromSDK,

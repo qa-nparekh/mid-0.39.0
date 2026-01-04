@@ -27,8 +27,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     CdpKeyboard: ()=>CdpKeyboard
 });
-const us_keyboard_layout_namespaceObject = require("@sqai/shared/us-keyboard-layout");
-const utils_namespaceObject = require("@sqai/shared/utils");
+const us_keyboard_layout_namespaceObject = require("@sqaitech/shared/us-keyboard-layout");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 /**
  * @license
  * Copyright 2017 Google Inc.

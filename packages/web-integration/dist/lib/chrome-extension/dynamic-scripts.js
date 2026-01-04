@@ -39,7 +39,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 const external_node_fs_namespaceObject = require("node:fs");
 var external_node_fs_default = /*#__PURE__*/ __webpack_require__.n(external_node_fs_namespaceObject);
-const utils_namespaceObject = require("@sqai/shared/utils");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 let scriptFileContentCache = null;
 const getHtmlElementScript = async ()=>{
     const scriptFileToRetrieve = chrome.runtime.getURL("scripts/htmlElement.js");

@@ -1,5 +1,5 @@
-import type { DeviceAction, Point, UIContext } from '@sqai/core';
-import type { AbstractInterface } from '@sqai/core/device';
+import type { DeviceAction, Point, UIContext } from '@sqaitech/core';
+import type { AbstractInterface } from '@sqaitech/core/device';
 type WebUIContext = UIContext & {
     screenshotBase64?: string;
     size: {

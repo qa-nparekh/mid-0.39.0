@@ -2,4 +2,4 @@ export {
   truncateText,
   trimAttributes,
   descriptionOfTree,
-} from '@sqai/shared/extractor';
+} from '@sqaitech/shared/extractor';

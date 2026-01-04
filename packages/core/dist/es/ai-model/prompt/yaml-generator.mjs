@@ -1,4 +1,4 @@
-import { YAML_EXAMPLE_CODE } from "@sqai/shared/constants";
+import { YAML_EXAMPLE_CODE } from "@sqaitech/shared/constants";
 import { AIActionType, callAI, callAIWithStringResponse } from "../index.mjs";
 const getScreenshotsForLLM = (events, maxScreenshots = 1)=>{
     const eventsWithScreenshots = events.filter((event)=>event.screenshotBefore || event.screenshotAfter || event.screenshotWithBox);

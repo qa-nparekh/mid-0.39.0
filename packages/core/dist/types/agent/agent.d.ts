@@ -1,7 +1,7 @@
 import { type AgentAssertOpt, type AgentDescribeElementAtPointResult, type AgentOpt, type AgentWaitForOpt, type DeviceAction, type ExecutionDump, type GroupedActionDump, Insight, type InsightAction, type InsightExtractOption, type InsightExtractParam, type LocateOption, type LocateResultElement, type LocateValidatorResult, type LocatorValidatorOption, type OnTaskStartTip, type ScrollParam, type TUserPrompt, type UIContext } from '../index';
 export type TestStatus = 'passed' | 'failed' | 'timedOut' | 'skipped' | 'interrupted';
 import type { AbstractInterface } from '../device';
-import { ModelConfigManager } from '@sqai/shared/env';
+import { ModelConfigManager } from '@sqaitech/shared/env';
 import { TaskCache } from './task-cache';
 import { TaskExecutor } from './tasks';
 export declare class Agent<InterfaceType extends AbstractInterface = AbstractInterface> {

@@ -1,5 +1,5 @@
-import { sleep } from "@sqai/core/utils";
-import { logMsg } from "@sqai/shared/utils";
+import { sleep } from "@sqaitech/core/utils";
+import { logMsg } from "@sqaitech/shared/utils";
 import { Server } from "socket.io";
 import { io } from "socket.io-client";
 import { BridgeCallTimeout, BridgeErrorCodeNoClientConnected, BridgeEvent, BridgeSignalKill, DefaultBridgeServerPort } from "./common.mjs";
@@ -71,7 +71,7 @@ class BridgeServer {
                     logMsg('one client connected');
                     this.socket = socket;
                     const clientVersion = socket.handshake.query.version;
-                    logMsg(`Bridge connected, cli-side version v0.30.9, browser-side version v${clientVersion}`);
+                    logMsg(`Bridge connected, cli-side version v0.30.10, browser-side version v${clientVersion}`);
                     socket.on(BridgeEvent.CallResponse, (params)=>{
                         const id = params.id;
                         const response = params.response;
@@ -99,7 +99,7 @@ class BridgeServer {
                         var _this_onConnect, _this;
                         null == (_this_onConnect = (_this = this).onConnect) || _this_onConnect.call(_this);
                         const payload = {
-                            version: "0.30.9"
+                            version: "0.30.10"
                         };
                         socket.emit(BridgeEvent.Connected, payload);
                         Promise.resolve().then(()=>{

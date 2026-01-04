@@ -4,15 +4,15 @@ import { dirname, join } from 'node:path';
 import { isDeepStrictEqual } from 'node:util';
 import type { TUserPrompt } from '@/ai-model';
 import type { ElementCacheFeature } from '@/types';
-import { getMidsceneRunSubDir } from '@sqai/shared/common';
+import { getMidsceneRunSubDir } from '@sqaitech/shared/common';
 import {
   SQAI_CACHE_MAX_FILENAME_LENGTH,
   globalConfigManager,
-} from '@sqai/shared/env';
-import { getDebug } from '@sqai/shared/logger';
-import { ifInBrowser, ifInWorker } from '@sqai/shared/utils';
-import { generateHashId } from '@sqai/shared/utils';
-import { replaceIllegalPathCharsAndSpace } from '@sqai/shared/utils';
+} from '@sqaitech/shared/env';
+import { getDebug } from '@sqaitech/shared/logger';
+import { ifInBrowser, ifInWorker } from '@sqaitech/shared/utils';
+import { generateHashId } from '@sqaitech/shared/utils';
+import { replaceIllegalPathCharsAndSpace } from '@sqaitech/shared/utils';
 import yaml from 'js-yaml';
 import semver from 'semver';
 import { getMidsceneVersion } from './utils';

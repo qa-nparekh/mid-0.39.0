@@ -1,5 +1,5 @@
-import type { DeviceAction, Point, UIContext } from '@sqai/core';
-import type { AbstractInterface } from '@sqai/core/device';
+import type { DeviceAction, Point, UIContext } from '@sqaitech/core';
+import type { AbstractInterface } from '@sqaitech/core/device';
 import {
   defineActionDragAndDrop,
   defineActionHover,
@@ -8,8 +8,8 @@ import {
   defineActionRightClick,
   defineActionScroll,
   defineActionTap,
-} from '@sqai/core/device';
-import { ERROR_CODE_NOT_IMPLEMENTED_AS_DESIGNED } from '@sqai/shared/common';
+} from '@sqaitech/core/device';
+import { ERROR_CODE_NOT_IMPLEMENTED_AS_DESIGNED } from '@sqaitech/shared/common';
 
 type WebUIContext = UIContext & {
   screenshotBase64?: string;

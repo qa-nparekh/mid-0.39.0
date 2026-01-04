@@ -1,7 +1,7 @@
 'use client';
 import { mousePointer } from "./index.mjs";
-import { paramStr, typeStr } from "@sqai/core/agent";
-import { treeToList } from "@sqai/shared/extractor";
+import { paramStr, typeStr } from "@sqaitech/core/agent";
+import { treeToList } from "@sqaitech/shared/extractor";
 const stillDuration = 900;
 const actionSpinningPointerDuration = 300;
 const stillAfterInsightDuration = 300;

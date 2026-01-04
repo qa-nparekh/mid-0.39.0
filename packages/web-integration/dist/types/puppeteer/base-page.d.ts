@@ -1,8 +1,8 @@
 import { type WebPageAgentOpt } from '../web-element';
-import type { DeviceAction, ElementCacheFeature, ElementTreeNode, Point, Rect, Size, UIContext } from '@sqai/core';
-import type { AbstractInterface } from '@sqai/core/device';
-import type { ElementInfo } from '@sqai/shared/extractor';
-import { type DebugFunction } from '@sqai/shared/logger';
+import type { DeviceAction, ElementCacheFeature, ElementTreeNode, Point, Rect, Size, UIContext } from '@sqaitech/core';
+import type { AbstractInterface } from '@sqaitech/core/device';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
+import { type DebugFunction } from '@sqaitech/shared/logger';
 import type { Page as PlaywrightPage } from 'playwright';
 import type { Page as PuppeteerPage } from 'puppeteer';
 import { type KeyInput, type MouseButton } from '../web-page';

@@ -28,7 +28,7 @@ __webpack_require__.d(__webpack_exports__, {
 });
 const external_node_fs_namespaceObject = require("node:fs");
 const external_node_path_namespaceObject = require("node:path");
-const common_namespaceObject = require("@sqai/shared/common");
+const common_namespaceObject = require("@sqaitech/shared/common");
 const index_js_namespaceObject = require("./agent/index.js");
 const external_utils_js_namespaceObject = require("./utils.js");
 function _define_property(obj, key, value) {

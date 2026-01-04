@@ -1,4 +1,4 @@
-import { Agent } from "@sqai/core/agent";
+import { Agent } from "@sqaitech/core/agent";
 class StaticPageAgent extends Agent {
     constructor(page){
         super(page, {});

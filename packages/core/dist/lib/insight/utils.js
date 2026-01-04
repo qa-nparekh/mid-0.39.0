@@ -26,7 +26,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     emitInsightDump: ()=>emitInsightDump
 });
-const utils_namespaceObject = require("@sqai/shared/utils");
+const utils_namespaceObject = require("@sqaitech/shared/utils");
 function emitInsightDump(data, dumpSubscriber) {
     const baseData = {
         logTime: Date.now()

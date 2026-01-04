@@ -29,13 +29,13 @@ __webpack_require__.d(__webpack_exports__, {
     forceClosePopup: ()=>forceClosePopup
 });
 const external_web_element_js_namespaceObject = require("../web-element.js");
-const utils_namespaceObject = require("@sqai/core/utils");
-const constants_namespaceObject = require("@sqai/shared/constants");
-const extractor_namespaceObject = require("@sqai/shared/extractor");
-const img_namespaceObject = require("@sqai/shared/img");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const node_namespaceObject = require("@sqai/shared/node");
-const shared_utils_namespaceObject = require("@sqai/shared/utils");
+const utils_namespaceObject = require("@sqaitech/core/utils");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
+const extractor_namespaceObject = require("@sqaitech/shared/extractor");
+const img_namespaceObject = require("@sqaitech/shared/img");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const node_namespaceObject = require("@sqaitech/shared/node");
+const shared_utils_namespaceObject = require("@sqaitech/shared/utils");
 const external_web_page_js_namespaceObject = require("../web-page.js");
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {

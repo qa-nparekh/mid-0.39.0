@@ -1,7 +1,7 @@
 import type { WebPage } from '@/web-element';
 import { WebPageContextParser } from '@/web-element';
-import { Agent as PageAgent } from '@sqai/core/agent';
-import { globalConfigManager } from '@sqai/shared/env';
+import { Agent as PageAgent } from '@sqaitech/core/agent';
+import { globalConfigManager } from '@sqaitech/shared/env';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import type { WebUIContext } from '../../src';
 

@@ -5,9 +5,9 @@ import type {
   PlanningAIResponse,
   Rect,
   plan,
-} from '@sqai/core';
-import type { AiLocateSection } from '@sqai/core/ai-model';
-import { globalModelConfigManager } from '@sqai/shared/env';
+} from '@sqaitech/core';
+import type { AiLocateSection } from '@sqaitech/core/ai-model';
+import { globalModelConfigManager } from '@sqaitech/shared/env';
 import type { TestCase } from '../tests/util';
 
 type ActualResult =

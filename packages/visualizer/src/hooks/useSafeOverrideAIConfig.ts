@@ -1,5 +1,5 @@
-import { overrideAIConfig } from '@sqai/shared/env';
-import type { GLOBAL_ENV_KEYS, MODEL_ENV_KEYS } from '@sqai/shared/env';
+import { overrideAIConfig } from '@sqaitech/shared/env';
+import type { GLOBAL_ENV_KEYS, MODEL_ENV_KEYS } from '@sqaitech/shared/env';
 import { message } from 'antd';
 
 /**

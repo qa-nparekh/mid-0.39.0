@@ -43,7 +43,7 @@ const external_react_namespaceObject = require("react");
 require("./index.css");
 const index_js_namespaceObject = require("../../utils/index.js");
 const icons_namespaceObject = require("@ant-design/icons");
-const extractor_namespaceObject = require("@sqai/shared/extractor");
+const extractor_namespaceObject = require("@sqaitech/shared/extractor");
 const external_antd_namespaceObject = require("antd");
 const global_perspective_js_namespaceObject = require("../../icons/global-perspective.js");
 var global_perspective_js_default = /*#__PURE__*/ __webpack_require__.n(global_perspective_js_namespaceObject);

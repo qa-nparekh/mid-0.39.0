@@ -1,6 +1,6 @@
 {
-  "name": "@sqai/visualizer",
-  "version": "0.30.9",
+  "name": "@sqaitech/visualizer",
+  "version": "0.30.10",
   "repository": "https://github.com/qa-nparekh/midscene",
   "homepage": "https://sqai.tech/",
   "types": "./dist/types/index.d.ts",
@@ -13,10 +13,16 @@
       "require": "./dist/es/index.js"
     }
   },
-  "files": ["dist", "html", "README.md"],
+  "files": [
+    "dist",
+    "html",
+    "README.md"
+  ],
   "watch": {
     "build": {
-      "patterns": ["src"],
+      "patterns": [
+        "src"
+      ],
       "extensions": "tsx,less,scss,css,js,jsx,ts",
       "quiet": false
     }
@@ -56,16 +62,21 @@
     "typescript": "^5.8.3",
     "zustand": "4.5.2"
   },
-  "sideEffects": ["**/*.css", "**/*.less", "**/*.sass", "**/*.scss"],
+  "sideEffects": [
+    "**/*.css",
+    "**/*.less",
+    "**/*.sass",
+    "**/*.scss"
+  ],
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.1",
-    "@sqai/core": "workspace:*",
-    "@sqai/playground": "workspace:*",
-    "@sqai/shared": "workspace:*",
-    "@sqai/web": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/playground": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
+    "@sqaitech/web": "workspace:*",
     "antd": "^5.21.6",
     "buffer": "6.0.3",
     "dayjs": "^1.11.11"

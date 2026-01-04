@@ -1,4 +1,4 @@
-import { assert } from "@sqai/shared/utils";
+import { assert } from "@sqaitech/shared/utils";
 import page from "../chrome-extension/page.mjs";
 import { BridgeEvent, DefaultBridgeServerPort, KeyboardEvent, MouseEvent } from "./common.mjs";
 import { BridgeClient } from "./io-client.mjs";
@@ -45,7 +45,7 @@ class ExtensionBridgePageBrowserSide extends page {
             }
         }, ()=>this.destroy());
         await this.bridgeClient.connect();
-        this.onLogMessage(`Bridge connected, cli-side version v${this.bridgeClient.serverVersion}, browser-side version v0.30.9`, 'log');
+        this.onLogMessage(`Bridge connected, cli-side version v${this.bridgeClient.serverVersion}, browser-side version v0.30.10`, 'log');
     }
     async connect() {
         return await this.setupBridgeClient();

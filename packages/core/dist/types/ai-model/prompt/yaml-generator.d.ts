@@ -1,5 +1,5 @@
 import type { StreamingAIResponse, StreamingCodeGenerationOptions } from '../../types';
-import type { IModelConfig } from '@sqai/shared/env';
+import type { IModelConfig } from '@sqaitech/shared/env';
 export interface EventCounts {
     navigation: number;
     click: number;

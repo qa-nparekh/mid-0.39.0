@@ -1,8 +1,8 @@
 import { readFileSync } from "node:fs";
-import { getDebug } from "@sqai/shared/logger";
-import { assert } from "@sqai/shared/utils";
+import { getDebug } from "@sqaitech/shared/logger";
+import { assert } from "@sqaitech/shared/utils";
 import { PuppeteerAgent } from "./index.mjs";
-import { DEFAULT_WAIT_FOR_NETWORK_IDLE_TIMEOUT } from "@sqai/shared/constants";
+import { DEFAULT_WAIT_FOR_NETWORK_IDLE_TIMEOUT } from "@sqaitech/shared/constants";
 import puppeteer from "puppeteer";
 const defaultUA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36';
 const defaultViewportWidth = 1440;

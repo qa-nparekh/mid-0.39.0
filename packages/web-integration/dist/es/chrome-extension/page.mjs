@@ -1,7 +1,7 @@
 import { WebPageContextParser, limitOpenNewTabScript } from "../web-element.mjs";
-import { treeToList } from "@sqai/shared/extractor";
-import { createImgBase64ByFormat } from "@sqai/shared/img";
-import { assert } from "@sqai/shared/utils";
+import { treeToList } from "@sqaitech/shared/extractor";
+import { createImgBase64ByFormat } from "@sqaitech/shared/img";
+import { assert } from "@sqaitech/shared/utils";
 import { commonWebActionsForWebPage } from "../web-page.mjs";
 import { CdpKeyboard } from "./cdpInput.mjs";
 import { getHtmlElementScript, injectStopWaterFlowAnimation, injectWaterFlowAnimation } from "./dynamic-scripts.mjs";

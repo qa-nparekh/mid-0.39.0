@@ -1,8 +1,8 @@
-import { Agent } from "@sqai/core/agent";
-import { getDebug } from "@sqai/shared/logger";
+import { Agent } from "@sqaitech/core/agent";
+import { getDebug } from "@sqaitech/shared/logger";
 import { forceClosePopup } from "./base-page.mjs";
 import { PuppeteerWebPage } from "./page.mjs";
-import { overrideAIConfig } from "@sqai/shared/env";
+import { overrideAIConfig } from "@sqaitech/shared/env";
 const debug = getDebug('puppeteer:agent');
 class PuppeteerAgent extends Agent {
     constructor(page, opts){

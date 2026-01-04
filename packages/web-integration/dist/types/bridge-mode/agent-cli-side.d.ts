@@ -1,4 +1,4 @@
-import { Agent, type AgentOpt } from '@sqai/core/agent';
+import { Agent, type AgentOpt } from '@sqaitech/core/agent';
 import { type BridgeConnectTabOptions } from './common';
 import type { ExtensionBridgePageBrowserSide } from './page-browser-side';
 interface ChromeExtensionPageCliSide extends ExtensionBridgePageBrowserSide {
@@ -25,7 +25,7 @@ export declare class AgentOverChromeBridge extends Agent<ChromeExtensionPageCliS
     aiAction(prompt: string, options?: any): Promise<{
         result: Record<string, any>;
     } | {
-        yamlFlow?: import("@sqai/core").MidsceneYamlFlowItem[];
+        yamlFlow?: import("@sqaitech/core").MidsceneYamlFlowItem[];
     } | undefined>;
     destroy(closeNewTabsAfterDisconnect?: boolean): Promise<void>;
 }

@@ -1,4 +1,4 @@
-import type { DeviceAction, UIContext } from '@sqai/core';
+import type { DeviceAction, UIContext } from '@sqaitech/core';
 import type { ComponentType } from 'react';
 
 // Zod schema related types - compatible with actual zod types
@@ -222,8 +222,8 @@ export const extractDefaultValue = (field: ZodType): unknown => {
   return undefined;
 };
 
-import type { GroupedActionDump, WebUIContext } from '@sqai/core';
-import type { ExecutionOptions, PlaygroundAgent } from '@sqai/playground';
+import type { GroupedActionDump, WebUIContext } from '@sqaitech/core';
+import type { ExecutionOptions, PlaygroundAgent } from '@sqaitech/playground';
 
 // result type
 export interface PlaygroundResult {

@@ -23,7 +23,7 @@ export default defineConfig({
       },
     },
   ],
-  // externals: ['@sqai/shared'],
+  // externals: ['@sqaitech/shared'],
   output: {
     target: 'web',
   },

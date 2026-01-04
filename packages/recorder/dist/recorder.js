@@ -1,4 +1,4 @@
-import { getElementXpath, isNotContainerElement } from "@sqai/shared/extractor";
+import { getElementXpath, isNotContainerElement } from "@sqaitech/shared/extractor";
 const DEBUG = 'true' === localStorage.getItem('DEBUG');
 function debugLog(...args) {
     if (DEBUG) console.log('[EventRecorder]', ...args);

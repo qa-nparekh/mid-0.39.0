@@ -1,8 +1,8 @@
 import node_assert from "node:assert";
-import { AbstractInterface, defineActionClearInput, defineActionDoubleClick, defineActionDragAndDrop, defineActionHover, defineActionInput, defineActionKeyboardPress, defineActionLongPress, defineActionRightClick, defineActionScroll, defineActionSwipe, defineActionTap } from "@sqai/core/device";
-import { sleep } from "@sqai/core/utils";
-import { getDebug } from "@sqai/shared/logger";
-import { transformHotkeyInput } from "@sqai/shared/us-keyboard-layout";
+import { AbstractInterface, defineActionClearInput, defineActionDoubleClick, defineActionDragAndDrop, defineActionHover, defineActionInput, defineActionKeyboardPress, defineActionLongPress, defineActionRightClick, defineActionScroll, defineActionSwipe, defineActionTap } from "@sqaitech/core/device";
+import { sleep } from "@sqaitech/core/utils";
+import { getDebug } from "@sqaitech/shared/logger";
+import { transformHotkeyInput } from "@sqaitech/shared/us-keyboard-layout";
 const debug = getDebug('web:page');
 function normalizeKeyInputs(value) {
     const inputs = Array.isArray(value) ? value : [

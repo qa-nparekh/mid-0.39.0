@@ -31,10 +31,10 @@ const external_node_fs_namespaceObject = require("node:fs");
 const external_node_os_namespaceObject = require("node:os");
 const external_node_path_namespaceObject = require("node:path");
 const external_index_js_namespaceObject = require("./index.js");
-const utils_namespaceObject = require("@sqai/core/utils");
-const constants_namespaceObject = require("@sqai/shared/constants");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const shared_utils_namespaceObject = require("@sqai/shared/utils");
+const utils_namespaceObject = require("@sqaitech/core/utils");
+const constants_namespaceObject = require("@sqaitech/shared/constants");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const shared_utils_namespaceObject = require("@sqaitech/shared/utils");
 const test_namespaceObject = require("@playwright/test");
 const debugPage = (0, logger_namespaceObject.getDebug)('web:playwright:ai-fixture');
 const groupAndCaseForTest = (testInfo)=>{

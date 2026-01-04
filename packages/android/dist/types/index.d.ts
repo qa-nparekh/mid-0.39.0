@@ -1,14 +1,14 @@
-import { AbstractInterface } from '@sqai/core/device';
+import { AbstractInterface } from '@sqaitech/core/device';
 import { ADB } from 'appium-adb';
-import { Agent } from '@sqai/core/agent';
-import { AgentOpt } from '@sqai/core/agent';
+import { Agent } from '@sqaitech/core/agent';
+import { AgentOpt } from '@sqaitech/core/agent';
 import { Device } from 'appium-adb';
-import { DeviceAction } from '@sqai/core';
-import type { ElementInfo } from '@sqai/shared/extractor';
-import { InterfaceType } from '@sqai/core';
-import { overrideAIConfig } from '@sqai/shared/env';
-import { Point } from '@sqai/core';
-import { Size } from '@sqai/core';
+import { DeviceAction } from '@sqaitech/core';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
+import { InterfaceType } from '@sqaitech/core';
+import { overrideAIConfig } from '@sqaitech/shared/env';
+import { Point } from '@sqaitech/core';
+import { Size } from '@sqaitech/core';
 
 export declare function agentFromAdbDevice(deviceId?: string, opts?: AndroidAgentOpt & AndroidDeviceOpt): Promise<AndroidAgent>;
 

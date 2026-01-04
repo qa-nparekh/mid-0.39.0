@@ -37,7 +37,7 @@ const external_pixi_js_namespaceObject = require("pixi.js");
 const external_react_namespaceObject = require("react");
 const color_js_namespaceObject = require("../../utils/color.js");
 require("./index.css");
-const extractor_namespaceObject = require("@sqai/shared/extractor");
+const extractor_namespaceObject = require("@sqaitech/shared/extractor");
 const external_pixi_filters_namespaceObject = require("pixi-filters");
 const store_js_namespaceObject = require("../../store/store.js");
 const itemFillAlpha = 0.4;

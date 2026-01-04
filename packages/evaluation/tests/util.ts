@@ -1,13 +1,13 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
-import type { PlanningAIResponse, Rect } from '@sqai/core';
-import { NodeType } from '@sqai/shared/constants';
+import type { PlanningAIResponse, Rect } from '@sqaitech/core';
+import { NodeType } from '@sqaitech/shared/constants';
 import {
   compositeElementInfoImg,
   imageInfoOfBase64,
   localImg2Base64,
-} from '@sqai/shared/img';
-import { WebPageContextParser } from '@sqai/web';
+} from '@sqaitech/shared/img';
+import { WebPageContextParser } from '@sqaitech/web';
 
 export const repeatTime = 1;
 

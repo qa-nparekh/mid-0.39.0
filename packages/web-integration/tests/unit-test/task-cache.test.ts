@@ -5,9 +5,9 @@ import {
   type PlanningCache,
   TaskCache,
   cacheFileExt,
-} from '@sqai/core/agent';
-import { getMidsceneRunSubDir } from '@sqai/shared/common';
-import { uuid } from '@sqai/shared/utils';
+} from '@sqaitech/core/agent';
+import { getMidsceneRunSubDir } from '@sqaitech/shared/common';
+import { uuid } from '@sqaitech/shared/utils';
 import yaml from 'js-yaml';
 import { afterAll, beforeAll, describe, expect, it, vi } from 'vitest';
 

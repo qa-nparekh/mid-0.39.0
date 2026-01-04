@@ -26,8 +26,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     default: ()=>StaticPage
 });
-const device_namespaceObject = require("@sqai/core/device");
-const common_namespaceObject = require("@sqai/shared/common");
+const device_namespaceObject = require("@sqaitech/core/device");
+const common_namespaceObject = require("@sqaitech/shared/common");
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,

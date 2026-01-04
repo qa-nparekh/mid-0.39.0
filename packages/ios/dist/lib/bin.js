@@ -11523,8 +11523,8 @@ var __webpack_exports__ = {};
     const external_node_path_namespaceObject = require("node:path");
     var external_node_path_default = /*#__PURE__*/ __webpack_require__.n(external_node_path_namespaceObject);
     const prompts_namespaceObject = require("@inquirer/prompts");
-    const ai_model_namespaceObject = require("@sqai/core/ai-model");
-    const yaml_namespaceObject = require("@sqai/core/yaml");
+    const ai_model_namespaceObject = require("@sqaitech/core/ai-model");
+    const yaml_namespaceObject = require("@sqaitech/core/yaml");
     const dataExtractionAPIs = [
         'aiQuery',
         'aiBoolean',
@@ -11610,10 +11610,10 @@ var __webpack_exports__ = {};
     }
     const external_node_fs_namespaceObject = require("node:fs");
     const external_node_url_namespaceObject = require("node:url");
-    const utils_namespaceObject = require("@sqai/core/utils");
-    const constants_namespaceObject = require("@sqai/shared/constants");
-    const env_namespaceObject = require("@sqai/shared/env");
-    const shared_utils_namespaceObject = require("@sqai/shared/utils");
+    const utils_namespaceObject = require("@sqaitech/core/utils");
+    const constants_namespaceObject = require("@sqaitech/shared/constants");
+    const env_namespaceObject = require("@sqaitech/shared/env");
+    const shared_utils_namespaceObject = require("@sqaitech/shared/utils");
     var express = __webpack_require__("../../node_modules/.pnpm/express@4.21.2/node_modules/express/index.js");
     var express_default = /*#__PURE__*/ __webpack_require__.n(express);
     __webpack_require__("../../node_modules/.pnpm/dotenv@16.4.5/node_modules/dotenv/config.js");
@@ -11990,14 +11990,14 @@ var __webpack_exports__ = {};
     }
     const external_node_child_process_namespaceObject = require("node:child_process");
     __webpack_require__("../../node_modules/.pnpm/cors@2.8.5/node_modules/cors/lib/index.js");
-    const agent_namespaceObject = require("@sqai/core/agent");
-    const logger_namespaceObject = require("@sqai/shared/logger");
+    const agent_namespaceObject = require("@sqaitech/core/agent");
+    const logger_namespaceObject = require("@sqaitech/shared/logger");
     const external_node_assert_namespaceObject = require("node:assert");
     var external_node_assert_default = /*#__PURE__*/ __webpack_require__.n(external_node_assert_namespaceObject);
-    const core_namespaceObject = require("@sqai/core");
-    const device_namespaceObject = require("@sqai/core/device");
-    const img_namespaceObject = require("@sqai/shared/img");
-    const webdriver_namespaceObject = require("@sqai/webdriver");
+    const core_namespaceObject = require("@sqaitech/core");
+    const device_namespaceObject = require("@sqaitech/core/device");
+    const img_namespaceObject = require("@sqaitech/shared/img");
+    const webdriver_namespaceObject = require("@sqaitech/webdriver");
     const debugIOS = (0, logger_namespaceObject.getDebug)('webdriver:ios');
     class IOSWebDriverClient extends webdriver_namespaceObject.WebDriverClient {
         async launchApp(bundleId) {

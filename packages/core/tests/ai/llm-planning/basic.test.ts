@@ -2,7 +2,7 @@ import { plan } from '@/ai-model';
 import {
   globalConfigManager,
   globalModelConfigManager,
-} from '@sqai/shared/env';
+} from '@sqaitech/shared/env';
 import { mockActionSpace } from 'tests/common';
 import { getContextFromFixture } from 'tests/evaluation';
 import { beforeAll, describe, expect, it, vi } from 'vitest';

@@ -1,6 +1,6 @@
 {
-  "name": "@sqai/android",
-  "version": "0.30.9",
+  "name": "@sqaitech/android",
+  "version": "0.30.10",
   "description": "Android automation library for SQAI",
   "keywords": [
     "Android UI automation",
@@ -12,7 +12,11 @@
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.mjs",
   "types": "./dist/types/index.d.ts",
-  "files": ["bin", "dist", "README.md"],
+  "files": [
+    "bin",
+    "dist",
+    "README.md"
+  ],
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
@@ -32,12 +36,12 @@
     "test:ai:cache": "SQAI_CACHE=true AI_TEST_TYPE=android npm run test"
   },
   "dependencies": {
-    "@sqai/core": "workspace:*",
-    "@sqai/shared": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
     "appium-adb": "12.12.1"
   },
   "devDependencies": {
-    "@sqai/playground": "workspace:*",
+    "@sqaitech/playground": "workspace:*",
     "@rslib/core": "^0.11.2",
     "@types/node": "^18.0.0",
     "dotenv": "^16.4.5",

@@ -1,7 +1,7 @@
 import { getMidsceneLocationSchema } from '@/ai-model';
 import type { DeviceAction, LocateResultElement } from '@/types';
-import type { ElementNode } from '@sqai/shared/extractor';
-import { _keyDefinitions } from '@sqai/shared/us-keyboard-layout';
+import type { ElementNode } from '@sqaitech/shared/extractor';
+import { _keyDefinitions } from '@sqaitech/shared/us-keyboard-layout';
 import { z } from 'zod';
 import type { ElementCacheFeature, Rect, Size, UIContext } from '../types';
 

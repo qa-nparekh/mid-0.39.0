@@ -12,9 +12,9 @@ import type {
   MidsceneYamlScript,
   MidsceneYamlScriptEnv,
   ScriptPlayerStatusValue,
-} from '@sqai/core';
-import { type ScriptPlayer, parseYamlScript } from '@sqai/core/yaml';
-import { getMidsceneRunSubDir } from '@sqai/shared/common';
+} from '@sqaitech/core';
+import { type ScriptPlayer, parseYamlScript } from '@sqaitech/core/yaml';
+import { getMidsceneRunSubDir } from '@sqaitech/shared/common';
 import puppeteer from 'puppeteer';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 
@@ -28,9 +28,9 @@ vi.mock('puppeteer', () => ({
   },
 }));
 vi.mock('@/create-yaml-player');
-vi.mock('@sqai/shared/common');
-vi.mock('@sqai/core/yaml', async (importOriginal) => {
-  const original = await importOriginal<typeof import('@sqai/core/yaml')>();
+vi.mock('@sqaitech/shared/common');
+vi.mock('@sqaitech/core/yaml', async (importOriginal) => {
+  const original = await importOriginal<typeof import('@sqaitech/core/yaml')>();
   return {
     ...original,
     parseYamlScript: vi.fn(),
@@ -43,9 +43,9 @@ vi.mock('@/printer', () => ({
   spinnerInterval: 80,
 }));
 vi.mock('@/tty-renderer');
-vi.mock('@sqai/web/puppeteer-agent-launcher');
-vi.mock('@sqai/web/bridge-mode');
-vi.mock('@sqai/android');
+vi.mock('@sqaitech/web/puppeteer-agent-launcher');
+vi.mock('@sqaitech/web/bridge-mode');
+vi.mock('@sqaitech/android');
 
 const mockBatchConfig = {
   files: ['file1.yml', 'file2.yml', 'file3.yml'],

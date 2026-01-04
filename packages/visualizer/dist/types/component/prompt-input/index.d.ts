@@ -3,7 +3,7 @@ import React from 'react';
 import type { RunType } from '../../types';
 import type { ServiceModeType } from '../../types';
 import './index.less';
-import type { DeviceAction } from '@sqai/core';
+import type { DeviceAction } from '@sqaitech/core';
 interface PromptInputProps {
     runButtonEnabled: boolean;
     form: any;

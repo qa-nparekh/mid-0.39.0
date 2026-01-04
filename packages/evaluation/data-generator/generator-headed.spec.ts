@@ -1,4 +1,4 @@
-import { PlaywrightWebPage } from '@sqai/web/playwright';
+import { PlaywrightWebPage } from '@sqaitech/web/playwright';
 import { test } from './fixture';
 import { generateExtractData, generateTestDataPath } from './utils';
 

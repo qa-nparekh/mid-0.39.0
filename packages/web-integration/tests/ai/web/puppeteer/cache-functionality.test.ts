@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import { PuppeteerAgent } from '@/puppeteer';
-import { sleep } from '@sqai/core/utils';
+import { sleep } from '@sqaitech/core/utils';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { launchPage } from './utils';
 

@@ -1,8 +1,8 @@
-import { assert } from "@sqai/shared/utils";
-import { NodeType } from "@sqai/shared/constants";
-import { treeToList } from "@sqai/shared/extractor";
-import { compositeElementInfoImg } from "@sqai/shared/img";
-import { getDebug } from "@sqai/shared/logger";
+import { assert } from "@sqaitech/shared/utils";
+import { NodeType } from "@sqaitech/shared/constants";
+import { treeToList } from "@sqaitech/shared/extractor";
+import { compositeElementInfoImg } from "@sqaitech/shared/img";
+import { getDebug } from "@sqaitech/shared/logger";
 import { z } from "zod";
 var common_AIActionType = /*#__PURE__*/ function(AIActionType) {
     AIActionType[AIActionType["ASSERT"] = 0] = "ASSERT";

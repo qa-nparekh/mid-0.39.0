@@ -27,7 +27,7 @@ __webpack_require__.d(__webpack_exports__, {
     getUiTarsPlanningPrompt: ()=>getUiTarsPlanningPrompt,
     getSummary: ()=>getSummary
 });
-const env_namespaceObject = require("@sqai/shared/env");
+const env_namespaceObject = require("@sqaitech/shared/env");
 function getUiTarsPlanningPrompt() {
     const preferredLanguage = (0, env_namespaceObject.getPreferredLanguage)();
     return `

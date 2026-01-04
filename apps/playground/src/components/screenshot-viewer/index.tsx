@@ -1,5 +1,5 @@
 import { InfoCircleOutlined, ReloadOutlined } from '@ant-design/icons';
-import type { PlaygroundSDK } from '@sqai/playground';
+import type { PlaygroundSDK } from '@sqaitech/playground';
 import { Button, Spin, Tooltip } from 'antd';
 import { useCallback, useEffect, useRef, useState } from 'react';
 

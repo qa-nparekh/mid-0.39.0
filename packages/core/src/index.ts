@@ -18,7 +18,7 @@ export {
   type TUserPrompt,
 } from './ai-model/index';
 
-export { SQAI_MODEL_NAME } from '@sqai/shared/env';
+export { SQAI_MODEL_NAME } from '@sqaitech/shared/env';
 
 export type * from './types';
 

@@ -1,6 +1,6 @@
-import { traverseTree } from "@sqai/shared/extractor";
-import { getDebug } from "@sqai/shared/logger";
-import { commonContextParser } from "@sqai/core/agent";
+import { traverseTree } from "@sqaitech/shared/extractor";
+import { getDebug } from "@sqaitech/shared/logger";
+import { commonContextParser } from "@sqaitech/core/agent";
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,

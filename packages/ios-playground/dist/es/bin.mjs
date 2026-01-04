@@ -1,1 +1,1 @@
-import "@sqai/ios/src/bin";
+import "@sqaitech/ios/src/bin";

@@ -1,9 +1,9 @@
 import { ConversationHistory, findAllMidsceneLocatorField, parseActionParam, plan as index_mjs_plan, uiTarsPlanning } from "../ai-model/index.mjs";
 import { Executor } from "../ai-model/action-executor.mjs";
 import { sleep as external_utils_mjs_sleep } from "../utils.mjs";
-import { SQAI_REPLANNING_CYCLE_LIMIT, globalConfigManager } from "@sqai/shared/env";
-import { getDebug } from "@sqai/shared/logger";
-import { assert } from "@sqai/shared/utils";
+import { SQAI_REPLANNING_CYCLE_LIMIT, globalConfigManager } from "@sqaitech/shared/env";
+import { getDebug } from "@sqaitech/shared/logger";
+import { assert } from "@sqaitech/shared/utils";
 import { taskTitleStr } from "./ui-utils.mjs";
 import { matchElementFromCache, matchElementFromPlan, parsePrompt } from "./utils.mjs";
 function _define_property(obj, key, value) {

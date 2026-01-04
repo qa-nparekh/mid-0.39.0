@@ -39,10 +39,10 @@ __webpack_require__.d(__webpack_exports__, {
 });
 const external_node_assert_namespaceObject = require("node:assert");
 var external_node_assert_default = /*#__PURE__*/ __webpack_require__.n(external_node_assert_namespaceObject);
-const device_namespaceObject = require("@sqai/core/device");
-const utils_namespaceObject = require("@sqai/core/utils");
-const logger_namespaceObject = require("@sqai/shared/logger");
-const us_keyboard_layout_namespaceObject = require("@sqai/shared/us-keyboard-layout");
+const device_namespaceObject = require("@sqaitech/core/device");
+const utils_namespaceObject = require("@sqaitech/core/utils");
+const logger_namespaceObject = require("@sqaitech/shared/logger");
+const us_keyboard_layout_namespaceObject = require("@sqaitech/shared/us-keyboard-layout");
 const debug = (0, logger_namespaceObject.getDebug)('web:page');
 function normalizeKeyInputs(value) {
     const inputs = Array.isArray(value) ? value : [

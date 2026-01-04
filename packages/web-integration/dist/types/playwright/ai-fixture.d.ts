@@ -1,5 +1,5 @@
 import { type PlaywrightWebPage } from './index';
-import type { Agent as PageAgent } from '@sqai/core/agent';
+import type { Agent as PageAgent } from '@sqaitech/core/agent';
 import { type TestInfo, type TestType } from '@playwright/test';
 import type { Page as OriginPlaywrightPage } from 'playwright';
 export type APITestType = Pick<TestType<any, any>, 'step'>;
