@@ -18,7 +18,7 @@ export interface MatchCacheResult<T extends PlanningCache | LocateCache> {
     updateFn: (cb: (cache: T) => void) => void;
 }
 export type CacheFileContent = {
-    midsceneVersion: string;
+    sqaiVersion: string;
     cacheId: string;
     caches: Array<PlanningCache | LocateCache>;
 };

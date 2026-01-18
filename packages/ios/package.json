@@ -1,6 +1,6 @@
 {
   "name": "@sqaitech/ios",
-  "version": "0.30.10",
+  "version": "0.5.0",
   "description": "iOS automation library for SQAI",
   "keywords": [
     "iOS UI automation",

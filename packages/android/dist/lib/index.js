@@ -287,7 +287,7 @@ ${Object.keys(size).filter((key)=>size[key]).map((key)=>`  ${key} size: ${size[k
                         const methodName = String(prop);
                         const deviceId = this.deviceId;
                         debugDevice(`ADB error with device ${deviceId} when calling ${methodName}: ${error}`);
-                        throw new Error(`ADB error with device ${deviceId} when calling ${methodName}, please check https://midscenejs.com/integrate-with-android.html#faq : ${error.message}`, {
+                        throw new Error(`ADB error with device ${deviceId} when calling ${methodName}, please check https://sqai.tech/integrate-with-android.html#faq : ${error.message}`, {
                             cause: error
                         });
                     }
@@ -1003,7 +1003,7 @@ async function getConnectedDevices() {
         return devices;
     } catch (error) {
         console.error('Failed to get device list:', error);
-        throw new Error(`Unable to get connected Android device list, please check https://midscenejs.com/integrate-with-android.html#faq : ${error.message}`, {
+        throw new Error(`Unable to get connected Android device list, please check https://sqai.tech/integrate-with-android.html#faq : ${error.message}`, {
             cause: error
         });
     }

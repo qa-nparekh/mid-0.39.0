@@ -277,6 +277,8 @@ export const getMidsceneVersion = (): string => {
   throw new Error('__VERSION__ inject failed during build');
 };
 
+export const getSqaiVersion = getMidsceneVersion;
+
 export const parsePrompt = (
   prompt: TUserPrompt,
 ): {

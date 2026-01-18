@@ -100,7 +100,7 @@ class BridgeServer {
                     (0, shared_utils_namespaceObject.logMsg)('one client connected');
                     this.socket = socket;
                     const clientVersion = socket.handshake.query.version;
-                    (0, shared_utils_namespaceObject.logMsg)(`Bridge connected, cli-side version v0.30.10, browser-side version v${clientVersion}`);
+                    (0, shared_utils_namespaceObject.logMsg)(`Bridge connected, cli-side version v0.5.0, browser-side version v${clientVersion}`);
                     socket.on(external_common_js_namespaceObject.BridgeEvent.CallResponse, (params)=>{
                         const id = params.id;
                         const response = params.response;
@@ -128,7 +128,7 @@ class BridgeServer {
                         var _this_onConnect, _this;
                         null == (_this_onConnect = (_this = this).onConnect) || _this_onConnect.call(_this);
                         const payload = {
-                            version: "0.30.10"
+                            version: "0.5.0"
                         };
                         socket.emit(external_common_js_namespaceObject.BridgeEvent.Connected, payload);
                         Promise.resolve().then(()=>{

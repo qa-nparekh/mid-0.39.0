@@ -90,7 +90,7 @@ export async function createYamlPlayer(
       if (typeof webTarget !== 'undefined') {
         if (typeof yamlScript.target !== 'undefined') {
           console.warn(
-            'target is deprecated, please use web instead. See https://midscenejs.com/automate-with-scripts-in-yaml for more information. Sorry for the inconvenience.',
+            'target is deprecated, please use web instead. See https://sqai.tech/automate-with-scripts-in-yaml for more information. Sorry for the inconvenience.',
           );
         }
 

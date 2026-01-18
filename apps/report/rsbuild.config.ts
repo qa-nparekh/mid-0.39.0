@@ -151,6 +151,7 @@ export default defineConfig({
   output: {
     inlineScripts: true,
     injectStyles: true,
+    assetPrefix: './',
   },
   plugins: [
     pluginReact(),

@@ -359,7 +359,7 @@ export function App() {
         }}
       >
         <Alert
-          message="Midscene.js - Error"
+          message="SQAI - Error"
           description={error}
           type="error"
           showIcon

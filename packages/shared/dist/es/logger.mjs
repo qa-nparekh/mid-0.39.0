@@ -4,7 +4,7 @@ import node_util from "node:util";
 import debug from "debug";
 import { getMidsceneRunSubDir } from "./common.mjs";
 import { ifInNode } from "./utils.mjs";
-const topicPrefix = 'midscene';
+const topicPrefix = 'sqai';
 const logStreams = new Map();
 const debugInstances = new Map();
 function getLogStream(topic) {

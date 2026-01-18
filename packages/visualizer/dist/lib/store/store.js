@@ -29,9 +29,9 @@ __webpack_require__.d(__webpack_exports__, {
 });
 const external_zustand_namespaceObject = require("zustand");
 const { create } = external_zustand_namespaceObject;
-const AUTO_ZOOM_KEY = 'midscene-auto-zoom';
-const BACKGROUND_VISIBLE_KEY = 'midscene-background-visible';
-const ELEMENTS_VISIBLE_KEY = 'midscene-elements-visible';
+const AUTO_ZOOM_KEY = 'sqai-auto-zoom';
+const BACKGROUND_VISIBLE_KEY = 'sqai-background-visible';
+const ELEMENTS_VISIBLE_KEY = 'sqai-elements-visible';
 const parseBooleanParam = (value)=>{
     if (null === value) return;
     const normalized = value.trim().toLowerCase();
@@ -83,12 +83,12 @@ const useBlackboardPreference = create((set)=>{
         }
     };
 });
-const CONFIG_KEY = 'midscene-env-config';
-const SERVICE_MODE_KEY = 'midscene-service-mode';
-const TRACKING_ACTIVE_TAB_KEY = 'midscene-tracking-active-tab';
-const DEEP_THINK_KEY = 'midscene-deep-think';
-const SCREENSHOT_INCLUDED_KEY = 'midscene-screenshot-included';
-const DOM_INCLUDED_KEY = 'midscene-dom-included';
+const CONFIG_KEY = 'sqai-env-config';
+const SERVICE_MODE_KEY = 'sqai-service-mode';
+const TRACKING_ACTIVE_TAB_KEY = 'sqai-tracking-active-tab';
+const DEEP_THINK_KEY = 'sqai-deep-think';
+const SCREENSHOT_INCLUDED_KEY = 'sqai-screenshot-included';
+const DOM_INCLUDED_KEY = 'sqai-dom-included';
 const getConfigStringFromLocalStorage = ()=>{
     const configString = localStorage.getItem(CONFIG_KEY);
     return configString || '';

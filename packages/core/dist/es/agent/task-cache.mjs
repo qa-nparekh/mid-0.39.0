@@ -8,7 +8,7 @@ import { getDebug } from "@sqaitech/shared/logger";
 import { generateHashId, ifInBrowser, ifInWorker, replaceIllegalPathCharsAndSpace } from "@sqaitech/shared/utils";
 import js_yaml from "js-yaml";
 import semver from "semver";
-import { getMidsceneVersion } from "./utils.mjs";
+import { getSqaiVersion } from "./utils.mjs";
 function _define_property(obj, key, value) {
     if (key in obj) Object.defineProperty(obj, key, {
         value: value,
@@ -21,7 +21,7 @@ function _define_property(obj, key, value) {
 }
 const DEFAULT_CACHE_MAX_FILENAME_LENGTH = 200;
 const debug = getDebug('cache');
-const lowestSupportedMidsceneVersion = '0.16.10';
+const lowestSupportedSqaiVersion = '0.5.0';
 const cacheFileExt = '.cache.yaml';
 class TaskCache {
     matchCache(prompt, type) {
@@ -75,11 +75,11 @@ class TaskCache {
         try {
             const data = readFileSync(cacheFile, 'utf8');
             const jsonData = js_yaml.load(data);
-            const version = getMidsceneVersion();
-            if (!version) return void debug('no midscene version info, will not read cache from file');
-            if (semver.lt(jsonData.midsceneVersion, lowestSupportedMidsceneVersion) && !jsonData.midsceneVersion.includes('beta')) return void console.warn(`You are using an old version of Midscene cache file, and we cannot match any info from it. Starting from Midscene v0.17, we changed our strategy to use xpath for cache info, providing better performance.\nPlease delete the existing cache and rebuild it. Sorry for the inconvenience.\ncache file: ${cacheFile}`);
-            debug('cache loaded from file, path: %s, cache version: %s, record length: %s', cacheFile, jsonData.midsceneVersion, jsonData.caches.length);
-            jsonData.midsceneVersion = getMidsceneVersion();
+            const version = getSqaiVersion();
+            if (!version) return void debug('no SQAI version info, will not read cache from file');
+            if (semver.lt(jsonData.sqaiVersion, lowestSupportedSqaiVersion) && !jsonData.sqaiVersion.includes('beta')) return void console.warn(`You are using an old version of SQAI cache file from before v0.5.0 rebrand. Cache format has changed.\nPlease delete the existing cache and rebuild it. Sorry for the inconvenience.\ncache file: ${cacheFile}`);
+            debug('cache loaded from file, path: %s, cache version: %s, record length: %s', cacheFile, jsonData.sqaiVersion, jsonData.caches.length);
+            jsonData.sqaiVersion = getSqaiVersion();
             return jsonData;
         } catch (err) {
             debug('cache file exists but load failed, path: %s, error: %s', cacheFile, err);
@@ -87,8 +87,8 @@ class TaskCache {
         }
     }
     flushCacheToFile(options) {
-        const version = getMidsceneVersion();
-        if (!version) return void debug('no midscene version info, will not write cache to file');
+        const version = getSqaiVersion();
+        if (!version) return void debug('no SQAI version info, will not write cache to file');
         if (!this.cacheFilePath) return void debug('no cache file path, will not write cache to file');
         if (null == options ? void 0 : options.cleanUnused) if (this.isCacheResultUsed) {
             const originalLength = this.cache.caches.length;
@@ -171,7 +171,7 @@ class TaskCache {
         let cacheContent;
         if (this.cacheFilePath && !this.writeOnlyMode) cacheContent = this.loadCacheFromFile();
         if (!cacheContent) cacheContent = {
-            midsceneVersion: getMidsceneVersion(),
+            sqaiVersion: getSqaiVersion(),
             cacheId: this.cacheId,
             caches: []
         };

@@ -83,7 +83,7 @@ class ModelConfigManager {
     }
     throwErrorIfNonVLModel(intent = 'grounding') {
         const modelConfig = this.getModelConfig(intent);
-        if (!modelConfig.vlMode) throw new Error('No visual language model (VL model) detected for the current scenario. Element localization may be inaccurate. Please verify your model configuration. Learn more: https://midscenejs.com/choose-a-model');
+        if (!modelConfig.vlMode) throw new Error('No visual language model (VL model) detected for the current scenario. Element localization may be inaccurate. Please verify your model configuration. Learn more: https://sqai.tech/choose-a-model');
     }
     constructor(modelConfigFn){
         _define_property(this, "modelConfigMap", void 0);

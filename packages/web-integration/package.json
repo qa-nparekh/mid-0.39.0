@@ -8,7 +8,7 @@
     "Browser use",
     "Android use"
   ],
-  "version": "0.30.10",
+  "version": "0.5.0",
   "repository": "https://github.com/qa-nparekh/midscene",
   "homepage": "https://sqai.tech/",
   "main": "./dist/lib/index.js",

@@ -46,6 +46,7 @@ export declare function trimContextByViewport(execution: ExecutionDump): {
     logTime: number;
 };
 export declare const getMidsceneVersion: () => string;
+export declare const getSqaiVersion: () => string;
 export declare const parsePrompt: (prompt: TUserPrompt) => {
     textPrompt: string;
     multimodalPrompt?: TMultimodalPrompt;

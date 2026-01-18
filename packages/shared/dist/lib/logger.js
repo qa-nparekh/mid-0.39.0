@@ -47,7 +47,7 @@ const external_debug_namespaceObject = require("debug");
 var external_debug_default = /*#__PURE__*/ __webpack_require__.n(external_debug_namespaceObject);
 const external_common_js_namespaceObject = require("./common.js");
 const external_utils_js_namespaceObject = require("./utils.js");
-const topicPrefix = 'midscene';
+const topicPrefix = 'sqai';
 const logStreams = new Map();
 const debugInstances = new Map();
 function getLogStream(topic) {

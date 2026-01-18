@@ -120,10 +120,10 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
           <Text type="secondary" className="text-xs">
             {type === 'playwright' ? (
               <>
-                💡 Learn how to integrate Playwright with Midscene.js
+                💡 Learn how to integrate Playwright with SQAI.js
                 <a
                   target="_blank"
-                  href="https://midscenejs.com/integrate-with-playwright.html"
+                  href="https://sqai.tech/integrate-with-playwright.html"
                   rel="noreferrer"
                 >
                   {' '}
@@ -133,10 +133,10 @@ export const CodeBlock: React.FC<CodeBlockProps> = ({
               </>
             ) : (
               <>
-                💡 Learn how to integrate YAML scripts with Midscene.js
+                💡 Learn how to integrate YAML scripts with SQAI.js
                 <a
                   target="_blank"
-                  href="https://midscenejs.com/automate-with-scripts-in-yaml.html"
+                  href="https://sqai.tech/automate-with-scripts-in-yaml.html"
                   rel="noreferrer"
                 >
                   {' '}

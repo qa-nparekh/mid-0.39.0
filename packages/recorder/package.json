@@ -1,6 +1,6 @@
 {
   "name": "@sqaitech/recorder",
-  "version": "0.30.10",
+  "version": "0.5.0",
   "type": "module",
   "exports": {
     ".": {

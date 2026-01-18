@@ -337,7 +337,7 @@ function debugLog(...message: any[]) {
   // also avoid circular dependency
   const debugMode = process.env[SQAI_DEBUG_MODE];
   if (debugMode) {
-    console.log('[Midscene]', ...message);
+    console.log('[SQAI]', ...message);
   }
 }
 

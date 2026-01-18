@@ -17,7 +17,7 @@ class BridgeClient {
             this.socket = io(this.endpoint, {
                 reconnection: false,
                 query: {
-                    version: "0.30.10"
+                    version: "0.5.0"
                 }
             });
             const timeout = setTimeout(()=>{

@@ -34,9 +34,10 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 __webpack_require__.d(__webpack_exports__, {
     commonContextParser: ()=>commonContextParser,
+    getSqaiVersion: ()=>getSqaiVersion,
     matchElementFromPlan: ()=>matchElementFromPlan,
-    trimContextByViewport: ()=>trimContextByViewport,
     getReportFileName: ()=>getReportFileName,
+    trimContextByViewport: ()=>trimContextByViewport,
     matchElementFromCache: ()=>matchElementFromCache,
     printReportMsg: ()=>printReportMsg,
     generateCacheId: ()=>generateCacheId,
@@ -190,7 +191,8 @@ function trimContextByViewport(execution) {
         }) : execution.tasks
     };
 }
-const getMidsceneVersion = ()=>"0.30.10";
+const getMidsceneVersion = ()=>"0.5.0";
+const getSqaiVersion = getMidsceneVersion;
 const parsePrompt = (prompt)=>{
     if ('string' == typeof prompt) return {
         textPrompt: prompt,
@@ -209,6 +211,7 @@ exports.generateCacheId = __webpack_exports__.generateCacheId;
 exports.getCurrentExecutionFile = __webpack_exports__.getCurrentExecutionFile;
 exports.getMidsceneVersion = __webpack_exports__.getMidsceneVersion;
 exports.getReportFileName = __webpack_exports__.getReportFileName;
+exports.getSqaiVersion = __webpack_exports__.getSqaiVersion;
 exports.matchElementFromCache = __webpack_exports__.matchElementFromCache;
 exports.matchElementFromPlan = __webpack_exports__.matchElementFromPlan;
 exports.parsePrompt = __webpack_exports__.parsePrompt;
@@ -220,6 +223,7 @@ for(var __webpack_i__ in __webpack_exports__)if (-1 === [
     "getCurrentExecutionFile",
     "getMidsceneVersion",
     "getReportFileName",
+    "getSqaiVersion",
     "matchElementFromCache",
     "matchElementFromPlan",
     "parsePrompt",

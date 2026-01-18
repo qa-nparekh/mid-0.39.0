@@ -7,7 +7,7 @@ export const initDebugConfig = () => {
   let debugConfig = '';
   if (shouldPrintTiming) {
     console.warn(
-      'SQAI_DEBUG_AI_PROFILE is deprecated, use DEBUG=midscene:ai:profile instead',
+      'SQAI_DEBUG_AI_PROFILE is deprecated, use DEBUG=sqai:ai:profile instead',
     );
     debugConfig = 'ai:profile';
   }
@@ -15,7 +15,7 @@ export const initDebugConfig = () => {
 
   if (shouldPrintAIResponse) {
     console.warn(
-      'SQAI_DEBUG_AI_RESPONSE is deprecated, use DEBUG=midscene:ai:response instead',
+      'SQAI_DEBUG_AI_RESPONSE is deprecated, use DEBUG=sqai:ai:response instead',
     );
     if (debugConfig) {
       debugConfig = 'ai:*';

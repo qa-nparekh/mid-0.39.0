@@ -32,7 +32,7 @@ const external_antd_namespaceObject = require("antd");
 const index_js_namespaceObject = require("../env-config/index.js");
 require("./style.css");
 function NavActions(param) {
-    let { showEnvConfig = true, showTooltipWhenEmpty = false, showModelName = false, githubUrl = 'https://github.com/web-infra-dev/midscene', helpUrl = 'https://midscenejs.com/quick-experience.html', className = '' } = param;
+    let { showEnvConfig = true, showTooltipWhenEmpty = false, showModelName = false, githubUrl = 'https://github.com/web-infra-dev/midscene', helpUrl = 'https://sqai.tech/quick-experience.html', className = '' } = param;
     return /*#__PURE__*/ (0, jsx_runtime_namespaceObject.jsxs)("div", {
         className: `nav-actions ${className}`,
         children: [

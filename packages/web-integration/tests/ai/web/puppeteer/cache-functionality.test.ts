@@ -302,7 +302,7 @@ describe('Cache Operation Tests', () => {
       // Check if cache file might exist (it may or may not be written yet)
       if (fs.existsSync(cacheFilePath)) {
         const cacheContent = fs.readFileSync(cacheFilePath, 'utf-8');
-        expect(cacheContent).toContain('midsceneVersion');
+        expect(cacheContent).toContain('sqaiVersion');
         expect(cacheContent).toContain(cacheId);
         expect(cacheContent).toContain('caches:');
       }

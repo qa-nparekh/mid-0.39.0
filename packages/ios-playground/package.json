@@ -1,6 +1,6 @@
 {
   "name": "@sqaitech/ios-playground",
-  "version": "0.30.10",
+  "version": "0.5.0",
   "description": "iOS playground for SQAI",
   "main": "./dist/lib/index.js",
   "types": "./dist/types/index.d.ts",

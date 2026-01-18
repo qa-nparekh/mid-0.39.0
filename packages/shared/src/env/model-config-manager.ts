@@ -138,7 +138,7 @@ export class ModelConfigManager {
 
     if (!modelConfig.vlMode) {
       throw new Error(
-        'No visual language model (VL model) detected for the current scenario. Element localization may be inaccurate. Please verify your model configuration. Learn more: https://midscenejs.com/choose-a-model',
+        'No visual language model (VL model) detected for the current scenario. Element localization may be inaccurate. Please verify your model configuration. Learn more: https://sqai.tech/choose-a-model',
       );
     }
   }

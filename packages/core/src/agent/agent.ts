@@ -229,7 +229,7 @@ export class Agent<
       {
         generateReport: true,
         autoPrintReportMsg: true,
-        groupName: 'Midscene Report',
+        groupName: 'SQAI Report',
         groupDescription: '',
       },
       opts || {},

@@ -3016,7 +3016,7 @@ var __webpack_modules__ = {
         var main = __webpack_require__("../../node_modules/.pnpm/dotenv@16.4.5/node_modules/dotenv/lib/main.js");
         var main_default = /*#__PURE__*/ __webpack_require__.n(main);
         var package_namespaceObject = {
-            i8: "0.30.10"
+            i8: "0.5.0"
         };
         const yaml_namespaceObject = require("@sqaitech/core/yaml");
         const common_namespaceObject = require("@sqaitech/shared/common");
@@ -3188,7 +3188,7 @@ var __webpack_modules__ = {
                 }
                 if (void 0 !== webTarget) {
                     var _yamlScript_agent;
-                    if (void 0 !== yamlScript.target) console.warn("target is deprecated, please use web instead. See https://midscenejs.com/automate-with-scripts-in-yaml for more information. Sorry for the inconvenience.");
+                    if (void 0 !== yamlScript.target) console.warn("target is deprecated, please use web instead. See https://sqai.tech/automate-with-scripts-in-yaml for more information. Sorry for the inconvenience.");
                     let localServer;
                     let urlToVisit;
                     if (webTarget.serve) {
@@ -11839,8 +11839,8 @@ var __webpack_modules__ = {
         }
         const cli_utils_debug = (0, logger_namespaceObject.getDebug)('sqai:cli');
         const parseProcessArgs = async ()=>{
-            const args = yargs(hideBin(process.argv)).usage(`Midscene.js helps you automate browser actions, assertions, and data extraction by AI. 
-Homepage: https://midscenejs.com
+            const args = yargs(hideBin(process.argv)).usage(`SQAI.js helps you automate browser actions, assertions, and data extraction by AI. 
+Homepage: https://sqai.tech
 Github: https://github.com/web-infra-dev/midscene
 
 Usage: 
@@ -11923,7 +11923,7 @@ Usage:
                     type: 'string',
                     description: 'Override WebDriverAgent host for iOS environments.'
                 }
-            }).version('version', 'Show version number', "0.30.10").help().wrap(yargs().terminalWidth());
+            }).version('version', 'Show version number', "0.5.0").help().wrap(yargs().terminalWidth());
             const argv = await args.argv;
             cli_utils_debug('argv', argv);
             const transformedArgv = {
@@ -11983,7 +11983,7 @@ Usage:
             const welcome = `\nWelcome to @sqaitech/cli v${package_namespaceObject.i8}\n`;
             console.log(welcome);
             if (options.url) {
-                console.error("the cli mode is no longer supported, please use yaml file instead. See https://midscenejs.com/automate-with-scripts-in-yaml for more information. Sorry for the inconvenience.");
+                console.error("the cli mode is no longer supported, please use yaml file instead. See https://sqai.tech/automate-with-scripts-in-yaml for more information. Sorry for the inconvenience.");
                 process.exit(1);
             }
             const configFile = options.config;

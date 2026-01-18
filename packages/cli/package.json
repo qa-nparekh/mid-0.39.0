@@ -1,7 +1,7 @@
 {
   "name": "@sqaitech/cli",
   "description": "An AI-powered automation SDK can control the page, perform assertions, and extract data in JSON format using natural language. See https://sqai.tech/ for details.",
-  "version": "0.30.10",
+  "version": "0.5.0",
   "repository": "https://github.com/qa-nparekh/midscene",
   "homepage": "https://sqai.tech/",
   "main": "./dist/lib/index.js",

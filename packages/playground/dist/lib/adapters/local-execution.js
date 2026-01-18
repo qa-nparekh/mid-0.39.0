@@ -56,7 +56,7 @@ class LocalExecutionAdapter extends external_base_js_namespaceObject.BasePlaygro
     }
     formatErrorMessage(error) {
         const errorMessage = (null == error ? void 0 : error.message) || '';
-        if (errorMessage.includes('of different extension')) return 'Conflicting extension detected. Please disable the suspicious plugins and refresh the page. Guide: https://midscenejs.com/quick-experience.html#faq';
+        if (errorMessage.includes('of different extension')) return 'Conflicting extension detected. Please disable the suspicious plugins and refresh the page. Guide: https://sqai.tech/quick-experience.html#faq';
         return this.formatBasicErrorMessage(error);
     }
     async getActionSpace(context) {

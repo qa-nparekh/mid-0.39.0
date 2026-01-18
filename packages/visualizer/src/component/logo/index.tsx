@@ -1,7 +1,7 @@
 import './index.less';
+import sqaiLogo from '../../assets/sqai-logo.png';
 
-export const LogoUrl =
-  'https://lf3-static.bytednsdoc.com/obj/eden-cn/vhaeh7vhabf/Midscene.png';
+export const LogoUrl = sqaiLogo;
 
 export const Logo = ({ hideLogo = false }: { hideLogo?: boolean }) => {
   if (hideLogo) {
@@ -10,10 +10,10 @@ export const Logo = ({ hideLogo = false }: { hideLogo?: boolean }) => {
 
   return (
     <div className="logo">
-      <a href="https://midscenejs.com/" target="_blank" rel="noreferrer">
+      <a href="https://sqai.tech" target="_blank" rel="noreferrer">
         <img
-          alt="Midscene_logo"
-          src="https://lf3-static.bytednsdoc.com/obj/eden-cn/vhaeh7vhabf/Midscene.png"
+          alt="SQAI Logo"
+          src={sqaiLogo}
         />
       </a>
     </div>

@@ -448,7 +448,7 @@ ${Object.keys(size)
 
             // throw the error again
             throw new Error(
-              `ADB error with device ${deviceId} when calling ${methodName}, please check https://midscenejs.com/integrate-with-android.html#faq : ${error.message}`,
+              `ADB error with device ${deviceId} when calling ${methodName}, please check https://sqai.tech/integrate-with-android.html#faq : ${error.message}`,
               {
                 cause: error,
               },

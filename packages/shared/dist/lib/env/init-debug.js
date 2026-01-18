@@ -33,12 +33,12 @@ const initDebugConfig = ()=>{
     const shouldPrintTiming = (0, external_basic_js_namespaceObject.getBasicEnvValue)(external_types_js_namespaceObject.SQAI_DEBUG_AI_PROFILE);
     let debugConfig = '';
     if (shouldPrintTiming) {
-        console.warn('SQAI_DEBUG_AI_PROFILE is deprecated, use DEBUG=midscene:ai:profile instead');
+        console.warn('SQAI_DEBUG_AI_PROFILE is deprecated, use DEBUG=sqai:ai:profile instead');
         debugConfig = 'ai:profile';
     }
     const shouldPrintAIResponse = (0, external_basic_js_namespaceObject.getBasicEnvValue)(external_types_js_namespaceObject.SQAI_DEBUG_AI_RESPONSE);
     if (shouldPrintAIResponse) {
-        console.warn('SQAI_DEBUG_AI_RESPONSE is deprecated, use DEBUG=midscene:ai:response instead');
+        console.warn('SQAI_DEBUG_AI_RESPONSE is deprecated, use DEBUG=sqai:ai:response instead');
         debugConfig = debugConfig ? 'ai:*' : 'ai:call';
     }
     if (debugConfig) (0, external_logger_js_namespaceObject.enableDebug)(debugConfig);

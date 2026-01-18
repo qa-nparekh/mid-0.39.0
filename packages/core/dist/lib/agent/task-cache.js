@@ -63,7 +63,7 @@ function _define_property(obj, key, value) {
 }
 const DEFAULT_CACHE_MAX_FILENAME_LENGTH = 200;
 const debug = (0, logger_namespaceObject.getDebug)('cache');
-const lowestSupportedMidsceneVersion = '0.16.10';
+const lowestSupportedSqaiVersion = '0.5.0';
 const cacheFileExt = '.cache.yaml';
 class TaskCache {
     matchCache(prompt, type) {
@@ -117,11 +117,11 @@ class TaskCache {
         try {
             const data = (0, external_node_fs_namespaceObject.readFileSync)(cacheFile, 'utf8');
             const jsonData = external_js_yaml_default().load(data);
-            const version = (0, external_utils_js_namespaceObject.getMidsceneVersion)();
-            if (!version) return void debug('no midscene version info, will not read cache from file');
-            if (external_semver_default().lt(jsonData.midsceneVersion, lowestSupportedMidsceneVersion) && !jsonData.midsceneVersion.includes('beta')) return void console.warn(`You are using an old version of Midscene cache file, and we cannot match any info from it. Starting from Midscene v0.17, we changed our strategy to use xpath for cache info, providing better performance.\nPlease delete the existing cache and rebuild it. Sorry for the inconvenience.\ncache file: ${cacheFile}`);
-            debug('cache loaded from file, path: %s, cache version: %s, record length: %s', cacheFile, jsonData.midsceneVersion, jsonData.caches.length);
-            jsonData.midsceneVersion = (0, external_utils_js_namespaceObject.getMidsceneVersion)();
+            const version = (0, external_utils_js_namespaceObject.getSqaiVersion)();
+            if (!version) return void debug('no SQAI version info, will not read cache from file');
+            if (external_semver_default().lt(jsonData.sqaiVersion, lowestSupportedSqaiVersion) && !jsonData.sqaiVersion.includes('beta')) return void console.warn(`You are using an old version of SQAI cache file from before v0.5.0 rebrand. Cache format has changed.\nPlease delete the existing cache and rebuild it. Sorry for the inconvenience.\ncache file: ${cacheFile}`);
+            debug('cache loaded from file, path: %s, cache version: %s, record length: %s', cacheFile, jsonData.sqaiVersion, jsonData.caches.length);
+            jsonData.sqaiVersion = (0, external_utils_js_namespaceObject.getSqaiVersion)();
             return jsonData;
         } catch (err) {
             debug('cache file exists but load failed, path: %s, error: %s', cacheFile, err);
@@ -129,8 +129,8 @@ class TaskCache {
         }
     }
     flushCacheToFile(options) {
-        const version = (0, external_utils_js_namespaceObject.getMidsceneVersion)();
-        if (!version) return void debug('no midscene version info, will not write cache to file');
+        const version = (0, external_utils_js_namespaceObject.getSqaiVersion)();
+        if (!version) return void debug('no SQAI version info, will not write cache to file');
         if (!this.cacheFilePath) return void debug('no cache file path, will not write cache to file');
         if (null == options ? void 0 : options.cleanUnused) if (this.isCacheResultUsed) {
             const originalLength = this.cache.caches.length;
@@ -213,7 +213,7 @@ class TaskCache {
         let cacheContent;
         if (this.cacheFilePath && !this.writeOnlyMode) cacheContent = this.loadCacheFromFile();
         if (!cacheContent) cacheContent = {
-            midsceneVersion: (0, external_utils_js_namespaceObject.getMidsceneVersion)(),
+            sqaiVersion: (0, external_utils_js_namespaceObject.getSqaiVersion)(),
             cacheId: this.cacheId,
             caches: []
         };

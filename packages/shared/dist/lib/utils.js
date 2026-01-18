@@ -92,8 +92,8 @@ async function repeat(times, fn) {
 }
 const utils_REGEXP_LT = /</g;
 const utils_REGEXP_GT = />/g;
-const REGEXP_LT_ESCAPE = '__midscene_lt__';
-const REGEXP_GT_ESCAPE = '__midscene_gt__';
+const REGEXP_LT_ESCAPE = '__sqai_lt__';
+const REGEXP_GT_ESCAPE = '__sqai_gt__';
 const escapeScriptTag = (html)=>html.replace(utils_REGEXP_LT, REGEXP_LT_ESCAPE).replace(utils_REGEXP_GT, REGEXP_GT_ESCAPE);
 const antiEscapeScriptTag = (html)=>{
     const REGEXP_LT = new RegExp(REGEXP_LT_ESCAPE, 'g');

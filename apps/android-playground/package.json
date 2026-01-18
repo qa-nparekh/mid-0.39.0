@@ -1,7 +1,7 @@
 {
   "name": "android-playground",
   "private": true,
-  "version": "0.12.4",
+  "version": "0.5.0",
   "type": "module",
   "scripts": {
     "build": "rsbuild build",
@@ -13,7 +13,6 @@
     "@sqaitech/android": "workspace:*",
     "@sqaitech/core": "workspace:*",
     "@sqaitech/playground": "workspace:*",
-
     "@sqaitech/shared": "workspace:*",
     "@sqaitech/visualizer": "workspace:*",
     "@sqaitech/web": "workspace:*",

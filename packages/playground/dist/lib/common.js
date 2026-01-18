@@ -51,7 +51,7 @@ const noReplayAPIs = [
 ];
 const formatErrorMessage = (e)=>{
     const errorMessage = (null == e ? void 0 : e.message) || '';
-    if (errorMessage.includes('of different extension')) return 'Conflicting extension detected. Please disable the suspicious plugins and refresh the page. Guide: https://midscenejs.com/quick-experience.html#faq';
+    if (errorMessage.includes('of different extension')) return 'Conflicting extension detected. Please disable the suspicious plugins and refresh the page. Guide: https://sqai.tech/quick-experience.html#faq';
     if (errorMessage.includes('NOT_IMPLEMENTED_AS_DESIGNED')) return 'Further actions cannot be performed in the current environment';
     return errorMessage || 'Unknown error';
 };

@@ -130,7 +130,7 @@ export class Page<
       } catch (error) {
         // Ignore timeout error, continue execution
         console.warn(
-          '[midscene:warning] Waiting for the "navigation" has timed out, but Midscene will continue execution. Please check https://midscenejs.com/faq.html#customize-the-network-timeout for more information on customizing the network timeout',
+          '[sqai:warning] Waiting for the "navigation" has timed out, but SQAI will continue execution. Please check https://sqai.tech/faq.html#customize-the-network-timeout for more information on customizing the network timeout',
         );
       }
       debugPage('waitForNavigation end');
@@ -153,7 +153,7 @@ export class Page<
       } catch (error) {
         // Ignore timeout error, continue execution
         console.warn(
-          '[midscene:warning] Waiting for the "network idle" has timed out, but Midscene will continue execution. Please check https://midscenejs.com/faq.html#customize-the-network-timeout for more information on customizing the network timeout',
+          '[sqai:warning] Waiting for the "network idle" has timed out, but SQAI will continue execution. Please check https://sqai.tech/faq.html#customize-the-network-timeout for more information on customizing the network timeout',
         );
       }
     } else {

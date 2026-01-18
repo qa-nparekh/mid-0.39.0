@@ -1,7 +1,7 @@
 {
   "name": "@sqaitech/core",
   "description": "Automate browser actions, extract data, and perform assertions using AI. It offers JavaScript SDK, Chrome extension, and support for scripting in YAML. See https://sqai.tech/ for details.",
-  "version": "0.30.10",
+  "version": "0.5.0",
   "repository": "https://github.com/qa-nparekh/midscene",
   "homepage": "https://sqai.tech/",
   "main": "./dist/lib/index.js",

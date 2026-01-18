@@ -109,7 +109,7 @@ const PlaywrightAiFixture = (options)=>{
                         debugPage(`waitForNetworkIdle timeout: ${waitForNetworkIdleTimeout}`);
                         await agent.waitForNetworkIdle(waitForNetworkIdleTimeout);
                     } catch (error) {
-                        console.warn('[midscene:warning] Waiting for network idle has timed out, but Midscene will continue execution. Please check https://midscenejs.com/faq.html#customize-the-network-timeout for more information on customizing the network timeout');
+                        console.warn('[sqai:warning] Waiting for network idle has timed out, but SQAI will continue execution. Please check https://sqai.tech/faq.html#customize-the-network-timeout for more information on customizing the network timeout');
                     }
                     try {
                         const result = await agent[aiActionType](taskPrompt, ...args || []);

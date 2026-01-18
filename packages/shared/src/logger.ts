@@ -5,7 +5,7 @@ import debug from 'debug';
 import { getMidsceneRunSubDir } from './common';
 import { ifInNode } from './utils';
 
-const topicPrefix = 'midscene';
+const topicPrefix = 'sqai';
 // Map to store file streams
 const logStreams = new Map<string, fs.WriteStream>();
 // Map to store debug instances

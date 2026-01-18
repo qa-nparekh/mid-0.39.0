@@ -143,7 +143,8 @@ function trimContextByViewport(execution) {
         }) : execution.tasks
     };
 }
-const getMidsceneVersion = ()=>"0.30.10";
+const getMidsceneVersion = ()=>"0.5.0";
+const getSqaiVersion = getMidsceneVersion;
 const parsePrompt = (prompt)=>{
     if ('string' == typeof prompt) return {
         textPrompt: prompt,
@@ -157,6 +158,6 @@ const parsePrompt = (prompt)=>{
         } : void 0
     };
 };
-export { commonContextParser, generateCacheId, getCurrentExecutionFile, getMidsceneVersion, getReportFileName, matchElementFromCache, matchElementFromPlan, parsePrompt, printReportMsg, trimContextByViewport };
+export { commonContextParser, generateCacheId, getCurrentExecutionFile, getMidsceneVersion, getReportFileName, getSqaiVersion, matchElementFromCache, matchElementFromPlan, parsePrompt, printReportMsg, trimContextByViewport };
 
 //# sourceMappingURL=utils.mjs.map

@@ -17,8 +17,8 @@ export const parseProcessArgs = async (): Promise<{
 }> => {
   const args = yargs(hideBin(process.argv))
     .usage(
-      `Midscene.js helps you automate browser actions, assertions, and data extraction by AI. 
-Homepage: https://midscenejs.com
+      `SQAI.js helps you automate browser actions, assertions, and data extraction by AI. 
+Homepage: https://sqai.tech
 Github: https://github.com/web-infra-dev/midscene
 
 Usage: 

@@ -608,7 +608,7 @@ class Agent {
         this.opts = Object.assign({
             generateReport: true,
             autoPrintReportMsg: true,
-            groupName: 'Midscene Report',
+            groupName: 'SQAI Report',
             groupDescription: ''
         }, opts || {});
         if ((null == opts ? void 0 : opts.modelConfig) && 'function' != typeof (null == opts ? void 0 : opts.modelConfig)) throw new Error(`opts.modelConfig must be one of function or undefined, but got ${typeof (null == opts ? void 0 : opts.modelConfig)}`);

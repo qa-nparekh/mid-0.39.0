@@ -27,8 +27,8 @@ __webpack_require__.d(external_zustand_namespaceObject, {
     create: ()=>create
 });
 const { create: history_create } = external_zustand_namespaceObject;
-const HISTORY_KEY = 'midscene-prompt-history-v2';
-const LAST_SELECTED_TYPE_KEY = 'midscene-last-selected-type';
+const HISTORY_KEY = 'sqai-prompt-history-v2';
+const LAST_SELECTED_TYPE_KEY = 'sqai-last-selected-type';
 const getHistoryFromLocalStorage = ()=>{
     const historyString = localStorage.getItem(HISTORY_KEY);
     return historyString ? JSON.parse(historyString) : {};

@@ -17,7 +17,7 @@ export function NavActions({
   showTooltipWhenEmpty = false,
   showModelName = false,
   githubUrl = 'https://github.com/web-infra-dev/midscene',
-  helpUrl = 'https://midscenejs.com/quick-experience.html',
+  helpUrl = 'https://sqai.tech/quick-experience.html',
   className = '',
 }: NavActionsProps) {
   return (

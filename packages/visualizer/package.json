@@ -1,6 +1,6 @@
 {
   "name": "@sqaitech/visualizer",
-  "version": "0.30.10",
+  "version": "0.5.0",
   "repository": "https://github.com/qa-nparekh/midscene",
   "homepage": "https://sqai.tech/",
   "types": "./dist/types/index.d.ts",

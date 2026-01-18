@@ -83,7 +83,7 @@ class ExtensionBridgePageBrowserSide extends page_js_default() {
             }
         }, ()=>this.destroy());
         await this.bridgeClient.connect();
-        this.onLogMessage(`Bridge connected, cli-side version v${this.bridgeClient.serverVersion}, browser-side version v0.30.10`, 'log');
+        this.onLogMessage(`Bridge connected, cli-side version v${this.bridgeClient.serverVersion}, browser-side version v0.5.0`, 'log');
     }
     async connect() {
         return await this.setupBridgeClient();
