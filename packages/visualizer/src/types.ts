@@ -1,4 +1,4 @@
-import type { DeviceAction, UIContext } from '@midscene/core';
+import type { DeviceAction, UIContext } from '@sqaitech/core';
 import type { ComponentType } from 'react';
 
 // Zod schema related types - compatible with actual zod types
@@ -227,8 +227,8 @@ import type {
   GroupedActionDump,
   IExecutionDump,
   WebUIContext,
-} from '@midscene/core';
-import type { ExecutionOptions, PlaygroundAgent } from '@midscene/playground';
+} from '@sqaitech/core';
+import type { ExecutionOptions, PlaygroundAgent } from '@sqaitech/playground';
 
 // result type
 export interface PlaygroundResult {

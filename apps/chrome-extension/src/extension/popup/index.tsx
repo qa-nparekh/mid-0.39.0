@@ -9,19 +9,19 @@ import {
   NavActions,
   globalThemeConfig,
   useEnvConfig,
-} from '@midscene/visualizer';
+} from '@sqaitech/visualizer';
 import { ConfigProvider, Dropdown } from 'antd';
 import { useEffect, useState } from 'react';
 import { BrowserExtensionPlayground } from '../../components/playground';
 import Bridge from '../bridge';
 import Recorder from '../recorder';
 import './index.less';
-import { OPENAI_API_KEY } from '@midscene/shared/env';
-import { safeOverrideAIConfig } from '@midscene/visualizer';
+import { OPENAI_API_KEY } from '@sqaitech/shared/env';
+import { safeOverrideAIConfig } from '@sqaitech/visualizer';
 import {
   ChromeExtensionProxyPage,
   ChromeExtensionProxyPageAgent,
-} from '@midscene/web/chrome-extension';
+} from '@sqaitech/web/chrome-extension';
 // remember to destroy the agent when the tab is destroyed: agent.page.destroy()
 const extensionAgentForTab = (forceSameTabNavigation = true) => {
   const page = new ChromeExtensionProxyPage(forceSameTabNavigation);

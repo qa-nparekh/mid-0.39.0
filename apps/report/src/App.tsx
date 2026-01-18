@@ -4,14 +4,14 @@ import { Alert, ConfigProvider, Empty, theme } from 'antd';
 import { useEffect, useRef, useState } from 'react';
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';
 
-import { GroupedActionDump } from '@midscene/core';
-import { antiEscapeScriptTag } from '@midscene/shared/utils';
+import { GroupedActionDump } from '@sqaitech/core';
+import { antiEscapeScriptTag } from '@sqaitech/shared/utils';
 import {
   Logo,
   Player,
   globalThemeConfig,
   useGlobalPreference,
-} from '@midscene/visualizer';
+} from '@sqaitech/visualizer';
 import DetailPanel from './components/detail-panel';
 import DetailSide from './components/detail-side';
 import GlobalHoverPreview from './components/global-hover-preview';

@@ -2,13 +2,13 @@ import './App.less';
 import {
   PLAYGROUND_SERVER_PORT,
   SCRCPY_SERVER_PORT,
-} from '@midscene/shared/constants';
+} from '@sqaitech/shared/constants';
 import {
   ScreenshotViewer,
   globalThemeConfig,
   safeOverrideAIConfig,
   useEnvConfig,
-} from '@midscene/visualizer';
+} from '@sqaitech/visualizer';
 import { ConfigProvider, Layout, message } from 'antd';
 import { useEffect, useRef, useState } from 'react';
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';

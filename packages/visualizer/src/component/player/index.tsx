@@ -10,7 +10,7 @@ import {
   ExportOutlined,
   LoadingOutlined,
 } from '@ant-design/icons';
-import type { BaseElement, LocateResultElement, Rect } from '@midscene/core';
+import type { BaseElement, LocateResultElement, Rect } from '@sqaitech/core';
 import { Dropdown, Spin, Switch, Tooltip, message } from 'antd';
 import GlobalPerspectiveIcon from '../../icons/global-perspective.svg';
 import PlayerSettingIcon from '../../icons/player-setting.svg';

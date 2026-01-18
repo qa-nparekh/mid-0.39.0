@@ -4,13 +4,13 @@ import type {
   AIUsageInfo,
   ExecutionTask,
   ExecutionTaskPlanningLocate,
-} from '@midscene/core';
-import { typeStr } from '@midscene/core/agent';
+} from '@sqaitech/core';
+import { typeStr } from '@sqaitech/core/agent';
 import {
   type AnimationScript,
   iconForStatus,
   timeCostStrElement,
-} from '@midscene/visualizer';
+} from '@sqaitech/visualizer';
 import { Checkbox, Tag, Tooltip } from 'antd';
 import { useEffect, useMemo } from 'react';
 import CameraIcon from '../../icons/camera.svg?react';

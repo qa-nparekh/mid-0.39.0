@@ -2,7 +2,7 @@ import { existsSync } from 'node:fs';
 import {
   MIDSCENE_MCP_CHROME_PATH,
   globalConfigManager,
-} from '@midscene/shared/env';
+} from '@sqaitech/shared/env';
 
 // Deep merge utility function
 export function deepMerge(target: any, source: any): any {
