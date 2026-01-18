@@ -11,11 +11,11 @@ import { uploadTestInfoToServer } from '@/utils';
 import {
   MIDSCENE_REPORT_TAG_NAME,
   globalConfigManager,
-} from '@midscene/shared/env';
-import { generateElementByPosition } from '@midscene/shared/extractor';
-import { getDebug } from '@midscene/shared/logger';
-import { _keyDefinitions } from '@midscene/shared/us-keyboard-layout';
-import { assert, logMsg, uuid } from '@midscene/shared/utils';
+} from '@sqaitech/shared/env';
+import { generateElementByPosition } from '@sqaitech/shared/extractor';
+import { getDebug } from '@sqaitech/shared/logger';
+import { _keyDefinitions } from '@sqaitech/shared/us-keyboard-layout';
+import { assert, logMsg, uuid } from '@sqaitech/shared/utils';
 import dayjs from 'dayjs';
 import type { TaskCache } from './task-cache';
 import { debug as cacheDebug } from './task-cache';
@@ -221,6 +221,8 @@ export const getMidsceneVersion = (): string => {
   }
   throw new Error('__VERSION__ inject failed during build');
 };
+
+export const getSqaiVersion = getMidsceneVersion;
 
 export const parsePrompt = (
   prompt: TUserPrompt,

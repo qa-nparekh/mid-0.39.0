@@ -31,14 +31,14 @@ import type {
   ServiceExtractParam,
 } from '@/types';
 import { ServiceError } from '@/types';
-import type { IModelConfig } from '@midscene/shared/env';
-import { getDebug } from '@midscene/shared/logger';
-import { assert } from '@midscene/shared/utils';
+import type { IModelConfig } from '@sqaitech/shared/env';
+import { getDebug } from '@sqaitech/shared/logger';
+import { assert } from '@sqaitech/shared/utils';
 import { ExecutionSession } from './execution-session';
 import { TaskBuilder } from './task-builder';
 import type { TaskCache } from './task-cache';
 export { locatePlanForLocate } from './task-builder';
-import { descriptionOfTree } from '@midscene/shared/extractor';
+import { descriptionOfTree } from '@sqaitech/shared/extractor';
 import { taskTitleStr } from './ui-utils';
 import { parsePrompt } from './utils';
 

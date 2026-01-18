@@ -20,8 +20,8 @@ import {
   pointToBbox,
 } from '@/common';
 import { type DeviceAction, getMidsceneLocationSchema } from '@/index';
-import { getMidsceneRunSubDir } from '@midscene/shared/common';
-import { uuid } from '@midscene/shared/utils';
+import { getMidsceneRunSubDir } from '@sqaitech/shared/common';
+import { uuid } from '@sqaitech/shared/utils';
 import { describe, expect, it } from 'vitest';
 import { z } from 'zod';
 // @ts-ignore no types in es folder

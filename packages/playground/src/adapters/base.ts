@@ -1,5 +1,5 @@
-import type { DeviceAction } from '@midscene/core';
-import { findAllMidsceneLocatorField } from '@midscene/core/ai-model';
+import type { DeviceAction } from '@sqaitech/core';
+import { findAllMidsceneLocatorField } from '@sqaitech/core/ai-model';
 import type { ExecutionOptions, FormValue, ValidationResult } from '../types';
 
 export abstract class BasePlaygroundAdapter {

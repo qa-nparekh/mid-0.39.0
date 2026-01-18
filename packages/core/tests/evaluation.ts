@@ -1,8 +1,8 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { describeUserPage } from '@/index';
-import type { TModelFamily } from '@midscene/shared/env';
-import { imageInfoOfBase64, localImg2Base64 } from '@midscene/shared/img';
+import type { TModelFamily } from '@sqaitech/shared/env';
+import { imageInfoOfBase64, localImg2Base64 } from '@sqaitech/shared/img';
 
 export async function buildContext(
   targetDir: string,

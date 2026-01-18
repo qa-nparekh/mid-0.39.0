@@ -1,5 +1,5 @@
 import path, { join, resolve } from 'node:path';
-import { assert } from '@midscene/shared/utils';
+import { assert } from '@sqaitech/shared/utils';
 
 import { existsSync, readFileSync } from 'node:fs';
 import type { PageAgent } from '@/index';
@@ -8,11 +8,11 @@ import type {
   DeviceAction,
   GroupedActionDump,
   MidsceneYamlScriptWebEnv,
-} from '@midscene/core';
-import { actionTapParamSchema } from '@midscene/core/device';
-import { ScriptPlayer, buildYaml, parseYamlScript } from '@midscene/core/yaml';
-import { getMidsceneRunSubDir } from '@midscene/shared/common';
-import { uuid } from '@midscene/shared/utils';
+} from '@sqaitech/core';
+import { actionTapParamSchema } from '@sqaitech/core/device';
+import { ScriptPlayer, buildYaml, parseYamlScript } from '@sqaitech/core/yaml';
+import { getMidsceneRunSubDir } from '@sqaitech/shared/common';
+import { uuid } from '@sqaitech/shared/utils';
 import { type MockedFunction, describe, expect, test, vi } from 'vitest';
 
 const serverRoot = join(__dirname, 'server_root');

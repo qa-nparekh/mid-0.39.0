@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import type { NodeType } from '@midscene/shared/constants';
-import type { CreateOpenAIClientFn, TModelConfig } from '@midscene/shared/env';
+import type { NodeType } from '@sqaitech/shared/constants';
+import type { CreateOpenAIClientFn, TModelConfig } from '@sqaitech/shared/env';
 import type {
   BaseElement,
   LocateResultElement,
   Rect,
   Size,
-} from '@midscene/shared/types';
+} from '@sqaitech/shared/types';
 import type { z } from 'zod';
 import type { TUserPrompt } from './common';
 import { ScreenshotItem } from './screenshot-item';
@@ -23,7 +23,7 @@ export type {
   Rect,
   Size,
   Point,
-} from '@midscene/shared/types';
+} from '@sqaitech/shared/types';
 export * from './yaml';
 
 export type AIUsageInfo = Record<string, any> & {

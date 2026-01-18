@@ -1,4 +1,4 @@
-import type { TModelFamily } from '@midscene/shared/env';
+import type { TModelFamily } from '@sqaitech/shared/env';
 import { bboxDescription } from './common';
 export function systemPromptToLocateElement(
   modelFamily: TModelFamily | undefined,

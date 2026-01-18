@@ -4,13 +4,13 @@ import type {
   Rect,
   UIContext,
   WebElementInfo,
-} from '@midscene/core';
-import type { AbstractInterface } from '@midscene/core/device';
-import { getDebug } from '@midscene/shared/logger';
-import { _keyDefinitions } from '@midscene/shared/us-keyboard-layout';
+} from '@sqaitech/core';
+import type { AbstractInterface } from '@sqaitech/core/device';
+import { getDebug } from '@sqaitech/shared/logger';
+import { _keyDefinitions } from '@sqaitech/shared/us-keyboard-layout';
 
-import { commonContextParser } from '@midscene/core/agent';
-import type { NodeType } from '@midscene/shared/constants';
+import { commonContextParser } from '@sqaitech/core/agent';
+import type { NodeType } from '@sqaitech/shared/constants';
 import type ChromeExtensionProxyPage from './chrome-extension/page';
 import type { PlaywrightWebPage } from './playwright';
 import type { PuppeteerWebPage } from './puppeteer';

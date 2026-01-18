@@ -1,6 +1,6 @@
 {
-  "name": "@midscene/web",
-  "description": "Automate browser actions, extract data, and perform assertions using AI. It offers JavaScript SDK, Chrome extension, and support for scripting in YAML. See https://midscenejs.com/ for details.",
+  "name": "@sqaitech/web",
+  "description": "Automate browser actions, extract data, and perform assertions using AI. It offers JavaScript SDK, Chrome extension, and support for scripting in YAML. See https://github.com/qa-nparekh/midscene for details.",
   "keywords": [
     "AI UI automation",
     "AI testing",
@@ -8,9 +8,9 @@
     "Browser use",
     "Android use"
   ],
-  "version": "1.2.1",
-  "repository": "https://github.com/web-infra-dev/midscene",
-  "homepage": "https://midscenejs.com/",
+  "version": "0.5.0",
+  "repository": "https://github.com/qa-nparekh/midscene",
+  "homepage": "https://github.com/qa-nparekh/midscene",
   "main": "./dist/lib/index.js",
   "types": "./dist/types/index.d.ts",
   "module": "./dist/es/index.mjs",
@@ -112,9 +112,9 @@
   },
   "files": ["static", "dist", "iife-script", "README.md", "bin"],
   "dependencies": {
-    "@midscene/core": "workspace:*",
-    "@midscene/playground": "workspace:*",
-    "@midscene/shared": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/playground": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
     "cors": "^2.8.5",
     "dayjs": "^1.11.11",
     "dotenv": "^16.4.5",

@@ -6,12 +6,12 @@
 */
 
 import { limitOpenNewTabScript } from '@/web-element';
-import type { ElementTreeNode, Point, Size, UIContext } from '@midscene/core';
-import type { AbstractInterface, DeviceAction } from '@midscene/core/device';
-import type { ElementInfo } from '@midscene/shared/extractor';
-import { treeToList } from '@midscene/shared/extractor';
-import { createImgBase64ByFormat } from '@midscene/shared/img';
-import { assert } from '@midscene/shared/utils';
+import type { ElementTreeNode, Point, Size, UIContext } from '@sqaitech/core';
+import type { AbstractInterface, DeviceAction } from '@sqaitech/core/device';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
+import { treeToList } from '@sqaitech/shared/extractor';
+import { createImgBase64ByFormat } from '@sqaitech/shared/img';
+import { assert } from '@sqaitech/shared/utils';
 import type { Protocol as CDPTypes } from 'devtools-protocol';
 import { WebPageContextParser } from '../web-element';
 import {

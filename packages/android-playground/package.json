@@ -1,14 +1,14 @@
 {
-  "name": "@midscene/android-playground",
-  "version": "1.2.1",
-  "description": "Android playground for Midscene",
+  "name": "@sqaitech/android-playground",
+  "version": "0.5.0",
+  "description": "Android playground for SQAI",
   "main": "./dist/lib/index.js",
   "types": "./dist/types/index.d.ts",
   "module": "./dist/es/index.mjs",
   "files": ["dist", "static", "bin", "README.md"],
   "bin": {
     "midscene-android-playground": "./bin/android-playground",
-    "@midscene/android-playground": "./bin/android-playground"
+    "@sqaitech/android-playground": "./bin/android-playground"
   },
   "scripts": {
     "dev": "npm run build:watch",
@@ -17,10 +17,10 @@
     "build:watch": "rslib build --watch --no-clean"
   },
   "dependencies": {
-    "@midscene/android": "workspace:*",
-    "@midscene/core": "workspace:*",
-    "@midscene/playground": "workspace:*",
-    "@midscene/shared": "workspace:*",
+    "@sqaitech/android": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/playground": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
     "@yume-chan/adb": "^1.1.0",
     "@yume-chan/adb-scrcpy": "^1.1.0",
     "@yume-chan/adb-server-node-tcp": "^1.1.0",

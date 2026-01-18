@@ -1,11 +1,11 @@
 import { readFileSync } from 'node:fs';
 import { createYamlPlayer, launchServer } from '@/create-yaml-player';
-import type { MidsceneYamlScript, MidsceneYamlScriptEnv } from '@midscene/core';
-import { processCacheConfig } from '@midscene/core/utils';
+import type { MidsceneYamlScript, MidsceneYamlScriptEnv } from '@sqaitech/core';
+import { processCacheConfig } from '@sqaitech/core/utils';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 
 // Mock the global config manager to control environment variables
-vi.mock('@midscene/shared/env', () => ({
+vi.mock('@sqaitech/shared/env', () => ({
   MIDSCENE_CACHE: 'MIDSCENE_CACHE',
   globalConfigManager: {
     getEnvConfigInBoolean: vi.fn(),
@@ -21,33 +21,33 @@ vi.mock('http-server', () => ({
   createServer: vi.fn(),
 }));
 
-vi.mock('@midscene/core/yaml', () => ({
+vi.mock('@sqaitech/core/yaml', () => ({
   ScriptPlayer: vi.fn(),
   parseYamlScript: vi.fn(),
 }));
 
-vi.mock('@midscene/android', () => ({
+vi.mock('@sqaitech/android', () => ({
   agentFromAdbDevice: vi.fn(),
 }));
 
-vi.mock('@midscene/ios', () => ({
+vi.mock('@sqaitech/ios', () => ({
   agentFromWebDriverAgent: vi.fn(),
 }));
 
-vi.mock('@midscene/web/bridge-mode', () => ({
+vi.mock('@sqaitech/web/bridge-mode', () => ({
   AgentOverChromeBridge: vi.fn(),
 }));
 
-vi.mock('@midscene/web/puppeteer-agent-launcher', () => ({
+vi.mock('@sqaitech/web/puppeteer-agent-launcher', () => ({
   puppeteerAgentForTarget: vi.fn(),
 }));
 
-import { agentFromAdbDevice } from '@midscene/android';
-import { ScriptPlayer, parseYamlScript } from '@midscene/core/yaml';
-import { agentFromWebDriverAgent } from '@midscene/ios';
-import { globalConfigManager } from '@midscene/shared/env';
-import { AgentOverChromeBridge } from '@midscene/web/bridge-mode';
-import { puppeteerAgentForTarget } from '@midscene/web/puppeteer-agent-launcher';
+import { agentFromAdbDevice } from '@sqaitech/android';
+import { ScriptPlayer, parseYamlScript } from '@sqaitech/core/yaml';
+import { agentFromWebDriverAgent } from '@sqaitech/ios';
+import { globalConfigManager } from '@sqaitech/shared/env';
+import { AgentOverChromeBridge } from '@sqaitech/web/bridge-mode';
+import { puppeteerAgentForTarget } from '@sqaitech/web/puppeteer-agent-launcher';
 import { createServer } from 'http-server';
 
 /**
@@ -649,7 +649,7 @@ describe('create-yaml-player', () => {
 
       // Mock AgentOverChromeBridge from the bridge-mode module
       const { AgentOverChromeBridge } = await import(
-        '@midscene/web/bridge-mode'
+        '@sqaitech/web/bridge-mode'
       );
       vi.mocked(AgentOverChromeBridge).mockImplementation(
         (opts) => mockAgent as any,

@@ -10,7 +10,7 @@ import {
   type Size,
   getMidsceneLocationSchema,
   z,
-} from '@midscene/core';
+} from '@sqaitech/core';
 import {
   type AbstractInterface,
   type ActionTapParam,
@@ -23,23 +23,23 @@ import {
   defineActionKeyboardPress,
   defineActionScroll,
   defineActionTap,
-} from '@midscene/core/device';
-import { getTmpFile, sleep } from '@midscene/core/utils';
+} from '@sqaitech/core/device';
+import { getTmpFile, sleep } from '@sqaitech/core/utils';
 import {
   MIDSCENE_ADB_PATH,
   MIDSCENE_ADB_REMOTE_HOST,
   MIDSCENE_ADB_REMOTE_PORT,
   MIDSCENE_ANDROID_IME_STRATEGY,
   globalConfigManager,
-} from '@midscene/shared/env';
-import type { ElementInfo } from '@midscene/shared/extractor';
+} from '@sqaitech/shared/env';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
 import {
   createImgBase64ByFormat,
   isValidPNGImageBuffer,
-} from '@midscene/shared/img';
-import { getDebug } from '@midscene/shared/logger';
-import { uuid } from '@midscene/shared/utils';
-import { repeat } from '@midscene/shared/utils';
+} from '@sqaitech/shared/img';
+import { getDebug } from '@sqaitech/shared/logger';
+import { uuid } from '@sqaitech/shared/utils';
+import { repeat } from '@sqaitech/shared/utils';
 
 import { ADB } from 'appium-adb';
 
@@ -47,7 +47,7 @@ import { ADB } from 'appium-adb';
 export type {
   AndroidDeviceOpt,
   AndroidDeviceInputOpt,
-} from '@midscene/core/device';
+} from '@sqaitech/core/device';
 
 // only for Android, because it's impossible to scroll to the bottom, so we need to set a default scroll times
 const defaultScrollUntilTimes = 10;
@@ -1208,7 +1208,7 @@ ${Object.keys(size)
       const adb = await this.getAdb();
       // Use a more reliable path resolution method
       const androidPkgJson = createRequire(import.meta.url).resolve(
-        '@midscene/android/package.json',
+        '@sqaitech/android/package.json',
       );
       const yadbBin = path.join(path.dirname(androidPkgJson), 'bin', 'yadb');
       await adb.push(yadbBin, '/data/local/tmp');

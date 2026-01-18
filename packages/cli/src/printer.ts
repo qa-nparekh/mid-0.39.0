@@ -3,8 +3,8 @@ import type {
   MidsceneYamlScriptEnv,
   ScriptPlayerStatusValue,
   ScriptPlayerTaskStatus,
-} from '@midscene/core';
-import type { ScriptPlayer } from '@midscene/core/yaml';
+} from '@sqaitech/core';
+import type { ScriptPlayer } from '@sqaitech/core/yaml';
 import chalk from 'chalk';
 
 export interface MidsceneYamlFileContext {

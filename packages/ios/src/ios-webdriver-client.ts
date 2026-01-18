@@ -1,5 +1,5 @@
-import { getDebug } from '@midscene/shared/logger';
-import { WebDriverClient } from '@midscene/webdriver';
+import { getDebug } from '@sqaitech/shared/logger';
+import { WebDriverClient } from '@sqaitech/webdriver';
 
 const debugIOS = getDebug('webdriver:ios');
 
@@ -451,7 +451,7 @@ export class IOSWebDriverClient extends WebDriverClient {
       ]);
 
       // Get screenshot dimensions from base64 using Jimp
-      const { jimpFromBase64 } = await import('@midscene/shared/img');
+      const { jimpFromBase64 } = await import('@sqaitech/shared/img');
       const screenshotImg = await jimpFromBase64(screenshotBase64);
       const screenshotWidth = screenshotImg.bitmap.width;
       const screenshotHeight = screenshotImg.bitmap.height;

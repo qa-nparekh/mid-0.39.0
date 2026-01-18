@@ -1,9 +1,9 @@
 import path from 'node:path';
 import { PuppeteerAgent } from '@/puppeteer';
-import { z } from '@midscene/core';
-import { defineAction } from '@midscene/core/device';
-import { sleep } from '@midscene/core/utils';
-import { globalModelConfigManager } from '@midscene/shared/env';
+import { z } from '@sqaitech/core';
+import { defineAction } from '@sqaitech/core/device';
+import { sleep } from '@sqaitech/core/utils';
+import { globalModelConfigManager } from '@sqaitech/shared/env';
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { launchPage } from './utils';
 

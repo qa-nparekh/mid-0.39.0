@@ -21,7 +21,7 @@ export {
 export {
   MIDSCENE_MODEL_NAME,
   type CreateOpenAIClientFn,
-} from '@midscene/shared/env';
+} from '@sqaitech/shared/env';
 
 export type * from './types';
 export {

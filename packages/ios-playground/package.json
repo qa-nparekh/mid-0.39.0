@@ -1,14 +1,14 @@
 {
-  "name": "@midscene/ios-playground",
-  "version": "1.2.1",
-  "description": "iOS playground for Midscene",
+  "name": "@sqaitech/ios-playground",
+  "version": "0.5.0",
+  "description": "iOS playground for SQAI",
   "main": "./dist/lib/index.js",
   "types": "./dist/types/index.d.ts",
   "module": "./dist/es/index.mjs",
   "files": ["dist", "bin", "README.md"],
   "bin": {
     "midscene-ios-playground": "./bin/ios-playground",
-    "@midscene/ios-playground": "./bin/ios-playground"
+    "@sqaitech/ios-playground": "./bin/ios-playground"
   },
   "scripts": {
     "dev": "npm run build:watch",
@@ -17,7 +17,7 @@
     "build:watch": "rslib build --watch --no-clean"
   },
   "dependencies": {
-    "@midscene/ios": "workspace:*"
+    "@sqaitech/ios": "workspace:*"
   },
   "devDependencies": {
     "@rslib/core": "^0.18.3",

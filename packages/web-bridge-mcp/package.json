@@ -1,7 +1,7 @@
 {
-  "name": "@midscene/web-bridge-mcp",
-  "version": "1.2.1",
-  "description": "Midscene MCP Server for Web automation (Bridge mode)",
+  "name": "@sqaitech/web-bridge-mcp",
+  "version": "0.5.0",
+  "description": "SQAI MCP Server for Web automation (Bridge mode)",
   "bin": "dist/index.js",
   "files": ["dist"],
   "main": "./dist/server.js",
@@ -21,10 +21,10 @@
     "inspect": "node scripts/inspect.mjs"
   },
   "devDependencies": {
-    "@midscene/core": "workspace:*",
-    "@midscene/report": "workspace:*",
-    "@midscene/shared": "workspace:*",
-    "@midscene/web": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/report": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
+    "@sqaitech/web": "workspace:*",
     "@modelcontextprotocol/inspector": "^0.16.3",
     "@modelcontextprotocol/sdk": "1.10.2",
     "@rslib/core": "^0.18.3",

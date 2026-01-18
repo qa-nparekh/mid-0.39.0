@@ -1,7 +1,7 @@
 {
-  "name": "@midscene/ios-mcp",
-  "version": "1.2.1",
-  "description": "Midscene MCP Server for iOS automation",
+  "name": "@sqaitech/ios-mcp",
+  "version": "0.5.0",
+  "description": "SQAI MCP Server for iOS automation",
   "bin": "dist/index.js",
   "files": ["dist"],
   "main": "./dist/server.js",
@@ -21,10 +21,10 @@
     "inspect": "node scripts/inspect.mjs"
   },
   "devDependencies": {
-    "@midscene/core": "workspace:*",
-    "@midscene/ios": "workspace:*",
-    "@midscene/report": "workspace:*",
-    "@midscene/shared": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/ios": "workspace:*",
+    "@sqaitech/report": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
     "@modelcontextprotocol/inspector": "^0.16.3",
     "@modelcontextprotocol/sdk": "1.10.2",
     "@rslib/core": "^0.18.3",

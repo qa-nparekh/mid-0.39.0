@@ -9,10 +9,10 @@ import {
   type TModelFamily,
   type UITarsModelVersion,
   globalConfigManager,
-} from '@midscene/shared/env';
+} from '@sqaitech/shared/env';
 
-import { getDebug } from '@midscene/shared/logger';
-import { assert, ifInBrowser } from '@midscene/shared/utils';
+import { getDebug } from '@sqaitech/shared/logger';
+import { assert, ifInBrowser } from '@sqaitech/shared/utils';
 import { jsonrepair } from 'jsonrepair';
 import OpenAI from 'openai';
 import type { ChatCompletionMessageParam } from 'openai/resources/index';

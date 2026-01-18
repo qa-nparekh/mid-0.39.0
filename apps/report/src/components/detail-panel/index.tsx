@@ -277,9 +277,11 @@ const DetailPanel = (): JSX.Element => {
           }}
         />
 
-        <OpenInPlayground
-          context={(activeTask as ExecutionTaskPlanning)?.uiContext}
-        />
+        <div style={{ display: 'none' }}>
+          <OpenInPlayground
+            context={(activeTask as ExecutionTaskPlanning)?.uiContext}
+          />
+        </div>
       </div>
       <div className="detail-content">{content}</div>
     </div>

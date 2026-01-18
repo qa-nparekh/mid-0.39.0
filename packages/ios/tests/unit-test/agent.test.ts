@@ -3,7 +3,7 @@ import {
   MIDSCENE_USE_DOUBAO_VISION,
   OPENAI_API_KEY,
   OPENAI_BASE_URL,
-} from '@midscene/shared/env';
+} from '@sqaitech/shared/env';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { IOSAgent } from '../../src/agent';
 import { IOSDevice } from '../../src/device';

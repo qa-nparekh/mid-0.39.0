@@ -1,9 +1,9 @@
 import type { DeviceAction } from '@/types';
-import type { TModelFamily } from '@midscene/shared/env';
+import type { TModelFamily } from '@sqaitech/shared/env';
 import {
   getZodDescription,
   getZodTypeName,
-} from '@midscene/shared/zod-schema-utils';
+} from '@sqaitech/shared/zod-schema-utils';
 import type { ResponseFormatJSONSchema } from 'openai/resources/index';
 import type { z } from 'zod';
 import { bboxDescription } from './common';

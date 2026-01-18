@@ -1,6 +1,6 @@
 import type { BaseElement, ElementTreeNode, Size, UIContext } from '@/types';
-import { NodeType } from '@midscene/shared/constants';
-import { assert } from '@midscene/shared/utils';
+import { NodeType } from '@sqaitech/shared/constants';
+import { assert } from '@sqaitech/shared/utils';
 
 export function describeSize(size: Size) {
   return `${size.width} x ${size.height}`;

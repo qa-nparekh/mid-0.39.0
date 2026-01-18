@@ -64,10 +64,10 @@ import {
   ModelConfigManager,
   globalConfigManager,
   globalModelConfigManager,
-} from '@midscene/shared/env';
-import { imageInfoOfBase64, resizeImgBase64 } from '@midscene/shared/img';
-import { getDebug } from '@midscene/shared/logger';
-import { assert } from '@midscene/shared/utils';
+} from '@sqaitech/shared/env';
+import { imageInfoOfBase64, resizeImgBase64 } from '@sqaitech/shared/img';
+import { getDebug } from '@sqaitech/shared/logger';
+import { assert } from '@sqaitech/shared/utils';
 import { defineActionAssert, defineActionFinalize } from '../device';
 import { TaskCache } from './task-cache';
 import {

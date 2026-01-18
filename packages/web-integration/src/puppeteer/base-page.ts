@@ -7,28 +7,28 @@ import type {
   Rect,
   Size,
   UIContext,
-} from '@midscene/core';
+} from '@sqaitech/core';
 import {
   AiJudgeOrderSensitive,
   callAIWithObjectResponse,
-} from '@midscene/core/ai-model';
-import type { AbstractInterface } from '@midscene/core/device';
-import { sleep } from '@midscene/core/utils';
+} from '@sqaitech/core/ai-model';
+import type { AbstractInterface } from '@sqaitech/core/device';
+import { sleep } from '@sqaitech/core/utils';
 import {
   DEFAULT_WAIT_FOR_NAVIGATION_TIMEOUT,
   DEFAULT_WAIT_FOR_NETWORK_IDLE_CONCURRENCY,
   DEFAULT_WAIT_FOR_NETWORK_IDLE_TIMEOUT,
-} from '@midscene/shared/constants';
-import type { IModelConfig } from '@midscene/shared/env';
-import type { ElementInfo } from '@midscene/shared/extractor';
-import { treeToList } from '@midscene/shared/extractor';
-import { createImgBase64ByFormat } from '@midscene/shared/img';
-import { type DebugFunction, getDebug } from '@midscene/shared/logger';
+} from '@sqaitech/shared/constants';
+import type { IModelConfig } from '@sqaitech/shared/env';
+import type { ElementInfo } from '@sqaitech/shared/extractor';
+import { treeToList } from '@sqaitech/shared/extractor';
+import { createImgBase64ByFormat } from '@sqaitech/shared/img';
+import { type DebugFunction, getDebug } from '@sqaitech/shared/logger';
 import {
   getElementInfosScriptContent,
   getExtraReturnLogic,
-} from '@midscene/shared/node';
-import { assert } from '@midscene/shared/utils';
+} from '@sqaitech/shared/node';
+import { assert } from '@sqaitech/shared/utils';
 import type { Page as PlaywrightPage } from 'playwright';
 import type { CDPSession, Protocol, Page as PuppeteerPage } from 'puppeteer';
 import {
@@ -699,7 +699,7 @@ export class Page<
 
   async registerFileChooserListener(
     handler: (
-      chooser: import('@midscene/core/device').FileChooserHandler,
+      chooser: import('@sqaitech/core/device').FileChooserHandler,
     ) => Promise<void>,
   ): Promise<{ dispose: () => void; getError: () => Error | undefined }> {
     if (this.interfaceType !== 'puppeteer') {

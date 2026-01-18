@@ -1,5 +1,5 @@
 import { Agent } from '@/agent';
-import type { CreateOpenAIClientFn } from '@midscene/shared/env';
+import type { CreateOpenAIClientFn } from '@sqaitech/shared/env';
 import {
   MIDSCENE_INSIGHT_MODEL_API_KEY,
   MIDSCENE_INSIGHT_MODEL_BASE_URL,
@@ -11,7 +11,7 @@ import {
   MIDSCENE_PLANNING_MODEL_API_KEY,
   MIDSCENE_PLANNING_MODEL_BASE_URL,
   MIDSCENE_PLANNING_MODEL_NAME,
-} from '@midscene/shared/env';
+} from '@sqaitech/shared/env';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 const defaultModelConfig = {

@@ -1,15 +1,7 @@
-<p align="center">
-  <img alt="Midscene.js"  width="260" src="https://github.com/user-attachments/assets/f60de3c1-dd6f-4213-97a1-85bf7c6e79e4">
-</p>
-
-<h1 align="center">Midscene.js</h1>
+<h1 align="center">SQAI</h1>
 <div align="center">
 
-English | [简体中文](./README.zh.md)
-
-<strong>Official Website</strong>: <a href="https://midscenejs.com/">https://midscenejs.com/</a>
-
-<a href="https://trendshift.io/repositories/12524" target="_blank"><img src="https://trendshift.io/api/badge/repositories/12524" alt="web-infra-dev%2Fmidscene | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
+**Repository**: <a href="https://github.com/qa-nparekh/midscene">https://github.com/qa-nparekh/midscene</a>
 
 </div>
 
@@ -18,23 +10,15 @@ English | [简体中文](./README.zh.md)
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/@midscene/web"><img src="https://img.shields.io/npm/v/@midscene/web?style=flat-square&color=00a8f0" alt="npm version" /></a>
-  <a href="https://huggingface.co/ByteDance-Seed/UI-TARS-1.5-7B"><img src="https://img.shields.io/badge/UI%20TARS%20Models-yellow" alt="hugging face model" /></a>
-  <a href="https://npm-compare.com/@midscene/web/#timeRange=THREE_YEARS"><img src="https://img.shields.io/npm/dm/@midscene/web.svg?style=flat-square&color=00a8f0" alt="downloads" /></a>
-  <a href="https://github.com/web-infra-dev/midscene/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&color=00a8f0" alt="License" />
-  <a href="https://discord.gg/2JyBHxszE4"><img src="https://img.shields.io/discord/1328277792730779648?style=flat-square&color=7289DA&label=Discord&logo=discord&logoColor=white" alt="discord" /></a>
-  <a href="https://x.com/midscene_ai"><img src="https://img.shields.io/twitter/follow/midscene_ai?style=flat-square" alt="twitter" /></a>
-  <a href="https://deepwiki.com/web-infra-dev/midscene">
-    <img alt="Ask DeepWiki.com" src="https://devin.ai/assets/deepwiki-badge.png" style="height: 18px; vertical-align: middle;" />
-  </a>
+  <a href="https://www.npmjs.com/package/@sqaitech/web"><img src="https://img.shields.io/npm/v/@sqaitech/web?style=flat-square&color=00a8f0" alt="npm version" /></a>
+  <a href="https://github.com/qa-nparekh/midscene/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square&color=00a8f0" alt="License" />
 </p>
 
-## 📣 v1.0 Release Notice
+## 📣 SQAI v0.5.0
 
-> **We have released v1.0.** It is currently published on npm.  
-> The v1.0 docs and code are on [https://midscenejs.com/](https://midscenejs.com/) and the `main` branch.  
-> The v0.x docs and code are on [https://v0.midscenejs.com/](https://v0.midscenejs.com/) and the `v0` branch.  
-> The v1.0 changelog: [https://midscenejs.com/changelog](https://midscenejs.com/changelog)
+> **SQAI is a fork of Midscene.js**, rebranded and customized for internal use.  
+> Based on Midscene v1.2.1 with custom modifications.  
+> Upstream Midscene: [https://github.com/web-infra-dev/midscene](https://github.com/web-infra-dev/midscene)
 
 ## Showcases
 

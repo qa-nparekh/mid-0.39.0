@@ -5,13 +5,13 @@ import {
   descriptionOfTree,
   traverseTree,
   treeToList,
-} from '@midscene/shared/extractor';
+} from '@sqaitech/shared/extractor';
 import {
   compositeElementInfoImg,
   imageInfoOfBase64,
   saveBase64Image,
-} from '@midscene/shared/img';
-import { getElementInfosScriptContent } from '@midscene/shared/node';
+} from '@sqaitech/shared/img';
+import { getElementInfosScriptContent } from '@sqaitech/shared/node';
 import { createServer } from 'http-server';
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
 import { launchPage } from '../ai/web/puppeteer/utils';

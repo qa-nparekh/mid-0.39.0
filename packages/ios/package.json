@@ -1,7 +1,7 @@
 {
-  "name": "@midscene/ios",
-  "version": "1.2.1",
-  "description": "iOS automation library for Midscene",
+  "name": "@sqaitech/ios",
+  "version": "0.5.0",
+  "description": "iOS automation library for SQAI",
   "keywords": [
     "iOS UI automation",
     "iOS AI testing",
@@ -46,14 +46,14 @@
     "test:ai:cache": "MIDSCENE_CACHE=true AI_TEST_TYPE=iOS npm run test"
   },
   "dependencies": {
-    "@midscene/core": "workspace:*",
-    "@midscene/shared": "workspace:*",
-    "@midscene/webdriver": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
+    "@sqaitech/webdriver": "workspace:*",
     "@inquirer/prompts": "^7.8.6",
     "open": "10.1.0"
   },
   "devDependencies": {
-    "@midscene/playground": "workspace:*",
+    "@sqaitech/playground": "workspace:*",
     "@rslib/core": "^0.18.3",
     "@types/node": "^18.0.0",
     "dotenv": "^16.4.5",

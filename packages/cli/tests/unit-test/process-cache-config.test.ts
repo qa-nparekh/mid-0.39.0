@@ -1,16 +1,16 @@
-import type { Cache } from '@midscene/core';
-import { processCacheConfig } from '@midscene/core/utils';
+import type { Cache } from '@sqaitech/core';
+import { processCacheConfig } from '@sqaitech/core/utils';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 
 // Mock the global config manager to control environment variables
-vi.mock('@midscene/shared/env', () => ({
+vi.mock('@sqaitech/shared/env', () => ({
   MIDSCENE_CACHE: 'MIDSCENE_CACHE',
   globalConfigManager: {
     getEnvConfigInBoolean: vi.fn(),
   },
 }));
 
-import { globalConfigManager } from '@midscene/shared/env';
+import { globalConfigManager } from '@sqaitech/shared/env';
 
 describe('processCacheConfig in CLI', () => {
   beforeEach(() => {

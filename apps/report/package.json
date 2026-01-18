@@ -1,6 +1,6 @@
 {
-  "name": "@midscene/report",
-  "version": "1.0.0",
+  "name": "@sqaitech/report",
+  "version": "0.5.0",
   "private": true,
   "scripts": {
     "dev": "rsbuild dev",
@@ -12,11 +12,11 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.3.1",
-    "@midscene/core": "workspace:*",
-    "@midscene/playground": "workspace:*",
-    "@midscene/shared": "workspace:*",
-    "@midscene/visualizer": "workspace:*",
-    "@midscene/web": "workspace:*",
+    "@sqaitech/core": "workspace:*",
+    "@sqaitech/playground": "workspace:*",
+    "@sqaitech/shared": "workspace:*",
+    "@sqaitech/visualizer": "workspace:*",
+    "@sqaitech/web": "workspace:*",
     "@rsbuild/core": "^1.6.15",
     "@rsbuild/plugin-less": "^1.5.0",
     "@rsbuild/plugin-react": "^1.4.1",

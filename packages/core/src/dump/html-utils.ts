@@ -1,4 +1,4 @@
-import { antiEscapeScriptTag, escapeScriptTag } from '@midscene/shared/utils';
+import { antiEscapeScriptTag, escapeScriptTag } from '@sqaitech/shared/utils';
 
 export const escapeContent = escapeScriptTag;
 export const unescapeContent = antiEscapeScriptTag;
